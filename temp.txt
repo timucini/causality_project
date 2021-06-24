@@ -1,1 +1,0 @@
-Jede Aktivität bekommt Ausführungskostenfunktion ('Initial Zeit'+'Ausführungszeit: Verteilungsfunktion')*'Kosten/je Zeit' -> 'Kosten', 'Gesamtzeit'

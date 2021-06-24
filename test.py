@@ -12,6 +12,8 @@ net, im, fm = pm.convert_to_petri_net(bpmn)
 evl = sim.apply_playout(net, im, no_traces=1000, max_trace_length=10, final_marking=fm)
 frame = pm.convert_to_dataframe(evl)
 
+frame.to_csv(path/'teslo.csv')
+
 case_id = 'case:concept:name'
 activity_names = 'concept:name'
 
