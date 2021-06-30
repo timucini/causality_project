@@ -20,3 +20,15 @@ print(ruleset)
 #case_table = calculate_outcome(case_table, ruleset)
 #print(case_table)
 #case_table.to_csv(path/'test_ct2.csv', sep=';', index=False, decimal=',', quoting=2)
+
+activities = {'changed_process': ["Check stock availability", "Check raw materials availabilty", "Notify unavailability to customer",
+                                    ("Request raw materials from Supplier 1", "Request raw materials from Supplier 2"),
+                                    ("Obtain raw materials from Supplier 1", "Obtain raw materials from Supplier 2"),
+                                    "Manufacture product", "Retrieve product from warehouse", "Confirm order", "Get shipping address",
+                                    ("Ship product", "Emit invoice"), "Receive Payment", "Archieve order"],
+
+            'unchanged_process': ["Check stock availability", "Check raw materials availabilty", ("Request raw materials from Supplier 1",
+                                    "Request raw materials from Supplier 2", "Obtain raw materials from Supplier 1",
+                                    "Obtain raw materials from Supplier 2"), "Manufacture product", "Retrieve product from warehouse",
+                                    "Confirm order", ("Get shipping address", "Ship product", "Emit invoice", "Receive Payment"),
+                                    "Archieve order"]}
