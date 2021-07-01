@@ -85,12 +85,15 @@ def calculate_outcome(case_table:DataFrame, ruleset:dict) -> DataFrame:
     """
     case_records = case_table.reset_index().to_dict('records')
 
-    def get_value(activity:'str|tuple', record:dict, rule:str):
-        if isinstance(activity, tuple):
+    def get_value(activity:'str|tuple|list', record:dict, rule:str):
+        if not isinstance(activity, str):
             values = []
             for paralell_activity in activity:
                 values.append(get_value(paralell_activity, record, rule))
-            return max(values)
+            if isinstance(activity, tuple):
+                return max(values)
+            elif isinstance(activity, list):
+                return sum(values)
         else:
             return record[rule+' '+activity]
 
@@ -98,8 +101,7 @@ def calculate_outcome(case_table:DataFrame, ruleset:dict) -> DataFrame:
         for record in case_records:
             value = 0
             if ruleset[rule]:
-                for activity in ruleset[rule]:
-                    value = value+get_value(activity, record, rule)
+                value = value+get_value(ruleset[rule], record, rule)
             else:
                 for acticity in record:
                     if rule in acticity:

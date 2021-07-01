@@ -2,8 +2,8 @@
 Check stock availability,1.00,00:00:30,10.00,True
 Check raw materials availabilty,1.00,00:00:45,10.00,True
 Notify unavailability to customer,1.00,00:01:00,10.00,True
-Request raw materials from Supplier 1,1.00,00:00:30,10.00,True
-Request raw materials from Supplier 2,1.00,00:00:30,10.00,True
+Start request raw materials from Supplier 1,1.00,00:00:30,10.00,True
+Start request raw materials from Supplier 2,1.00,00:00:30,10.00,True
 Obtain raw materials from Supplier 1,2.00,00:03:00,40.00,False
 Obtain raw materials from Supplier 2,2.00,00:03:00,40.00,False
 Manufacture product,5.00,03:00:00,40.00,False
