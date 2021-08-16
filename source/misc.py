@@ -138,3 +138,18 @@ def get_dummy_ruleset(event_frame:DataFrame, case_id:str='case:concept:name', ac
         pos = randint(0, len(ruleset))
         ruleset[pos] = (ruleset[pos], parallel)
     return {name:ruleset}
+
+def min_max_scale(frame:DataFrame, scale_min:int=0, scale_max:int=1) -> DataFrame:
+    return_frame = frame.copy()
+    numerics = frame.select_dtypes(include='number').columns
+    for column in numerics:
+        column_min = frame[column].min()
+        column_max = frame[column].max()
+        if column_min==scale_min and column_max==scale_max:
+            continue
+        if column_min==column_max:
+            scale = 0
+        else:
+            scale = (scale_max-scale_min)/(column_max-column_min)
+        return_frame[column] = scale*frame[column]-frame[column].min()*scale
+    return return_frame

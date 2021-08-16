@@ -3,13 +3,13 @@ from pandas import DataFrame
 """
 This module covers methods and procedures for conducting causality testing.
 """
-def linearFullCheck(unchangedData:DataFrame, changedData:DataFrame, kpi:str, genericFeatures:List[str], changeFeatures:List[str], score:str='neg_mean_squared_error') -> int:
-    from source.ml.linear_regression import getModel as linear
-    from source.ml.linear_regression import implementation as model
+def linear_full_check(unchanged_data:DataFrame, changed_data:DataFrame, kpi:str, generic_features:List[str], change_features:List[str]) -> int:
+    from sklearn.linear_model import LinearRegression as linear
     from sklearn.model_selection import cross_validate as validate
     UNCHANGED_PREDICTION = 'unchaged prediction'
     DIFFRENCE = 'diffrence'
-    unchagedModel = linear(unchangedData[genericFeatures], unchangedData[kpi])
-    changedData[UNCHANGED_PREDICTION] = unchagedModel.predict(changedData[genericFeatures])
-    changedData[DIFFRENCE] = changedData[kpi]-changedData[UNCHANGED_PREDICTION]
-    return DataFrame(validate(model, changedData[changeFeatures], changedData[DIFFRENCE], scoring=score, n_jobs=-1)).mean().to_dict()['test_score']
+    unchagedModel = linear().fit(unchanged_data[generic_features], unchanged_data[kpi])
+    changed_data[UNCHANGED_PREDICTION] = unchagedModel.predict(changed_data[generic_features])
+    changed_data[DIFFRENCE] = changed_data[kpi]-changed_data[UNCHANGED_PREDICTION]
+    print(changed_data[[UNCHANGED_PREDICTION,kpi,DIFFRENCE]])
+    return DataFrame(validate(linear(), changed_data[change_features], changed_data[DIFFRENCE], n_jobs=-1)).mean()['test_score']
