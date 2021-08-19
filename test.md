@@ -19,13 +19,12 @@ g(p) = &sum;(d<sub>n</sub>)
 ## Procedure
 In order to prove causality, it is necessary to define the actual results as predictions of a model `m`.</br>
 c<sub>p=0</sub> = m<sub>p=0</sub>(x)</br>
-c<sub>p=1</sub> = m<sub>p=1</sub>(x)</br>
-In the next step it is necessary to determine the difference &Delta; between the predictions of the model. This represents the change in the KPI that resulted from the change in the process.</br>
+In the next step it is necessary to determine the difference &Delta; between the prediction of the model and the results of the changed process c<sub>p=1</sub>. This represents the change in the KPI that resulted from the change in the process.</br>
 &Delta;<sub>c</sub> = c<sub>p=0</sub> - c<sub>p=1</sub></br>
-Finally, another model `m` is used to try to determine the change in KPI based on the changes `g(1)`. The better this succeeds, i.e. the higher this accuracy is, the more one can speak of a causal relationship.</br>
-causality &equiv; accuracy(m<sub>c</sub>(g(1))&rarr;&Delta;<sub>c</sub>)</br>
+Finally, another model `M` is used to try to determine the change in KPI based on the changes `g(1)`. The better this succeeds, i.e. the higher this accuracy is, the more one can speak of a causal relationship.</br>
+causality &equiv; accuracy(M<sub>c</sub>(g(1))&rarr;&Delta;<sub>c</sub>)</br>
 In addition, under the following assumption, each individual change can also be checked.</br>
-causality &equiv; &sum;<sup>n</sup>accuracy(m<sub>c<sub>n</sub></sub>(d(n))&rarr;&Delta;<sub>c<sub>n</sub></sub>)
+causality &equiv; &sum;<sup>n</sup>accuracy(M<sub>c<sub>n</sub></sub>(d(n))&rarr;&Delta;<sub>c<sub>n</sub></sub>)
 
 Sources:</br>
 https://link.springer.com/article/10.1365/s40702-019-00557-y </br>
