@@ -1,12 +1,37 @@
-from os import dup
 from typing import Tuple
 from pandas import DataFrame
+"""
+This module covers methods and procedures for filtering features from case_tables.
+"""
+def variance_dropout(case_table: DataFrame, round=3) -> DataFrame:
+    """
+    This method is used to drop features/columns with a variance of zero.
 
-def variance_dropout(case_table: DataFrame) -> DataFrame:
-    variance = case_table.var()
+    Parameters:
+    ---
+    case_table : pandas.DataFrame
+        The data wich should be used
+
+    Returns
+    ---
+    pandas.DataFrame
+    """
+    variance = case_table.var().round(round)
     return case_table.drop(columns=variance[variance==0].index.to_list())
 
 def scale_comparison_dropout(case_table: DataFrame) -> DataFrame:
+    """
+    This method is used to drop features/columns which carry identical information on an aligned scale.
+
+    Parameters:
+    ---
+    case_table : pandas.DataFrame
+        The data wich should be used
+
+    Returns
+    ---
+    pandas.DataFrame
+    """
     from source.misc import min_max_scale
     scaled = min_max_scale(case_table)
     duped = []
@@ -22,6 +47,19 @@ def scale_comparison_dropout(case_table: DataFrame) -> DataFrame:
     return case_table.drop(columns=duped)
 
 def prepare_features(unchanged_case_table: DataFrame, changed_case_table: DataFrame) -> Tuple[DataFrame,DataFrame]:
+    """
+    This method is used to drop unnecessary features/columns based on variance and scale. In addition, missing features are added if necessary.
+
+    Parameters:
+    ---
+    unchanged_case_table : pandas.DataFrame
+
+    changed_case_table : pandas.DataFrame
+
+    Returns
+    ---
+    pandas.DataFrame
+    """
     from pandas import Series
     prepared_unchanged = scale_comparison_dropout(variance_dropout(unchanged_case_table))
     prepared_changed = scale_comparison_dropout(variance_dropout(changed_case_table))
@@ -34,29 +72,3 @@ def prepare_features(unchanged_case_table: DataFrame, changed_case_table: DataFr
         else:
             prepared_changed[feature] = 0
     return prepared_unchanged, prepared_changed
-
-#def add_changed_features(changed_case_table: DataFrame) -> DataFrame:
-#    import numpy as np
-#    #Notify unavailability to customer features
-#    changed_case_table['Is notify customer automated'] = changed_case_table['cost Notify unavailability to customer']>0, 0, 0)
-#    case_table_changed['Changed parallelism step notify customer'] = np.where(case_table_changed['cost Notify unavailability to customer'] > 0, 0, 0)
-#    case_table_changed['Changed containment step notify customer'] = np.where(case_table_changed['cost Notify unavailability to customer'] > 0, 1, 0)
-#    #Request raw materials from Suppliers features
-#    case_table_changed['Changed automation step request materials'] = np.where(case_table_changed['cost Start request raw materials from Supplier 1'] > 0, 1, 0)
-#    case_table_changed['Changed parallelism step request materials'] = np.where(case_table_changed['cost Start request raw materials from Supplier 1'] > 0, 0, 0)
-#    case_table_changed['Changed containment step request materials'] = np.where(case_table_changed['cost Start request raw materials from Supplier 1'] > 0, 0, 0)
-#    #Get shipping address features
-#    case_table_changed['Changed automation step shipping address'] = np.where(case_table_changed['cost Get shipping address'] > 0, 0, 0)
-#    case_table_changed['Changed parallelism step shipping address'] = np.where(case_table_changed['cost Get shipping address'] > 0, 0, 0)
-#    case_table_changed['Changed containment step shipping address'] = np.where(case_table_changed['cost Get shipping address'] > 0, 1, 0)
-#    return case_table_changed
-
-
-#def get_generic_feature_list() -> List[str]:
-#    return generic_feature_list
-#
-#
-#def get_changed_feature_list() -> List[str]:
-#    return changed_feature_list
-#
-#
