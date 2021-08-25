@@ -17,5 +17,7 @@ change_features = changed.drop(columns=['case:concept:name','time','cost']+gener
 print("Changed features:")
 for feature in change_features:
     print(feature)
-from sklearn.linear_model import LinearRegression
-print(full_check(LinearRegression(), unchanged, changed, 'cost', generic_features, change_features))
+print()
+for feature in change_features:
+    from sklearn.linear_model import LinearRegression
+    print("Prediction of " + feature + ": " + str(full_check(LinearRegression(), unchanged, changed, 'cost', generic_features, [feature])))
