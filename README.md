@@ -1,6 +1,20 @@
 # Causality Project
 This repositorie represents a student project between the HTW Berlin and Signavio. The goal is to provide a toolbox of approaches for causality testing of process changes and their potential impacts.
 
+## Environment
+
+| Software | Version |
+| - | - |
+| OS | Windows 10 |
+| Pythyon | 3.8 |
+
+| System | |
+| - | - |
+| CPU | AMD Ryzen 9 5950x |
+| RAM | 32GB DDR4 |
+| GPU | Nvidia RTX 3090 |
+| SSD | PCIe NVMe |
+
 ## Structure
 
 ### root

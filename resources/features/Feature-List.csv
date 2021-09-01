@@ -1,7 +1,7 @@
 ﻿Activity,AutomatedInUnchanged,AutomatedInChanged,IsParallelInUnchanged,IsParallelInChanged,IsInUnchanged,IsInChanged
 Notify unavailability to customer,True,True,False,False,False,True
-Start request raw materials from Supplier 1,False,True,True,True,False,True
-Start request raw materials from Supplier 2,False,True,True,True,False,True
+Request raw materials from Supplier 1,False,True,True,True,False,True
+Request raw materials from Supplier 2,False,True,True,True,False,True
 Request raw materials from Supplier 1,False,True,True,True,True,False
 Request raw materials from Supplier 2,False,True,True,True,True,False
 Get shipping address,False,False,True,False,True,True

@@ -1,7 +1,7 @@
 ﻿Activity,Description
 Notify unavailability to customer,Will be triggered when raw materials are not available and product is not in stock
-Start request raw materials from Supplier 1,Automated process which request raw materials from Supplier1 via ERP-System
-Start request raw materials from Supplier 2,Automated process which request raw materials from Supplier2 via ERP-System
+Request raw materials from Supplier 1,Automated process which request raw materials from Supplier1 via ERP-System
+Request raw materials from Supplier 2,Automated process which request raw materials from Supplier2 via ERP-System
 Request raw materials from Supplier 1,Manual task from warehouse statt which which request raw materials from Supplier1
 Request raw materials from Supplier 2,Manual task from warehouse statt which which request raw materials from Supplier2
 Get shipping address,Task to get the shipping address from customer can be manual or automated

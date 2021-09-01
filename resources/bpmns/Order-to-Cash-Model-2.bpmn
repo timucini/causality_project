@@ -283,7 +283,7 @@
          <incoming>sid-F8A86F3C-54B7-4237-983E-DDF8EC6C4C7C</incoming>
          <terminateEventDefinition id="sid-347866b6-0e22-45fe-810b-56afa0b9d1ac"/>
       </endEvent>
-      <task completionQuantity="1" id="sid-FE2A37B6-6677-4DBE-BDCD-497F1E2F8E57" isForCompensation="false" name="Start request raw materials from Supplier 1" startQuantity="1">
+      <task completionQuantity="1" id="sid-FE2A37B6-6677-4DBE-BDCD-497F1E2F8E57" isForCompensation="false" name="Request raw materials from Supplier 1" startQuantity="1">
          <extensionElements>
             <signavio:signavioMetaData metaKey="bgcolor" metaValue="#ffffcc"/>
             <signavio:signavioMetaData metaKey="bordercolor" metaValue="#000000"/>
@@ -320,7 +320,7 @@
             <targetRef>sid-1860A324-6905-40ED-BA40-7F4E24B59807</targetRef>
          </dataOutputAssociation>
       </task>
-      <task completionQuantity="1" id="sid-D0C48252-31F0-4EA4-A4D6-A6D1DA91C6D2" isForCompensation="false" name="Start request raw materials from Supplier 2" startQuantity="1">
+      <task completionQuantity="1" id="sid-D0C48252-31F0-4EA4-A4D6-A6D1DA91C6D2" isForCompensation="false" name="Request raw materials from Supplier 2" startQuantity="1">
          <extensionElements>
             <signavio:signavioMetaData metaKey="bgcolor" metaValue="#ffffcc"/>
             <signavio:signavioMetaData metaKey="bordercolor" metaValue="#000000"/>

@@ -1,25 +1,43 @@
-from typing import List
+from typing import List, Tuple
 from pandas import DataFrame
 from sklearn.base import BaseEstimator
-"""
-This module covers methods and procedures for conducting causality testing.
-"""
-def linear_full_check(unchanged_data:DataFrame, changed_data:DataFrame, kpi:str, generic_features:List[str], changed_features:List[str]) -> float:
-    """
-    Depricated, this will be deleted soon.
-    """
-    from sklearn.linear_model import LinearRegression as linear
-    from sklearn.model_selection import cross_validate as validate
-    UNCHANGED_PREDICTION = 'unchaged prediction'
-    DIFFRENCE = 'diffrence'
-    unchagedModel = linear().fit(unchanged_data[generic_features], unchanged_data[kpi])
-    changed_data[UNCHANGED_PREDICTION] = unchagedModel.predict(changed_data[generic_features])
-    changed_data[DIFFRENCE] = changed_data[kpi]-changed_data[UNCHANGED_PREDICTION]
-    print()
-    print(changed_data[[UNCHANGED_PREDICTION,kpi,DIFFRENCE]])
-    return DataFrame(validate(linear(), changed_data[changed_features], changed_data[DIFFRENCE], n_jobs=-1)).mean()['test_score']
+UNCHANGED_PREDICTION = 'unchaged prediction'
+DIFFRENCE = 'diffrence'
 
-def full_check(model:BaseEstimator, unchanged_data:DataFrame, changed_data:DataFrame, kpi:str, generic_features:List[str], changed_features:List[str]) -> float:
+def calculate_diffrence(model:BaseEstimator, unchanged_data:DataFrame, changed_data:DataFrame, kpi:str, generic_features:List[str], cv:int=5) -> DataFrame:
+    """
+    This method is used to estimate the causality of a change in a process an the change in the outcome.
+
+    Parameters:
+    ---
+    model : sklearn.base.BaseEstimator
+        A sklearn estimator, wich should be used to estimate the causality
+    unchanged_data : pandas.DataFrame
+        The data of the unchanged process organized as a case table
+    changed_data : pandas.DataFrame
+        The data of the changed process organized as a case table
+    kpi : str
+        A string representing the column of the kpi/outcome of the unchanged_data
+    generic_features : List[str]
+        A list of string representing the columns of the features describing the base process, most likely the features that have not changed; Ensure that both data inhabitates the features
+    cv : int
+        A integer representing the number of folds used for a prediction
+
+    Returns
+    ---
+    pandas.DataFrame
+        Returns the changed_data with two more columns 'unchanged prediction' and 'diffrence'
+    """
+    from sklearn.model_selection import cross_validate as validate
+    estimators = validate(model, unchanged_data[generic_features], unchanged_data[kpi], return_estimator=True, n_jobs=-1, cv=cv).pop('estimator')
+    predictions = []
+    for estimator in estimators:
+        predictions.append(estimator.predict(unchanged_data[generic_features]))
+    changed_data[UNCHANGED_PREDICTION] = DataFrame(predictions).mean()
+    changed_data[DIFFRENCE] = changed_data[kpi]-changed_data[UNCHANGED_PREDICTION]
+    return changed_data
+
+def full_check(model:BaseEstimator, unchanged_data:DataFrame, changed_data:DataFrame, kpi:str, generic_features:List[str], changed_features:List[str], cv=5, scoring='neg_mean_squared_error') -> float:
     """
     This method is used to estimate the causality of a change in a process an the change in the outcome.
 
@@ -37,20 +55,37 @@ def full_check(model:BaseEstimator, unchanged_data:DataFrame, changed_data:DataF
         A list of string representing the columns of the features describing the base process, most likely the features that have not changed; Ensure that both data inhabitates the features
     changed_features : List[str]
         A list of string representing the columns of the features describing the changes in the changed_data frame.
+    cv : int
+        A integer representing the number of folds used for a prediction
 
     Returns
     ---
     float
-        A value between 0 and 1
+        A value defined by the scoring, larger is better
     """
     from sklearn.model_selection import cross_validate as validate
-    UNCHANGED_PREDICTION = 'unchaged prediction'
-    DIFFRENCE = 'diffrence'
-    estimators = validate(model, unchanged_data[generic_features], unchanged_data[kpi], return_estimator=True, n_jobs=-1).pop('estimator')
-    predictions = []
-    for estimator in estimators:
-        predictions.append(estimator.predict(unchanged_data[generic_features]))
-    changed_data[UNCHANGED_PREDICTION] = DataFrame(predictions).mean()
-    changed_data[DIFFRENCE] = changed_data[kpi]-changed_data[UNCHANGED_PREDICTION]
-    causality_model = model.__class__().set_params(**model.get_params())
-    return DataFrame(validate(causality_model, changed_data[changed_features], changed_data[DIFFRENCE], n_jobs=-1))['test_score'].mean()
+    changed_data = calculate_diffrence(model, unchanged_data, changed_data, kpi, generic_features, cv)
+    return DataFrame(validate(model, changed_data[changed_features], changed_data[DIFFRENCE], n_jobs=-1, cv=cv, scoring=scoring))['test_score'].mean()
+
+def feature_tracing(model:BaseEstimator, data:DataFrame, features:List[str], target:str, cv=5, scoring='neg_mean_squared_error') -> DataFrame:
+    from sklearn.model_selection import cross_validate as validate
+    records = []
+    bias = -2**16
+    used_features = []
+    def trace(bias:float, used_features:List[str]) -> Tuple[float, List[str]]:
+        best_features = []
+        for feature in features:
+            if feature not in used_features:
+                trace_features = used_features+[feature]
+                score = DataFrame(validate(model, data[trace_features], data[target], n_jobs=-1, cv=cv, scoring=scoring))['test_score'].mean()
+                records.append({'features':trace_features, 'score':score})
+                if score>bias:
+                    bias=score
+                    best_features = trace_features
+        return bias, best_features
+    while True:
+        pre_bias = bias
+        bias, used_features = trace(bias, used_features)
+        if bias==pre_bias:
+            break
+    return DataFrame(records)
