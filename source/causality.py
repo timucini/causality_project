@@ -1,7 +1,7 @@
 from typing import List, Tuple
 from pandas import DataFrame
 from sklearn.base import BaseEstimator
-UNCHANGED_PREDICTION = 'unchaged prediction'
+UNCHANGED_PREDICTION = 'unchanged prediction'
 DIFFRENCE = 'diffrence'
 
 def calculate_diffrence(model:BaseEstimator, unchanged_data:DataFrame, changed_data:DataFrame, kpi:str, generic_features:List[str], cv:int=5) -> DataFrame:
@@ -57,6 +57,8 @@ def full_check(model:BaseEstimator, unchanged_data:DataFrame, changed_data:DataF
         A list of string representing the columns of the features describing the changes in the changed_data frame.
     cv : int
         A integer representing the number of folds used for a prediction
+    scoring : str
+        A string representing the scoring method according to sklearn used for evaluation
 
     Returns
     ---
@@ -67,7 +69,30 @@ def full_check(model:BaseEstimator, unchanged_data:DataFrame, changed_data:DataF
     changed_data = calculate_diffrence(model, unchanged_data, changed_data, kpi, generic_features, cv)
     return DataFrame(validate(model, changed_data[changed_features], changed_data[DIFFRENCE], n_jobs=-1, cv=cv, scoring=scoring))['test_score'].mean()
 
-def feature_tracing(model:BaseEstimator, data:DataFrame, features:List[str], target:str, cv=5, scoring='neg_mean_squared_error') -> DataFrame:
+def feature_tracing(model:BaseEstimator, data:DataFrame, features:List[str], target:str, cv:int=5, scoring:str='neg_mean_squared_error') -> DataFrame:
+    """
+    This method is used to find out which features best describe the problem.
+
+    Parameters:
+    ---
+    model : sklearn.base.BaseEstimator
+        A sklearn estimator, wich should be used to estimate the problem
+    data : pandas.DataFrame
+        The data of problem
+    features : List[str]
+        A list of string representing the columns of the features describing the problem in the data
+    target : str
+        A string representing the column of the outcome of the problem
+    cv : int
+        A integer representing the number of folds used for a prediction
+    scoring : str
+        A string representing the scoring method according to sklearn used for evaluation
+
+    Returns
+    ---
+    float
+        A value defined by the scoring, larger is better
+    """
     from sklearn.model_selection import cross_validate as validate
     records = []
     bias = -2**16

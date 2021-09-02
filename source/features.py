@@ -58,7 +58,7 @@ def prepare_features(unchanged_case_table: DataFrame, changed_case_table: DataFr
 
     Returns
     ---
-    pandas.DataFrame
+    Tuple of pandas.DataFrame
     """
     from pandas import Series
     prepared_unchanged = scale_comparison_dropout(variance_dropout(unchanged_case_table))

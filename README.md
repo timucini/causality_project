@@ -39,5 +39,8 @@ This directory contains all CSV files representing a scenario used for simulatio
 #### xes_logs
 This directory contains all extern XES files representing a event-log used for research.
 
+#### causality_feature_tables
+This directory contains the results of the investigation.
+
 ### source
 This direcory contains the source-code.
