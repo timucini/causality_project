@@ -23,7 +23,7 @@ generic_features = feature_tracing(LinearRegression(), unchanged, generic_featur
 print(generic_features)
 changed = calculate_difference(LinearRegression(), unchanged, changed, 'cost', generic_features)
 print(changed)
-change_features = changed.drop(columns=['case:concept:name','time','cost','diffrence','unchaged prediction']).columns.to_list()
+change_features = changed.drop(columns=['case:concept:name','time','cost','difference','unchanged prediction']).columns.to_list()
 print(feature_tracing(LinearRegression(), changed, change_features, 'cost').sort_values('score', ascending=False).iloc[0]['features'])
 #print()
 #for feature in change_features:
