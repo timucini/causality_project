@@ -1,8 +1,11 @@
 from typing import Tuple
 from pandas import DataFrame
+
 """
-This module covers methods and procedures for filtering features from case_tables.
+This module covers methods and procedures for filtering features from the case_tables.
 """
+
+
 def variance_dropout(case_table: DataFrame, round=3) -> DataFrame:
     """
     This method is used to drop features/columns with a variance of zero.
@@ -10,14 +13,15 @@ def variance_dropout(case_table: DataFrame, round=3) -> DataFrame:
     Parameters:
     ---
     case_table : pandas.DataFrame
-        The data wich should be used
+        The data which should be used
 
     Returns
     ---
     pandas.DataFrame
     """
     variance = case_table.var().round(round)
-    return case_table.drop(columns=variance[variance==0].index.to_list())
+    return case_table.drop(columns=variance[variance == 0].index.to_list())
+
 
 def scale_comparison_dropout(case_table: DataFrame) -> DataFrame:
     """
@@ -26,7 +30,7 @@ def scale_comparison_dropout(case_table: DataFrame) -> DataFrame:
     Parameters:
     ---
     case_table : pandas.DataFrame
-        The data wich should be used
+        The data which should be used
 
     Returns
     ---
@@ -37,18 +41,20 @@ def scale_comparison_dropout(case_table: DataFrame) -> DataFrame:
     duped = []
     for column in scaled.columns:
         for other in scaled.columns:
-            if column!=other:
-                diff = scaled[column]==scaled[other]
-                if diff.sum()==len(diff):
+            if column != other:
+                diff = scaled[column] == scaled[other]
+                if diff.sum() == len(diff):
                     if (column in duped) or (other in duped):
                         break
                     else:
                         duped.append(column)
     return case_table.drop(columns=duped)
 
-def prepare_features(unchanged_case_table: DataFrame, changed_case_table: DataFrame) -> Tuple[DataFrame,DataFrame]:
+
+def prepare_features(unchanged_case_table: DataFrame, changed_case_table: DataFrame) -> Tuple[DataFrame, DataFrame]:
     """
-    This method is used to drop unnecessary features/columns based on variance and scale. In addition, missing features are added if necessary.
+    This method is used to drop unnecessary features/columns based on variance and scale.
+    In addition, missing features are added if necessary.
 
     Parameters:
     ---

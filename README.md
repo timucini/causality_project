@@ -1,12 +1,12 @@
 # Causality Project
-This repositorie represents a student project between the HTW Berlin and Signavio. The goal is to provide a toolbox of approaches for causality testing of process changes and their potential impacts.
+This repository represents a student project between the HTW Berlin and Signavio. The goal is to provide a toolbox of approaches for causality testing of process changes and their potential impacts.
 
 ## Environment
 
 | Software | Version |
 | - | - |
 | OS | Windows 10 |
-| Pythyon | 3.8 |
+| Python | 3.8 |
 
 | System | |
 | - | - |
@@ -22,7 +22,7 @@ The root directory of the project could contain testing files and jupyter notebo
 Additionally you can find there the environment.py, which contains important environment variables for the project.
 
 ### resources
-The resource directory contains all necesassary files wich are used for testing and research.
+The resource directory contains all necessary files which are used for testing and research.
 
 #### bpmns
 This directory contains all BPMNs used for research, for example for simulation.
@@ -43,4 +43,4 @@ This directory contains all extern XES files representing a event-log used for r
 This directory contains the results of the investigation.
 
 ### source
-This direcory contains the source-code.
+This directory contains the source-code.

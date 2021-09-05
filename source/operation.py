@@ -1,11 +1,14 @@
 """
-This module is used to do operational activities with process data.
+This module is used to perform operational activities with process data.
 """
 from pandas import DataFrame
 
-def to_case_table(event_frame:DataFrame, case_id:str='case:concept:name', activity_id:str='concept:name', timestamp:str='time:timestamp', aggregate:dict={}, fillna=None, rename_count:str='Num of') -> DataFrame:
+
+def to_case_table(event_frame: DataFrame, case_id: str = 'case:concept:name', activity_id: str = 'concept:name',
+                  timestamp: str = 'time:timestamp', aggregate: dict = {}, fillna=None,
+                  rename_count: str = 'Num of') -> DataFrame:
     """
-    This method is used to transform an evnetl-log to a case table.
+    This method is used to transform an event-log to a case table.
 
     Parameters
     ---
@@ -18,7 +21,7 @@ def to_case_table(event_frame:DataFrame, case_id:str='case:concept:name', activi
     timestamp : str
         The column in the dataframe representing the timestamp
     aggregate : dict
-        A dict used to aggregate values by a given function. At least it will be used:
+        A dict used to aggregate values by a given function. what will be used at least:
             'timestamp':count
     fillna : Any
         A value used to fill na values
@@ -31,17 +34,18 @@ def to_case_table(event_frame:DataFrame, case_id:str='case:concept:name', activi
     pandas.DataFrame
     """
     if rename_count:
-        event_frame = event_frame.rename(columns={timestamp:rename_count})
+        event_frame = event_frame.rename(columns={timestamp: rename_count})
         timestamp = rename_count
-    aggregate.update({timestamp:'count'})
-    event_frame = event_frame.groupby([case_id,activity_id]).agg(aggregate)
+    aggregate.update({timestamp: 'count'})
+    event_frame = event_frame.groupby([case_id, activity_id]).agg(aggregate)
     event_frame = event_frame.reset_index()
     case_table = event_frame.pivot(index=case_id, columns=activity_id)
     case_table.columns = [" ".join(col) for col in case_table.columns.to_flat_index()]
     case_table = case_table.fillna(fillna).sort_index()
     return case_table
 
-def apply_scenario(event_frame:DataFrame, scenario:dict, activity_id:str='concept:name') -> DataFrame:
+
+def apply_scenario(event_frame: DataFrame, scenario: dict, activity_id: str = 'concept:name') -> DataFrame:
     """
     This method is used to apply a scenario to an event-log.
 
@@ -50,24 +54,25 @@ def apply_scenario(event_frame:DataFrame, scenario:dict, activity_id:str='concep
     event_frame : pandas.DataFrame
         The dataframe representing the event-log
     scenario : dict
-        The scenario wich should be applied
+        The scenario which should be applied
     activity_id : str
         The column in the dataframe representing the activity_ids
 
     Returns
     ---
     pandas.DataFrame:
-        The eventframe with added columns for each scenario entry
+        The event-frame with added columns for each scenario entry
     """
     for description, resource in scenario.items():
-        if resource['apply_to']!=None:
-            func = lambda x:resource['functions'][x[activity_id]](x[resource['apply_to']])
+        if resource['apply_to'] != None:
+            func = lambda x: resource['functions'][x[activity_id]](x[resource['apply_to']])
         else:
-            func = lambda x:resource['functions'][x[activity_id]]()
+            func = lambda x: resource['functions'][x[activity_id]]()
         event_frame[description] = event_frame.apply(func, axis=1)
     return event_frame
 
-def calculate_outcome(case_table:DataFrame, ruleset:dict) -> DataFrame:
+
+def calculate_outcome(case_table: DataFrame, ruleset: dict) -> DataFrame:
     """
     This method is used to calculate the outcome of a process for each given ruleset.
 
@@ -76,7 +81,7 @@ def calculate_outcome(case_table:DataFrame, ruleset:dict) -> DataFrame:
     case_table : pandas.DataFrame
         The dataframe representing the case_table
     ruleset : dict
-        Inhabitates the rules wich are applied
+        Inhabitates the rules which are applied
 
     Returns
     ---
@@ -85,7 +90,7 @@ def calculate_outcome(case_table:DataFrame, ruleset:dict) -> DataFrame:
     """
     case_records = case_table.reset_index().to_dict('records')
 
-    def get_value(activity:'str|tuple|list', record:dict, rule:str):
+    def get_value(activity: 'str|tuple|list', record: dict, rule: str):
         if not isinstance(activity, str):
             values = []
             for paralell_activity in activity:
@@ -95,16 +100,16 @@ def calculate_outcome(case_table:DataFrame, ruleset:dict) -> DataFrame:
             elif isinstance(activity, list):
                 return sum(values)
         else:
-            return record[rule+' '+activity]
+            return record[rule + ' ' + activity]
 
     for rule in ruleset:
         for record in case_records:
             value = 0
             if ruleset[rule]:
-                value = value+get_value(ruleset[rule], record, rule)
+                value = value + get_value(ruleset[rule], record, rule)
             else:
                 for acticity in record:
                     if rule in acticity:
-                        value = value+record[acticity]
-            record[rule] = value    
+                        value = value + record[acticity]
+            record[rule] = value
     return DataFrame(case_records).sort_values(case_table.index.name)
