@@ -110,6 +110,7 @@ def feature_tracing(model: BaseEstimator, data: DataFrame, features: List[str], 
     records = []
     bias = -2 ** 16
     used_features = []
+    dim = 0
 
     def trace(bias: float, used_features: List[str]) -> Tuple[float, List[str]]:
         best_features = []
@@ -119,7 +120,7 @@ def feature_tracing(model: BaseEstimator, data: DataFrame, features: List[str], 
                 score = \
                     DataFrame(validate(model, data[trace_features], data[target], n_jobs=-1, cv=cv, scoring=scoring))[
                         'test_score'].mean()
-                records.append({'features': trace_features, 'score': score})
+                records.append({'features': trace_features, 'dim':dim, 'score': score})
                 if score > bias:
                     bias = score
                     best_features = trace_features
@@ -128,6 +129,7 @@ def feature_tracing(model: BaseEstimator, data: DataFrame, features: List[str], 
     while True:
         pre_bias = bias
         bias, used_features = trace(bias, used_features)
+        dim = dim+1
         if bias == pre_bias:
             break
     return DataFrame(records)
