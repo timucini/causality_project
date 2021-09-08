@@ -219,7 +219,7 @@
          <outgoing>sid-1F809C96-E4A0-484A-837A-174EB1686696</outgoing>
          <outgoing>sid-A0CAE9EE-E354-49B0-B99C-CE30FDF90D65</outgoing>
       </exclusiveGateway>
-      <task completionQuantity="1" id="sid-08C9160D-A624-417D-9B05-DDBE73C9C08D" isForCompensation="false" name="Check raw materials availabilty" startQuantity="1">
+      <task completionQuantity="1" id="sid-08C9160D-A624-417D-9B05-DDBE73C9C08D" isForCompensation="false" name="Check raw materials availability" startQuantity="1">
          <extensionElements>
             <signavio:signavioMetaData metaKey="bgcolor" metaValue="#ffffcc"/>
             <signavio:signavioMetaData metaKey="bordercolor" metaValue="#000000"/>
@@ -580,7 +580,7 @@
          <incoming>sid-00151ADC-9ECB-4856-811D-572AC20675B7</incoming>
          <outgoing>sid-747A62A1-C6B1-4821-B4F9-0288F8CA6F88</outgoing>
       </parallelGateway>
-      <task completionQuantity="1" id="sid-8D4D410D-B6F0-4B1C-B196-61D6C1260BFE" isForCompensation="false" name="Archieve order" startQuantity="1">
+      <task completionQuantity="1" id="sid-8D4D410D-B6F0-4B1C-B196-61D6C1260BFE" isForCompensation="false" name="Archive order" startQuantity="1">
          <extensionElements>
             <signavio:signavioMetaData metaKey="bgcolor" metaValue="#ffffcc"/>
             <signavio:signavioMetaData metaKey="bordercolor" metaValue="#000000"/>

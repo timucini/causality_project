@@ -1,165 +1,165 @@
 features,dim,score
-['cost Emit invoice'],0,-2.6711665284892416e-06
-['cost Get shipping address'],0,-2.6711665284892416e-06
-['cost Manufacture product'],0,-6.326128003912677e-06
-['cost Obtain raw materials from Supplier 1'],0,-8.532503689983943e-06
-['cost Obtain raw materials from Supplier 2'],0,-7.809003228003898e-06
-['cost Receive Payment'],0,-2.6711665284892416e-06
-['cost Request raw materials from Supplier 1'],0,-2.6711665284892416e-06
-['cost Request raw materials from Supplier 2'],0,-2.6711665284892416e-06
-['cost Retrieve product from warehouse'],0,-0.0017726965076398267
-['cost Ship product'],0,-1.046343677960115e-05
-['Num of Archieve order'],0,-2.6711665284892615e-06
-['Num of Check raw materials availabilty'],0,-0.0017641950837435662
-['Num of Confirm order'],0,-0.002417956285120844
-['Num of Emit invoice'],0,-2.6711665284892615e-06
-['Num of Get shipping address'],0,-2.6711665284892615e-06
-['Num of Manufacture product'],0,-2.6711665284892615e-06
-['Num of Notify unavailability to customer'],0,-0.002417956285120844
-['Num of Obtain raw materials from Supplier 1'],0,-2.6711665284892615e-06
-['Num of Obtain raw materials from Supplier 2'],0,-2.6711665284892615e-06
-['Num of Receive Payment'],0,-2.6711665284892615e-06
-['Num of Request raw materials from Supplier 1'],0,-2.6711665284892615e-06
-['Num of Request raw materials from Supplier 2'],0,-2.6711665284892615e-06
-['Num of Retrieve product from warehouse'],0,-0.0017641950837435662
-['Num of Ship product'],0,-2.6711665284892615e-06
-"['cost Emit invoice', 'cost Get shipping address']",1,-2.6745225645681047e-06
-"['cost Emit invoice', 'cost Manufacture product']",1,-1.8802382799236118e-06
-"['cost Emit invoice', 'cost Obtain raw materials from Supplier 1']",1,-2.488371123157295e-06
-"['cost Emit invoice', 'cost Obtain raw materials from Supplier 2']",1,-2.562657687523805e-06
-"['cost Emit invoice', 'cost Receive Payment']",1,-2.6745225645681047e-06
-"['cost Emit invoice', 'cost Request raw materials from Supplier 1']",1,-2.6745225645681047e-06
-"['cost Emit invoice', 'cost Request raw materials from Supplier 2']",1,-2.6745225645681047e-06
-"['cost Emit invoice', 'cost Retrieve product from warehouse']",1,-2.658656900894339e-06
-"['cost Emit invoice', 'cost Ship product']",1,-2.687513934225737e-06
-"['cost Emit invoice', 'Num of Archieve order']",1,-2.674179480573111e-06
-"['cost Emit invoice', 'Num of Check raw materials availabilty']",1,-2.6709688584678924e-06
-"['cost Emit invoice', 'Num of Confirm order']",1,-2.670968858467889e-06
-"['cost Emit invoice', 'Num of Emit invoice']",1,-2.674179480573111e-06
-"['cost Emit invoice', 'Num of Get shipping address']",1,-2.674179480573111e-06
-"['cost Emit invoice', 'Num of Manufacture product']",1,-2.674179480573111e-06
-"['cost Emit invoice', 'Num of Notify unavailability to customer']",1,-2.670968858467889e-06
-"['cost Emit invoice', 'Num of Obtain raw materials from Supplier 1']",1,-2.674179480573111e-06
-"['cost Emit invoice', 'Num of Obtain raw materials from Supplier 2']",1,-2.674179480573111e-06
-"['cost Emit invoice', 'Num of Receive Payment']",1,-2.674179480573111e-06
-"['cost Emit invoice', 'Num of Request raw materials from Supplier 1']",1,-2.674179480573111e-06
-"['cost Emit invoice', 'Num of Request raw materials from Supplier 2']",1,-2.674179480573111e-06
-"['cost Emit invoice', 'Num of Retrieve product from warehouse']",1,-2.6709688584678915e-06
-"['cost Emit invoice', 'Num of Ship product']",1,-2.674179480573111e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Get shipping address']",2,-1.87884493739952e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1']",2,-1.6701127455012352e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2']",2,-1.75240404015089e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Receive Payment']",2,-1.87884493739952e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Request raw materials from Supplier 1']",2,-1.87884493739952e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Request raw materials from Supplier 2']",2,-1.87884493739952e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Retrieve product from warehouse']",2,-1.8677286523287128e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Ship product']",2,-1.8854584256856114e-06
-"['cost Emit invoice', 'cost Manufacture product', 'Num of Archieve order']",2,-1.8801881693228809e-06
-"['cost Emit invoice', 'cost Manufacture product', 'Num of Check raw materials availabilty']",2,-1.880040609902262e-06
-"['cost Emit invoice', 'cost Manufacture product', 'Num of Confirm order']",2,-1.880040609902261e-06
-"['cost Emit invoice', 'cost Manufacture product', 'Num of Emit invoice']",2,-1.8801881693228809e-06
-"['cost Emit invoice', 'cost Manufacture product', 'Num of Get shipping address']",2,-1.8801881693228809e-06
-"['cost Emit invoice', 'cost Manufacture product', 'Num of Manufacture product']",2,-1.8801881693228809e-06
-"['cost Emit invoice', 'cost Manufacture product', 'Num of Notify unavailability to customer']",2,-1.8800406099022604e-06
-"['cost Emit invoice', 'cost Manufacture product', 'Num of Obtain raw materials from Supplier 1']",2,-1.8801881693228809e-06
-"['cost Emit invoice', 'cost Manufacture product', 'Num of Obtain raw materials from Supplier 2']",2,-1.8801881693228809e-06
-"['cost Emit invoice', 'cost Manufacture product', 'Num of Receive Payment']",2,-1.8801881693228809e-06
-"['cost Emit invoice', 'cost Manufacture product', 'Num of Request raw materials from Supplier 1']",2,-1.8801881693228809e-06
-"['cost Emit invoice', 'cost Manufacture product', 'Num of Request raw materials from Supplier 2']",2,-1.8801881693228809e-06
-"['cost Emit invoice', 'cost Manufacture product', 'Num of Retrieve product from warehouse']",2,-1.8800406099022627e-06
-"['cost Emit invoice', 'cost Manufacture product', 'Num of Ship product']",2,-1.8801881693228809e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Get shipping address']",3,-1.6696003127039275e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2']",3,-1.520889367245636e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Receive Payment']",3,-1.6696003127039275e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Request raw materials from Supplier 1']",3,-1.6696003127039275e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Request raw materials from Supplier 2']",3,-1.6696003127039275e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse']",3,-1.6576031179063352e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Ship product']",3,-1.6707659235183171e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'Num of Archieve order']",3,-1.6703901609873321e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'Num of Check raw materials availabilty']",3,-1.669915075479887e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'Num of Confirm order']",3,-1.6699150754798883e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'Num of Emit invoice']",3,-1.6703901609873321e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'Num of Get shipping address']",3,-1.6703901609873321e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'Num of Manufacture product']",3,-1.6703901609873321e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'Num of Notify unavailability to customer']",3,-1.669915075479888e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'Num of Obtain raw materials from Supplier 1']",3,-1.6703901609873321e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'Num of Obtain raw materials from Supplier 2']",3,-1.6703901609873321e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'Num of Receive Payment']",3,-1.6703901609873321e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'Num of Request raw materials from Supplier 1']",3,-1.6703901609873321e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'Num of Request raw materials from Supplier 2']",3,-1.6703901609873321e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'Num of Retrieve product from warehouse']",3,-1.6699150754798863e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'Num of Ship product']",3,-1.6703901609873321e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Get shipping address']",4,-1.5211944856353134e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Receive Payment']",4,-1.5211944856353134e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Request raw materials from Supplier 1']",4,-1.5211944856353134e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Request raw materials from Supplier 2']",4,-1.5211944856353134e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse']",4,-1.5083797396507387e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Ship product']",4,-1.5206430602207408e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'Num of Archieve order']",4,-1.5214325436917957e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'Num of Check raw materials availabilty']",4,-1.5206916972242888e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'Num of Confirm order']",4,-1.52069169722429e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'Num of Emit invoice']",4,-1.5214325436917957e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'Num of Get shipping address']",4,-1.5214325436917957e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'Num of Manufacture product']",4,-1.5214325436917957e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'Num of Notify unavailability to customer']",4,-1.52069169722429e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'Num of Obtain raw materials from Supplier 1']",4,-1.5214325436917957e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'Num of Obtain raw materials from Supplier 2']",4,-1.5214325436917957e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'Num of Receive Payment']",4,-1.5214325436917957e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'Num of Request raw materials from Supplier 1']",4,-1.5214325436917957e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'Num of Request raw materials from Supplier 2']",4,-1.5214325436917957e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'Num of Retrieve product from warehouse']",4,-1.5206916972242892e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'Num of Ship product']",4,-1.5214325436917957e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'cost Get shipping address']",5,-1.5087269025025786e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'cost Receive Payment']",5,-1.5087269025025786e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'cost Request raw materials from Supplier 1']",5,-1.5087269025025786e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'cost Request raw materials from Supplier 2']",5,-1.5087269025025786e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'cost Ship product']",5,-1.5081334326258423e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Archieve order']",5,-1.5087286146417173e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty']",5,-1.50097863810362e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Confirm order']",5,-1.5009786381036505e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Emit invoice']",5,-1.5087286146417173e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Get shipping address']",5,-1.5087286146417173e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Manufacture product']",5,-1.5087286146417173e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Notify unavailability to customer']",5,-1.500978638103637e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Obtain raw materials from Supplier 1']",5,-1.5087286146417173e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Obtain raw materials from Supplier 2']",5,-1.5087286146417173e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Receive Payment']",5,-1.5087286146417173e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Request raw materials from Supplier 1']",5,-1.5087286146417173e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Request raw materials from Supplier 2']",5,-1.5087286146417173e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Retrieve product from warehouse']",5,-1.500978638103626e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Ship product']",5,-1.5087286146417173e-06
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Get shipping address']",6,-1.5022611253529406e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Receive Payment']",6,-1.5022611253529406e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Request raw materials from Supplier 1']",6,-1.5022611253529406e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Request raw materials from Supplier 2']",6,-1.5022611253529406e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product']",6,-1.4985155678546613e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'Num of Archieve order']",6,-1.5009786381036339e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'Num of Confirm order']",6,-1.5010666959205e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'Num of Emit invoice']",6,-1.5009786381036339e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'Num of Get shipping address']",6,-1.5009786381036339e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'Num of Manufacture product']",6,-1.5009786381036339e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'Num of Notify unavailability to customer']",6,-1.5010548734299757e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'Num of Obtain raw materials from Supplier 1']",6,-1.5009786381036339e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'Num of Obtain raw materials from Supplier 2']",6,-1.5009786381036339e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'Num of Receive Payment']",6,-1.5009786381036339e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'Num of Request raw materials from Supplier 1']",6,-1.5009786381036339e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'Num of Request raw materials from Supplier 2']",6,-1.5009786381036339e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'Num of Retrieve product from warehouse']",6,-1.5009786381036265e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'Num of Ship product']",6,-1.5009786381036339e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'cost Get shipping address']",7,-1.499416053543353e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'cost Receive Payment']",7,-1.499416053543353e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'cost Request raw materials from Supplier 1']",7,-1.499416053543353e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'cost Request raw materials from Supplier 2']",7,-1.499416053543353e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'Num of Archieve order']",7,-1.4985155678546725e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'Num of Confirm order']",7,-1.498693727358124e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'Num of Emit invoice']",7,-1.4985155678546725e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'Num of Get shipping address']",7,-1.4985155678546725e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'Num of Manufacture product']",7,-1.4985155678546725e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'Num of Notify unavailability to customer']",7,-1.4985797442088665e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'Num of Obtain raw materials from Supplier 1']",7,-1.4985155678546725e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'Num of Obtain raw materials from Supplier 2']",7,-1.4985155678546725e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'Num of Receive Payment']",7,-1.4985155678546725e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'Num of Request raw materials from Supplier 1']",7,-1.4985155678546725e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'Num of Request raw materials from Supplier 2']",7,-1.4985155678546725e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'Num of Retrieve product from warehouse']",7,-1.4985155678546677e-07
-"['cost Emit invoice', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse', 'Num of Check raw materials availabilty', 'cost Ship product', 'Num of Ship product']",7,-1.4985155678546725e-07
+['cost Emit invoice'],0,-2.6536445512290507e-06
+['cost Get shipping address'],0,-2.6536445512290507e-06
+['cost Manufacture product'],0,-5.486905496798124e-06
+['cost Obtain raw materials from Supplier 1'],0,-8.033574385370265e-06
+['cost Obtain raw materials from Supplier 2'],0,-8.1952459076133e-06
+['cost Receive Payment'],0,-2.6536445512290507e-06
+['cost Request raw materials from Supplier 1'],0,-2.6536445512290507e-06
+['cost Request raw materials from Supplier 2'],0,-2.6536445512290507e-06
+['cost Retrieve product from warehouse'],0,-0.0017561567283580124
+['cost Ship product'],0,-9.486641410252097e-06
+['Num of Archive order'],0,-2.653644551229042e-06
+['Num of Check raw materials availability'],0,-0.0017487735838756916
+['Num of Confirm order'],0,-0.002182381077480408
+['Num of Emit invoice'],0,-2.653644551229042e-06
+['Num of Get shipping address'],0,-2.653644551229042e-06
+['Num of Manufacture product'],0,-2.653644551229042e-06
+['Num of Notify unavailability to customer'],0,-0.002182381077480408
+['Num of Obtain raw materials from Supplier 1'],0,-2.653644551229042e-06
+['Num of Obtain raw materials from Supplier 2'],0,-2.653644551229042e-06
+['Num of Receive Payment'],0,-2.653644551229042e-06
+['Num of Request raw materials from Supplier 1'],0,-2.653644551229042e-06
+['Num of Request raw materials from Supplier 2'],0,-2.653644551229042e-06
+['Num of Retrieve product from warehouse'],0,-0.0017487735838756916
+['Num of Ship product'],0,-2.653644551229042e-06
+"['Num of Archive order', 'cost Emit invoice']",1,-2.6582240646320067e-06
+"['Num of Archive order', 'cost Get shipping address']",1,-2.6582240646320067e-06
+"['Num of Archive order', 'cost Manufacture product']",1,-1.953930907545578e-06
+"['Num of Archive order', 'cost Obtain raw materials from Supplier 1']",1,-2.569728515139637e-06
+"['Num of Archive order', 'cost Obtain raw materials from Supplier 2']",1,-2.4473422342927256e-06
+"['Num of Archive order', 'cost Receive Payment']",1,-2.6582240646320067e-06
+"['Num of Archive order', 'cost Request raw materials from Supplier 1']",1,-2.6582240646320067e-06
+"['Num of Archive order', 'cost Request raw materials from Supplier 2']",1,-2.6582240646320067e-06
+"['Num of Archive order', 'cost Retrieve product from warehouse']",1,-2.64397044876498e-06
+"['Num of Archive order', 'cost Ship product']",1,-2.6696392004850726e-06
+"['Num of Archive order', 'Num of Check raw materials availability']",1,-2.654120545552401e-06
+"['Num of Archive order', 'Num of Confirm order']",1,-2.6541205455524027e-06
+"['Num of Archive order', 'Num of Emit invoice']",1,-2.654683736764972e-06
+"['Num of Archive order', 'Num of Get shipping address']",1,-2.654683736764972e-06
+"['Num of Archive order', 'Num of Manufacture product']",1,-2.654683736764972e-06
+"['Num of Archive order', 'Num of Notify unavailability to customer']",1,-2.6541205455524027e-06
+"['Num of Archive order', 'Num of Obtain raw materials from Supplier 1']",1,-2.654683736764972e-06
+"['Num of Archive order', 'Num of Obtain raw materials from Supplier 2']",1,-2.654683736764972e-06
+"['Num of Archive order', 'Num of Receive Payment']",1,-2.654683736764972e-06
+"['Num of Archive order', 'Num of Request raw materials from Supplier 1']",1,-2.654683736764972e-06
+"['Num of Archive order', 'Num of Request raw materials from Supplier 2']",1,-2.654683736764972e-06
+"['Num of Archive order', 'Num of Retrieve product from warehouse']",1,-2.654120545552402e-06
+"['Num of Archive order', 'Num of Ship product']",1,-2.654683736764972e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Emit invoice']",2,-1.9592209899237373e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Get shipping address']",2,-1.9592209899237373e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 1']",2,-1.8534350613729125e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2']",2,-1.7127953644774192e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Receive Payment']",2,-1.9592209899237373e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Request raw materials from Supplier 1']",2,-1.9592209899237373e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Request raw materials from Supplier 2']",2,-1.9592209899237373e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Retrieve product from warehouse']",2,-1.9442568050815177e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Ship product']",2,-1.960919107185346e-06
+"['Num of Archive order', 'cost Manufacture product', 'Num of Check raw materials availability']",2,-1.954406901868937e-06
+"['Num of Archive order', 'cost Manufacture product', 'Num of Confirm order']",2,-1.9544069018689387e-06
+"['Num of Archive order', 'cost Manufacture product', 'Num of Emit invoice']",2,-1.9569162925219405e-06
+"['Num of Archive order', 'cost Manufacture product', 'Num of Get shipping address']",2,-1.9569162925219405e-06
+"['Num of Archive order', 'cost Manufacture product', 'Num of Manufacture product']",2,-1.9569162925219405e-06
+"['Num of Archive order', 'cost Manufacture product', 'Num of Notify unavailability to customer']",2,-1.9544069018689396e-06
+"['Num of Archive order', 'cost Manufacture product', 'Num of Obtain raw materials from Supplier 1']",2,-1.9569162925219405e-06
+"['Num of Archive order', 'cost Manufacture product', 'Num of Obtain raw materials from Supplier 2']",2,-1.9569162925219405e-06
+"['Num of Archive order', 'cost Manufacture product', 'Num of Receive Payment']",2,-1.9569162925219405e-06
+"['Num of Archive order', 'cost Manufacture product', 'Num of Request raw materials from Supplier 1']",2,-1.9569162925219405e-06
+"['Num of Archive order', 'cost Manufacture product', 'Num of Request raw materials from Supplier 2']",2,-1.9569162925219405e-06
+"['Num of Archive order', 'cost Manufacture product', 'Num of Retrieve product from warehouse']",2,-1.954406901868938e-06
+"['Num of Archive order', 'cost Manufacture product', 'Num of Ship product']",2,-1.9569162925219405e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Emit invoice']",3,-1.7186949805458341e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Get shipping address']",3,-1.7186949805458341e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1']",3,-1.6111751546950509e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Receive Payment']",3,-1.7186949805458341e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Request raw materials from Supplier 1']",3,-1.7186949805458341e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Request raw materials from Supplier 2']",3,-1.7186949805458341e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Retrieve product from warehouse']",3,-1.7031212620133576e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Ship product']",3,-1.7162921005001847e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'Num of Check raw materials availability']",3,-1.7132713588007797e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'Num of Confirm order']",3,-1.7132713588007801e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'Num of Emit invoice']",3,-1.7133558019561779e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'Num of Get shipping address']",3,-1.7133558019561779e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'Num of Manufacture product']",3,-1.7133558019561779e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'Num of Notify unavailability to customer']",3,-1.7132713588007801e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'Num of Obtain raw materials from Supplier 1']",3,-1.7133558019561779e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'Num of Obtain raw materials from Supplier 2']",3,-1.7133558019561779e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'Num of Receive Payment']",3,-1.7133558019561779e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'Num of Request raw materials from Supplier 1']",3,-1.7133558019561779e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'Num of Request raw materials from Supplier 2']",3,-1.7133558019561779e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'Num of Retrieve product from warehouse']",3,-1.7132713588007797e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'Num of Ship product']",3,-1.7133558019561779e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Emit invoice']",4,-1.6150345729249776e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Get shipping address']",4,-1.6150345729249776e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Receive Payment']",4,-1.6150345729249776e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Request raw materials from Supplier 1']",4,-1.6150345729249776e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Request raw materials from Supplier 2']",4,-1.6150345729249776e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse']",4,-1.6015010522309815e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Ship product']",4,-1.6123740802502764e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'Num of Check raw materials availability']",4,-1.6116511490184042e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'Num of Confirm order']",4,-1.6116511490184049e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'Num of Emit invoice']",4,-1.6136573450670508e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'Num of Get shipping address']",4,-1.6136573450670508e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'Num of Manufacture product']",4,-1.6136573450670508e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'Num of Notify unavailability to customer']",4,-1.6116511490184055e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'Num of Obtain raw materials from Supplier 1']",4,-1.6136573450670508e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'Num of Obtain raw materials from Supplier 2']",4,-1.6136573450670508e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'Num of Receive Payment']",4,-1.6136573450670508e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'Num of Request raw materials from Supplier 1']",4,-1.6136573450670508e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'Num of Request raw materials from Supplier 2']",4,-1.6136573450670508e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'Num of Retrieve product from warehouse']",4,-1.6116511490184042e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'Num of Ship product']",4,-1.6136573450670508e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'cost Emit invoice']",5,-1.6022914196416275e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'cost Get shipping address']",5,-1.6022914196416275e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'cost Receive Payment']",5,-1.6022914196416275e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'cost Request raw materials from Supplier 1']",5,-1.6022914196416275e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'cost Request raw materials from Supplier 2']",5,-1.6022914196416275e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'cost Ship product']",5,-1.6026999777862155e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability']",5,-1.353582992669678e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Confirm order']",5,-1.3535829926696947e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Emit invoice']",5,-1.6046334007885228e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Get shipping address']",5,-1.6046334007885228e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Manufacture product']",5,-1.6046334007885228e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Notify unavailability to customer']",5,-1.3535829926696968e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Obtain raw materials from Supplier 1']",5,-1.6046334007885228e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Obtain raw materials from Supplier 2']",5,-1.6046334007885228e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Receive Payment']",5,-1.6046334007885228e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Request raw materials from Supplier 1']",5,-1.6046334007885228e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Request raw materials from Supplier 2']",5,-1.6046334007885228e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Retrieve product from warehouse']",5,-1.3535829926696836e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Ship product']",5,-1.6046334007885228e-06
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'cost Emit invoice']",6,-1.3535829926696796e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'cost Get shipping address']",6,-1.3535829926696796e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'cost Receive Payment']",6,-1.3535829926696796e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'cost Request raw materials from Supplier 1']",6,-1.3535829926696796e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'cost Request raw materials from Supplier 2']",6,-1.3535829926696796e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'cost Ship product']",6,-1.3655722482220095e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order']",6,-1.3535704963526519e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Emit invoice']",6,-1.3535829926697156e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Get shipping address']",6,-1.3535829926697156e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Manufacture product']",6,-1.3535829926697156e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Notify unavailability to customer']",6,-1.353575621437103e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Obtain raw materials from Supplier 1']",6,-1.3535829926697156e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Obtain raw materials from Supplier 2']",6,-1.3535829926697156e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Receive Payment']",6,-1.3535829926697156e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Request raw materials from Supplier 1']",6,-1.3535829926697156e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Request raw materials from Supplier 2']",6,-1.3535829926697156e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Retrieve product from warehouse']",6,-1.3535829926696839e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Ship product']",6,-1.3535829926697156e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'cost Emit invoice']",7,-1.3535815498860324e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'cost Get shipping address']",7,-1.3535815498860324e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'cost Receive Payment']",7,-1.3535815498860324e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'cost Request raw materials from Supplier 1']",7,-1.3535815498860324e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'cost Request raw materials from Supplier 2']",7,-1.3535815498860324e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'cost Ship product']",7,-1.3655679445899423e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'Num of Emit invoice']",7,-1.353586564641415e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'Num of Get shipping address']",7,-1.353586564641415e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'Num of Manufacture product']",7,-1.353586564641415e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'Num of Notify unavailability to customer']",7,-1.353584867127031e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'Num of Obtain raw materials from Supplier 1']",7,-1.353586564641415e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'Num of Obtain raw materials from Supplier 2']",7,-1.353586564641415e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'Num of Receive Payment']",7,-1.353586564641415e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'Num of Request raw materials from Supplier 1']",7,-1.353586564641415e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'Num of Request raw materials from Supplier 2']",7,-1.353586564641415e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'Num of Retrieve product from warehouse']",7,-1.3535783285408374e-07
+"['Num of Archive order', 'cost Manufacture product', 'cost Obtain raw materials from Supplier 2', 'cost Obtain raw materials from Supplier 1', 'cost Retrieve product from warehouse', 'Num of Check raw materials availability', 'Num of Confirm order', 'Num of Ship product']",7,-1.353586564641415e-07

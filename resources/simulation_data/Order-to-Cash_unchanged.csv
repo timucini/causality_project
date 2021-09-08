@@ -1,6 +1,6 @@
 ﻿Activity,Execution costs,Execution time,Resources cost/hour,Automated
 Check stock availability,1.00,00:00:30,10.00,True
-Check raw materials availabilty,1.00,00:00:45,10.00,True
+Check raw materials availability,1.00,00:00:45,10.00,True
 Request raw materials from Supplier 1,2.00,00:05:00,40.00,False
 Request raw materials from Supplier 2,2.00,00:05:00,40.00,False
 Obtain raw materials from Supplier 1,2.00,00:03:00,40.00,False
@@ -12,4 +12,4 @@ Get shipping address,1.50,00:01:00,40.00,True
 Ship product,5.00,00:10:00,40.00,False
 Emit invoice,2.00,00:05:00,50.00,True
 Receive Payment,1.50,00:02:00,50.00,True
-Archieve order,1.00,00:01:00,50.00,True
+Archive order,1.00,00:01:00,50.00,True
