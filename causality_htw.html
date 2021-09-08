@@ -14274,7 +14274,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Prozess-Causality-Project">Prozess Causality Project<a class="anchor-link" href="#Prozess-Causality-Project">&#182;</a></h1><h2 id="First-attempts">First attempts<a class="anchor-link" href="#First-attempts">&#182;</a></h2><p>The basic idea is to compare two processes of the same origin. To do this, we first examined the resources publicly available on the Internet. Since this use case is rather uncommon, we found that the possibilities are quickly exhausted. However, the research and feedback revealed that probably the BPI, which organizes an annual challange, used the same data source twice. Under this pretext, we were able to find the following sources:</p>
+<h1 id="Process-causality-project">Process causality project<a class="anchor-link" href="#Process-causality-project">&#182;</a></h1><h2 id="First-attempts">First attempts<a class="anchor-link" href="#First-attempts">&#182;</a></h2><p>The basic idea is to compare two processes of the same origin. To do this, we first examined the resources publicly available on the Internet. Since this use case is rather uncommon, we found that the possibilities are quickly exhausted. However, research and feedback revealed that probably the BPI, which holds an annual contest, used the same data source twice. Under this guise, we were able to find the following sources:</p>
 <table>
 <thead><tr>
 <th style="text-align:left">Challange</th>
@@ -14329,8 +14329,8 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>parsing log, completed traces :: 100%|██████████| 13087/13087 [00:05&lt;00:00, 2249.01it/s]
-parsing log, completed traces :: 100%|██████████| 31509/31509 [00:36&lt;00:00, 872.48it/s] 
+<pre>parsing log, completed traces :: 100%|██████████| 13087/13087 [00:05&lt;00:00, 2208.40it/s]
+parsing log, completed traces :: 100%|██████████| 31509/31509 [00:36&lt;00:00, 869.77it/s] 
 </pre>
 </div>
 </div>
@@ -14528,8 +14528,8 @@ bpi2017: num of possible activities: 26
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>With so much possible activities and diffrences in language between the two processes it is really hard to understand the changes in the process. For this project it may take too lang to fully understand this processes. So we decided to use an other approach.</p>
-<h2 id="Simulation">Simulation<a class="anchor-link" href="#Simulation">&#182;</a></h2><p>To get two versions of a process we decided to create our own processes. Therefor we builded two bpmn models representing a basic version of an order to cash process and a changed version. For better understanding of the process we provide a so called ruleset representing the activities.</p>
+<p>With so many possible activities and differences in language between the two processes, it is really hard to understand the changes in the process. For this project, it may take too lang to fully understand these processes. Therefore, we decided to take a different approach.</p>
+<h2 id="Simulation">Simulation<a class="anchor-link" href="#Simulation">&#182;</a></h2><p>In order to have two versions of a process, we decided to create our own processes. For this purpose, we created two bpmn models representing a basic version of an order-to-cash process and a changed version. For a better understanding of the process, we created a so-called set of rules representing the activities.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14540,7 +14540,7 @@ bpi2017: num of possible activities: 26
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">unchanged_basic_ruleset</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s2">&quot;Check stock availability&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Check raw materials availabilty&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Check raw materials availability&quot;</span><span class="p">,</span>
     <span class="p">(</span>
         <span class="p">[</span>
             <span class="s2">&quot;Request raw materials from Supplier 1&quot;</span><span class="p">,</span>
@@ -14564,15 +14564,15 @@ bpi2017: num of possible activities: 26
             <span class="s2">&quot;Receive Payment&quot;</span>
         <span class="p">]</span>
     <span class="p">),</span>
-    <span class="s2">&quot;Archieve order&quot;</span>
+    <span class="s2">&quot;Archive order&quot;</span>
 <span class="p">]</span>
 <span class="n">changed_basic_ruleset</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s2">&quot;Check stock availability&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Check raw materials availabilty&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Check raw materials availability&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Notify unavailability to customer&quot;</span><span class="p">,</span>
     <span class="p">(</span>
-        <span class="s2">&quot;Start request raw materials from Supplier 1&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Start request raw materials from Supplier 2&quot;</span>
+        <span class="s2">&quot;Request raw materials from Supplier 1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Request raw materials from Supplier 2&quot;</span>
     <span class="p">),</span>
     <span class="p">(</span>
         <span class="s2">&quot;Obtain raw materials from Supplier 1&quot;</span><span class="p">,</span>
@@ -14589,7 +14589,7 @@ bpi2017: num of possible activities: 26
             <span class="s2">&quot;Receive Payment&quot;</span>
         <span class="p">]</span>
     <span class="p">),</span>
-    <span class="s2">&quot;Archieve order&quot;</span>
+    <span class="s2">&quot;Archive order&quot;</span>
 <span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">unchanged_basic_ruleset</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">changed_basic_ruleset</span><span class="p">)</span>
@@ -14612,8 +14612,8 @@ bpi2017: num of possible activities: 26
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[&#39;Check stock availability&#39;, &#39;Check raw materials availabilty&#39;, ([&#39;Request raw materials from Supplier 1&#39;, &#39;Obtain raw materials from Supplier 1&#39;], [&#39;Request raw materials from Supplier 2&#39;, &#39;Obtain raw materials from Supplier 2&#39;]), &#39;Manufacture product&#39;, &#39;Retrieve product from warehouse&#39;, &#39;Confirm order&#39;, ([&#39;Get shipping address&#39;, &#39;Ship product&#39;], [&#39;Emit invoice&#39;, &#39;Receive Payment&#39;]), &#39;Archieve order&#39;]
-[&#39;Check stock availability&#39;, &#39;Check raw materials availabilty&#39;, &#39;Notify unavailability to customer&#39;, (&#39;Start request raw materials from Supplier 1&#39;, &#39;Start request raw materials from Supplier 2&#39;), (&#39;Obtain raw materials from Supplier 1&#39;, &#39;Obtain raw materials from Supplier 2&#39;), &#39;Manufacture product&#39;, &#39;Retrieve product from warehouse&#39;, &#39;Confirm order&#39;, &#39;Get shipping address&#39;, (&#39;Ship product&#39;, [&#39;Emit invoice&#39;, &#39;Receive Payment&#39;]), &#39;Archieve order&#39;]
+<pre>[&#39;Check stock availability&#39;, &#39;Check raw materials availability&#39;, ([&#39;Request raw materials from Supplier 1&#39;, &#39;Obtain raw materials from Supplier 1&#39;], [&#39;Request raw materials from Supplier 2&#39;, &#39;Obtain raw materials from Supplier 2&#39;]), &#39;Manufacture product&#39;, &#39;Retrieve product from warehouse&#39;, &#39;Confirm order&#39;, ([&#39;Get shipping address&#39;, &#39;Ship product&#39;], [&#39;Emit invoice&#39;, &#39;Receive Payment&#39;]), &#39;Archive order&#39;]
+[&#39;Check stock availability&#39;, &#39;Check raw materials availability&#39;, &#39;Notify unavailability to customer&#39;, (&#39;Request raw materials from Supplier 1&#39;, &#39;Request raw materials from Supplier 2&#39;), (&#39;Obtain raw materials from Supplier 1&#39;, &#39;Obtain raw materials from Supplier 2&#39;), &#39;Manufacture product&#39;, &#39;Retrieve product from warehouse&#39;, &#39;Confirm order&#39;, &#39;Get shipping address&#39;, (&#39;Ship product&#39;, [&#39;Emit invoice&#39;, &#39;Receive Payment&#39;]), &#39;Archive order&#39;]
 </pre>
 </div>
 </div>
@@ -14625,7 +14625,7 @@ bpi2017: num of possible activities: 26
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>These activities define two simple, but diffrent processes. For experimentation we can now load the bpmn's and simulate some event logs.</p>
+<p>These activities define two similar but different processes. For experimentation, we can now load the bpmn's and simulate some event logs.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14664,47 +14664,47 @@ bpi2017: num of possible activities: 26
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>                          concept:name      time:timestamp case:concept:name
-0             Check stock availability 1970-04-26 19:46:40             C0000
-1      Retrieve product from warehouse 1970-04-26 19:46:41             C0000
-2                        Confirm order 1970-04-26 19:46:42             C0000
-3                 Get shipping address 1970-04-26 19:46:43             C0000
-4                         Emit invoice 1970-04-26 19:46:44             C0000
-...                                ...                 ...               ...
-10540                     Emit invoice 1970-04-26 22:42:20             C0999
-10541                  Receive Payment 1970-04-26 22:42:21             C0999
-10542             Get shipping address 1970-04-26 22:42:22             C0999
-10543                     Ship product 1970-04-26 22:42:23             C0999
-10544                   Archieve order 1970-04-26 22:42:24             C0999
+<pre>                                concept:name      time:timestamp  \
+0                   Check stock availability 1970-04-26 19:46:40   
+1           Check raw materials availability 1970-04-26 19:46:41   
+2      Request raw materials from Supplier 1 1970-04-26 19:46:42   
+3       Obtain raw materials from Supplier 1 1970-04-26 19:46:43   
+4      Request raw materials from Supplier 2 1970-04-26 19:46:44   
+...                                      ...                 ...   
+10510                           Emit invoice 1970-04-26 22:41:50   
+10511                        Receive Payment 1970-04-26 22:41:51   
+10512                   Get shipping address 1970-04-26 22:41:52   
+10513                           Ship product 1970-04-26 22:41:53   
+10514                          Archive order 1970-04-26 22:41:54   
 
-[10545 rows x 3 columns]
-                                     concept:name      time:timestamp  \
-0                        Check stock availability 1970-04-26 19:46:40   
-1                 Check raw materials availabilty 1970-04-26 19:46:41   
-2     Start request raw materials from Supplier 1 1970-04-26 19:46:42   
-3     Start request raw materials from Supplier 2 1970-04-26 19:46:43   
-4                            Get shipping address 1970-04-26 19:46:44   
-...                                           ...                 ...   
-5555                                Confirm order 1970-04-26 21:19:15   
-5556                                 Emit invoice 1970-04-26 21:19:16   
-5557                              Receive Payment 1970-04-26 21:19:17   
-5558                                 Ship product 1970-04-26 21:19:18   
-5559                               Archieve order 1970-04-26 21:19:19   
+      case:concept:name  
+0                 C0000  
+1                 C0000  
+2                 C0000  
+3                 C0000  
+4                 C0000  
+...                 ...  
+10510             C0999  
+10511             C0999  
+10512             C0999  
+10513             C0999  
+10514             C0999  
 
-     case:concept:name  
-0                C0000  
-1                C0000  
-2                C0000  
-3                C0000  
-4                C0000  
-...                ...  
-5555             C0999  
-5556             C0999  
-5557             C0999  
-5558             C0999  
-5559             C0999  
+[10515 rows x 3 columns]
+                           concept:name      time:timestamp case:concept:name
+0              Check stock availability 1970-04-26 19:46:40             C0000
+1       Retrieve product from warehouse 1970-04-26 19:46:41             C0000
+2                         Confirm order 1970-04-26 19:46:42             C0000
+3              Check stock availability 1970-04-26 19:46:43             C0001
+4       Retrieve product from warehouse 1970-04-26 19:46:44             C0001
+...                                 ...                 ...               ...
+5295    Retrieve product from warehouse 1970-04-26 21:14:55             C0998
+5296                      Confirm order 1970-04-26 21:14:56             C0998
+5297           Check stock availability 1970-04-26 21:14:57             C0999
+5298   Check raw materials availability 1970-04-26 21:14:58             C0999
+5299  Notify unavailability to customer 1970-04-26 21:14:59             C0999
 
-[5560 rows x 3 columns]
+[5300 rows x 3 columns]
 </pre>
 </div>
 </div>
@@ -14716,7 +14716,7 @@ bpi2017: num of possible activities: 26
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Despite having courios timestamps, both processes are simulated according to the bpmn. If we now apply some scenario data for the processes, we can get a more realistic version. But fist of all, let us have a look at the scenarios.</p>
+<p>Despite having courios timestamps, both processes are simulated according to the bpmn. If we now apply some scenario data for the processes, we can get a more realistic version. But let's look at the scenarios first.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14751,8 +14751,8 @@ bpi2017: num of possible activities: 26
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>{&#39;time&#39;: {&#39;apply_to&#39;: None, &#39;functions&#39;: {&#39;Check stock availability&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FACA59F700&gt;, &#39;Check raw materials availabilty&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB6ED9AF0&gt;, &#39;Request raw materials from Supplier 1&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB6ED9DC0&gt;, &#39;Request raw materials from Supplier 2&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB6ED9EE0&gt;, &#39;Obtain raw materials from Supplier 1&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9040&gt;, &#39;Obtain raw materials from Supplier 2&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9160&gt;, &#39;Manufacture product&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9280&gt;, &#39;Retrieve product from warehouse&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D93A0&gt;, &#39;Confirm order&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D94C0&gt;, &#39;Get shipping address&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D95E0&gt;, &#39;Ship product&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9700&gt;, &#39;Emit invoice&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9820&gt;, &#39;Receive Payment&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9940&gt;, &#39;Archieve order&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9A60&gt;}}, &#39;cost&#39;: {&#39;apply_to&#39;: &#39;time&#39;, &#39;functions&#39;: {&#39;Check stock availability&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB6ED9A60&gt;, &#39;Check raw materials availabilty&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB6ED9D30&gt;, &#39;Request raw materials from Supplier 1&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB6ED9E50&gt;, &#39;Request raw materials from Supplier 2&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB6ED9F70&gt;, &#39;Obtain raw materials from Supplier 1&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D90D0&gt;, &#39;Obtain raw materials from Supplier 2&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D91F0&gt;, &#39;Manufacture product&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9310&gt;, &#39;Retrieve product from warehouse&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9430&gt;, &#39;Confirm order&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9550&gt;, &#39;Get shipping address&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9670&gt;, &#39;Ship product&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9790&gt;, &#39;Emit invoice&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D98B0&gt;, &#39;Receive Payment&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D99D0&gt;, &#39;Archieve order&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9AF0&gt;}}}
-{&#39;time&#39;: {&#39;apply_to&#39;: None, &#39;functions&#39;: {&#39;Check stock availability&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9CA0&gt;, &#39;Check raw materials availabilty&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9B80&gt;, &#39;Notify unavailability to customer&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9DC0&gt;, &#39;Start request raw materials from Supplier 1&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9EE0&gt;, &#39;Start request raw materials from Supplier 2&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB8184040&gt;, &#39;Obtain raw materials from Supplier 1&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB8184160&gt;, &#39;Obtain raw materials from Supplier 2&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB8184280&gt;, &#39;Manufacture product&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB81843A0&gt;, &#39;Retrieve product from warehouse&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB81844C0&gt;, &#39;Confirm order&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB81845E0&gt;, &#39;Get shipping address&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB8184700&gt;, &#39;Ship product&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB8184820&gt;, &#39;Emit invoice&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB8184940&gt;, &#39;Receive Payment&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB8184A60&gt;, &#39;Archieve order&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB8184B80&gt;}}, &#39;cost&#39;: {&#39;apply_to&#39;: &#39;time&#39;, &#39;functions&#39;: {&#39;Check stock availability&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9C10&gt;, &#39;Check raw materials availabilty&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9D30&gt;, &#39;Notify unavailability to customer&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9E50&gt;, &#39;Start request raw materials from Supplier 1&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB61D9F70&gt;, &#39;Start request raw materials from Supplier 2&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB81840D0&gt;, &#39;Obtain raw materials from Supplier 1&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB81841F0&gt;, &#39;Obtain raw materials from Supplier 2&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB8184310&gt;, &#39;Manufacture product&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB8184430&gt;, &#39;Retrieve product from warehouse&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB8184550&gt;, &#39;Confirm order&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB8184670&gt;, &#39;Get shipping address&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB8184790&gt;, &#39;Ship product&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB81848B0&gt;, &#39;Emit invoice&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB81849D0&gt;, &#39;Receive Payment&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB8184AF0&gt;, &#39;Archieve order&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001FBB8184C10&gt;}}}
+<pre>{&#39;time&#39;: {&#39;apply_to&#39;: None, &#39;functions&#39;: {&#39;Check stock availability&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x00000127733E8C10&gt;, &#39;Check raw materials availability&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x00000128359CFAF0&gt;, &#39;Request raw materials from Supplier 1&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x00000128359CFDC0&gt;, &#39;Request raw materials from Supplier 2&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x00000128359CFEE0&gt;, &#39;Obtain raw materials from Supplier 1&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA040&gt;, &#39;Obtain raw materials from Supplier 2&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA160&gt;, &#39;Manufacture product&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA280&gt;, &#39;Retrieve product from warehouse&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA3A0&gt;, &#39;Confirm order&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA4C0&gt;, &#39;Get shipping address&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA5E0&gt;, &#39;Ship product&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA700&gt;, &#39;Emit invoice&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA820&gt;, &#39;Receive Payment&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA940&gt;, &#39;Archive order&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECAA60&gt;}}, &#39;cost&#39;: {&#39;apply_to&#39;: &#39;time&#39;, &#39;functions&#39;: {&#39;Check stock availability&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x00000128359CFA60&gt;, &#39;Check raw materials availability&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x00000128359CFD30&gt;, &#39;Request raw materials from Supplier 1&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x00000128359CFE50&gt;, &#39;Request raw materials from Supplier 2&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x00000128359CFF70&gt;, &#39;Obtain raw materials from Supplier 1&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA0D0&gt;, &#39;Obtain raw materials from Supplier 2&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA1F0&gt;, &#39;Manufacture product&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA310&gt;, &#39;Retrieve product from warehouse&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA430&gt;, &#39;Confirm order&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA550&gt;, &#39;Get shipping address&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA670&gt;, &#39;Ship product&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA790&gt;, &#39;Emit invoice&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA8B0&gt;, &#39;Receive Payment&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECA9D0&gt;, &#39;Archive order&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECAAF0&gt;}}}
+{&#39;time&#39;: {&#39;apply_to&#39;: None, &#39;functions&#39;: {&#39;Check stock availability&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECACA0&gt;, &#39;Check raw materials availability&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECAB80&gt;, &#39;Notify unavailability to customer&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECADC0&gt;, &#39;Request raw materials from Supplier 1&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECAEE0&gt;, &#39;Request raw materials from Supplier 2&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF8040&gt;, &#39;Obtain raw materials from Supplier 1&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF8160&gt;, &#39;Obtain raw materials from Supplier 2&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF8280&gt;, &#39;Manufacture product&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF83A0&gt;, &#39;Retrieve product from warehouse&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF84C0&gt;, &#39;Confirm order&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF85E0&gt;, &#39;Get shipping address&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF8700&gt;, &#39;Ship product&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF8820&gt;, &#39;Emit invoice&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF8940&gt;, &#39;Receive Payment&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF8A60&gt;, &#39;Archive order&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF8B80&gt;}}, &#39;cost&#39;: {&#39;apply_to&#39;: &#39;time&#39;, &#39;functions&#39;: {&#39;Check stock availability&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECAC10&gt;, &#39;Check raw materials availability&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECAD30&gt;, &#39;Notify unavailability to customer&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECAE50&gt;, &#39;Request raw materials from Supplier 1&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x000001282EECAF70&gt;, &#39;Request raw materials from Supplier 2&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF80D0&gt;, &#39;Obtain raw materials from Supplier 1&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF81F0&gt;, &#39;Obtain raw materials from Supplier 2&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF8310&gt;, &#39;Manufacture product&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF8430&gt;, &#39;Retrieve product from warehouse&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF8550&gt;, &#39;Confirm order&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF8670&gt;, &#39;Get shipping address&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF8790&gt;, &#39;Ship product&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF88B0&gt;, &#39;Emit invoice&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF89D0&gt;, &#39;Receive Payment&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF8AF0&gt;, &#39;Archive order&#39;: &lt;function get_scenario.&lt;locals&gt;.&lt;lambda&gt; at 0x0000012833FF8C10&gt;}}}
 </pre>
 </div>
 </div>
@@ -14764,7 +14764,7 @@ bpi2017: num of possible activities: 26
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>It is hard to see, but all activities have been assigned functions to simulate the behavior in a process run. If we now applying these methods we obtaining a more realistic eventlog.</p>
+<p>It is hard to see, but all activities have been assigned functions to simulate the behavior in a process flow. If we now apply these methods, we get a more realistic event log.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14798,60 +14798,60 @@ bpi2017: num of possible activities: 26
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>                          concept:name      time:timestamp case:concept:name  \
-0             Check stock availability 1970-04-26 19:46:40             C0000   
-1      Retrieve product from warehouse 1970-04-26 19:46:41             C0000   
-2                        Confirm order 1970-04-26 19:46:42             C0000   
-3                 Get shipping address 1970-04-26 19:46:43             C0000   
-4                         Emit invoice 1970-04-26 19:46:44             C0000   
-...                                ...                 ...               ...   
-10540                     Emit invoice 1970-04-26 22:42:20             C0999   
-10541                  Receive Payment 1970-04-26 22:42:21             C0999   
-10542             Get shipping address 1970-04-26 22:42:22             C0999   
-10543                     Ship product 1970-04-26 22:42:23             C0999   
-10544                   Archieve order 1970-04-26 22:42:24             C0999   
+<pre>                                concept:name      time:timestamp  \
+0                   Check stock availability 1970-04-26 19:46:40   
+1           Check raw materials availability 1970-04-26 19:46:41   
+2      Request raw materials from Supplier 1 1970-04-26 19:46:42   
+3       Obtain raw materials from Supplier 1 1970-04-26 19:46:43   
+4      Request raw materials from Supplier 2 1970-04-26 19:46:44   
+...                                      ...                 ...   
+10510                           Emit invoice 1970-04-26 22:41:50   
+10511                        Receive Payment 1970-04-26 22:41:51   
+10512                   Get shipping address 1970-04-26 22:41:52   
+10513                           Ship product 1970-04-26 22:41:53   
+10514                          Archive order 1970-04-26 22:41:54   
 
-           time      cost  
-0      0.016667  1.833333  
-1      0.016616  1.830799  
-2      0.016667  1.833333  
-3      0.016667  1.833333  
-4      0.016667  1.833333  
-...         ...       ...  
-10540  0.016667  1.833333  
-10541  0.016667  1.833333  
-10542  0.016667  1.833333  
-10543  0.015803  1.790166  
-10544  0.016667  1.833333  
+      case:concept:name      time      cost  
+0                 C0000  0.016667  1.833333  
+1                 C0000  0.016667  1.833333  
+2                 C0000  0.014098  1.704885  
+3                 C0000  0.018759  1.937964  
+4                 C0000  0.016753  1.837664  
+...                 ...       ...       ...  
+10510             C0999  0.016667  1.833333  
+10511             C0999  0.016667  1.833333  
+10512             C0999  0.016667  1.833333  
+10513             C0999  0.019263  1.963138  
+10514             C0999  0.016667  1.833333  
 
-[10545 rows x 5 columns]
-                                     concept:name      time:timestamp  \
-0                        Check stock availability 1970-04-26 19:46:40   
-1                 Check raw materials availabilty 1970-04-26 19:46:41   
-2     Start request raw materials from Supplier 1 1970-04-26 19:46:42   
-3     Start request raw materials from Supplier 2 1970-04-26 19:46:43   
-4                            Get shipping address 1970-04-26 19:46:44   
-...                                           ...                 ...   
-5555                                Confirm order 1970-04-26 21:19:15   
-5556                                 Emit invoice 1970-04-26 21:19:16   
-5557                              Receive Payment 1970-04-26 21:19:17   
-5558                                 Ship product 1970-04-26 21:19:18   
-5559                               Archieve order 1970-04-26 21:19:19   
+[10515 rows x 5 columns]
+                           concept:name      time:timestamp case:concept:name  \
+0              Check stock availability 1970-04-26 19:46:40             C0000   
+1       Retrieve product from warehouse 1970-04-26 19:46:41             C0000   
+2                         Confirm order 1970-04-26 19:46:42             C0000   
+3              Check stock availability 1970-04-26 19:46:43             C0001   
+4       Retrieve product from warehouse 1970-04-26 19:46:44             C0001   
+...                                 ...                 ...               ...   
+5295    Retrieve product from warehouse 1970-04-26 21:14:55             C0998   
+5296                      Confirm order 1970-04-26 21:14:56             C0998   
+5297           Check stock availability 1970-04-26 21:14:57             C0999   
+5298   Check raw materials availability 1970-04-26 21:14:58             C0999   
+5299  Notify unavailability to customer 1970-04-26 21:14:59             C0999   
 
-     case:concept:name      time      cost  
-0                C0000  0.016667  1.833333  
-1                C0000  0.016667  1.833333  
-2                C0000  0.016667  1.833333  
-3                C0000  0.016667  1.833333  
-4                C0000  0.016667  1.833333  
-...                ...       ...       ...  
-5555             C0999  0.016667  1.833333  
-5556             C0999  0.016667  1.833333  
-5557             C0999  0.016667  1.833333  
-5558             C0999  0.015783  1.789165  
-5559             C0999  0.016667  1.833333  
+          time      cost  
+0     0.016667  1.833333  
+1     0.015099  1.754974  
+2     0.016667  1.833333  
+3     0.016667  1.833333  
+4     0.018885  1.944254  
+...        ...       ...  
+5295  0.013857  1.692863  
+5296  0.016667  1.833333  
+5297  0.016667  1.833333  
+5298  0.016667  1.833333  
+5299  0.016667  1.833333  
 
-[5560 rows x 5 columns]
+[5300 rows x 5 columns]
 </pre>
 </div>
 </div>
@@ -14863,7 +14863,7 @@ bpi2017: num of possible activities: 26
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>To get now a more machine learning convenient view, we can now change the eventlogs into case tables.</p>
+<p>Now, to get a view more suitable for machine learning, we can convert the event logs into case tables.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14898,19 +14898,19 @@ bpi2017: num of possible activities: 26
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>                   cost Archieve order  cost Check raw materials availabilty  \
+<pre>                   cost Archive order  cost Check raw materials availability  \
 case:concept:name                                                              
-C0000                         1.833333                              0.000000   
-C0001                         1.833333                              1.833333   
-C0002                         1.833333                              1.833333   
-C0003                         1.833333                              0.000000   
-C0004                         1.833333                              1.833333   
-...                                ...                                   ...   
-C0995                         1.833333                              1.833333   
-C0996                         1.833333                              0.000000   
-C0997                         1.833333                              0.000000   
-C0998                         1.833333                              0.000000   
-C0999                         1.833333                              1.833333   
+C0000                        1.833333                               1.833333   
+C0001                        1.833333                               1.833333   
+C0002                        1.833333                               1.833333   
+C0003                        1.833333                               1.833333   
+C0004                        1.833333                               1.833333   
+...                               ...                                    ...   
+C0995                        1.833333                               0.000000   
+C0996                        1.833333                               0.000000   
+C0997                        1.833333                               0.000000   
+C0998                        1.833333                               1.833333   
+C0999                        1.833333                               0.000000   
 
                    cost Check stock availability  cost Confirm order  \
 case:concept:name                                                      
@@ -14942,45 +14942,45 @@ C0999                       1.833333                   1.833333
 
                    cost Manufacture product  \
 case:concept:name                             
-C0000                              0.000000   
-C0001                              1.806044   
-C0002                              1.846709   
-C0003                              0.000000   
-C0004                              1.900497   
+C0000                              1.678151   
+C0001                              1.874765   
+C0002                              1.872077   
+C0003                              1.757009   
+C0004                              1.870412   
 ...                                     ...   
-C0995                              1.846385   
+C0995                              0.000000   
 C0996                              0.000000   
 C0997                              0.000000   
-C0998                              0.000000   
-C0999                              1.822779   
+C0998                              1.827977   
+C0999                              0.000000   
 
                    cost Obtain raw materials from Supplier 1  \
 case:concept:name                                              
-C0000                                               0.000000   
-C0001                                               1.833766   
-C0002                                               1.928332   
-C0003                                               0.000000   
-C0004                                               1.835040   
+C0000                                               1.937964   
+C0001                                               1.878748   
+C0002                                               1.776891   
+C0003                                               1.792334   
+C0004                                               1.760657   
 ...                                                      ...   
-C0995                                               1.870751   
+C0995                                               0.000000   
 C0996                                               0.000000   
 C0997                                               0.000000   
-C0998                                               0.000000   
-C0999                                               1.893984   
+C0998                                               1.787821   
+C0999                                               0.000000   
 
                    cost Obtain raw materials from Supplier 2  \
 case:concept:name                                              
-C0000                                               0.000000   
-C0001                                               1.867458   
-C0002                                               1.776117   
-C0003                                               0.000000   
-C0004                                               1.836200   
+C0000                                               1.728169   
+C0001                                               1.812782   
+C0002                                               1.824346   
+C0003                                               1.939364   
+C0004                                               1.844286   
 ...                                                      ...   
-C0995                                               1.960020   
+C0995                                               0.000000   
 C0996                                               0.000000   
 C0997                                               0.000000   
-C0998                                               0.000000   
-C0999                                               1.796379   
+C0998                                               1.898442   
+C0999                                               0.000000   
 
                    cost Receive Payment  ...  Num of Emit invoice  \
 case:concept:name                        ...                        
@@ -14998,45 +14998,45 @@ C0999                          1.833333  ...                  1.0
 
                    Num of Get shipping address  Num of Manufacture product  \
 case:concept:name                                                            
-C0000                                      1.0                         0.0   
+C0000                                      1.0                         1.0   
 C0001                                      1.0                         1.0   
 C0002                                      1.0                         1.0   
-C0003                                      1.0                         0.0   
+C0003                                      1.0                         1.0   
 C0004                                      1.0                         1.0   
 ...                                        ...                         ...   
-C0995                                      1.0                         1.0   
+C0995                                      1.0                         0.0   
 C0996                                      1.0                         0.0   
 C0997                                      1.0                         0.0   
-C0998                                      1.0                         0.0   
-C0999                                      1.0                         1.0   
+C0998                                      1.0                         1.0   
+C0999                                      1.0                         0.0   
 
                    Num of Obtain raw materials from Supplier 1  \
 case:concept:name                                                
-C0000                                                      0.0   
+C0000                                                      1.0   
 C0001                                                      1.0   
 C0002                                                      1.0   
-C0003                                                      0.0   
+C0003                                                      1.0   
 C0004                                                      1.0   
 ...                                                        ...   
-C0995                                                      1.0   
+C0995                                                      0.0   
 C0996                                                      0.0   
 C0997                                                      0.0   
-C0998                                                      0.0   
-C0999                                                      1.0   
+C0998                                                      1.0   
+C0999                                                      0.0   
 
                    Num of Obtain raw materials from Supplier 2  \
 case:concept:name                                                
-C0000                                                      0.0   
+C0000                                                      1.0   
 C0001                                                      1.0   
 C0002                                                      1.0   
-C0003                                                      0.0   
+C0003                                                      1.0   
 C0004                                                      1.0   
 ...                                                        ...   
-C0995                                                      1.0   
+C0995                                                      0.0   
 C0996                                                      0.0   
 C0997                                                      0.0   
-C0998                                                      0.0   
-C0999                                                      1.0   
+C0998                                                      1.0   
+C0999                                                      0.0   
 
                    Num of Receive Payment  \
 case:concept:name                           
@@ -15054,60 +15054,60 @@ C0999                                 1.0
 
                    Num of Request raw materials from Supplier 1  \
 case:concept:name                                                 
-C0000                                                       0.0   
+C0000                                                       1.0   
 C0001                                                       1.0   
 C0002                                                       1.0   
-C0003                                                       0.0   
+C0003                                                       1.0   
 C0004                                                       1.0   
 ...                                                         ...   
-C0995                                                       1.0   
+C0995                                                       0.0   
 C0996                                                       0.0   
 C0997                                                       0.0   
-C0998                                                       0.0   
-C0999                                                       1.0   
+C0998                                                       1.0   
+C0999                                                       0.0   
 
                    Num of Request raw materials from Supplier 2  \
 case:concept:name                                                 
-C0000                                                       0.0   
+C0000                                                       1.0   
 C0001                                                       1.0   
 C0002                                                       1.0   
-C0003                                                       0.0   
+C0003                                                       1.0   
 C0004                                                       1.0   
 ...                                                         ...   
-C0995                                                       1.0   
+C0995                                                       0.0   
 C0996                                                       0.0   
 C0997                                                       0.0   
-C0998                                                       0.0   
-C0999                                                       1.0   
+C0998                                                       1.0   
+C0999                                                       0.0   
 
                    Num of Retrieve product from warehouse  Num of Ship product  
 case:concept:name                                                               
-C0000                                                 1.0                  1.0  
+C0000                                                 0.0                  1.0  
 C0001                                                 0.0                  1.0  
 C0002                                                 0.0                  1.0  
-C0003                                                 1.0                  1.0  
+C0003                                                 0.0                  1.0  
 C0004                                                 0.0                  1.0  
 ...                                                   ...                  ...  
-C0995                                                 0.0                  1.0  
+C0995                                                 1.0                  1.0  
 C0996                                                 1.0                  1.0  
 C0997                                                 1.0                  1.0  
-C0998                                                 1.0                  1.0  
-C0999                                                 0.0                  1.0  
+C0998                                                 0.0                  1.0  
+C0999                                                 1.0                  1.0  
 
 [1000 rows x 42 columns]
-                   cost Archieve order  cost Check raw materials availabilty  \
+                   cost Archive order  cost Check raw materials availability  \
 case:concept:name                                                              
-C0000                         1.833333                              1.833333   
-C0001                         0.000000                              0.000000   
-C0002                         0.000000                              0.000000   
-C0003                         0.000000                              0.000000   
-C0004                         0.000000                              1.833333   
-...                                ...                                   ...   
-C0995                         1.833333                              1.833333   
-C0996                         1.833333                              1.833333   
-C0997                         1.833333                              1.833333   
-C0998                         0.000000                              0.000000   
-C0999                         1.833333                              1.833333   
+C0000                             0.0                               0.000000   
+C0001                             0.0                               0.000000   
+C0002                             0.0                               0.000000   
+C0003                             0.0                               0.000000   
+C0004                             0.0                               0.000000   
+...                               ...                                    ...   
+C0995                             0.0                               0.000000   
+C0996                             0.0                               0.000000   
+C0997                             0.0                               1.833333   
+C0998                             0.0                               0.000000   
+C0999                             0.0                               1.833333   
 
                    cost Check stock availability  cost Confirm order  \
 case:concept:name                                                      
@@ -15115,41 +15115,41 @@ C0000                                   1.833333            1.833333
 C0001                                   1.833333            1.833333   
 C0002                                   1.833333            1.833333   
 C0003                                   1.833333            1.833333   
-C0004                                   1.833333            0.000000   
+C0004                                   1.833333            1.833333   
 ...                                          ...                 ...   
 C0995                                   1.833333            1.833333   
 C0996                                   1.833333            1.833333   
-C0997                                   1.833333            1.833333   
+C0997                                   1.833333            0.000000   
 C0998                                   1.833333            1.833333   
-C0999                                   1.833333            1.833333   
+C0999                                   1.833333            0.000000   
 
                    cost Emit invoice  cost Get shipping address  \
 case:concept:name                                                 
-C0000                       1.833333                   1.833333   
-C0001                       0.000000                   0.000000   
-C0002                       0.000000                   0.000000   
-C0003                       0.000000                   0.000000   
-C0004                       0.000000                   0.000000   
+C0000                            0.0                        0.0   
+C0001                            0.0                        0.0   
+C0002                            0.0                        0.0   
+C0003                            0.0                        0.0   
+C0004                            0.0                        0.0   
 ...                              ...                        ...   
-C0995                       1.833333                   1.833333   
-C0996                       1.833333                   1.833333   
-C0997                       1.833333                   1.833333   
-C0998                       0.000000                   0.000000   
-C0999                       1.833333                   1.833333   
+C0995                            0.0                        0.0   
+C0996                            0.0                        0.0   
+C0997                            0.0                        0.0   
+C0998                            0.0                        0.0   
+C0999                            0.0                        0.0   
 
                    cost Manufacture product  \
 case:concept:name                             
-C0000                              1.792326   
-C0001                              0.000000   
-C0002                              0.000000   
-C0003                              0.000000   
-C0004                              0.000000   
+C0000                                   0.0   
+C0001                                   0.0   
+C0002                                   0.0   
+C0003                                   0.0   
+C0004                                   0.0   
 ...                                     ...   
-C0995                              1.872307   
-C0996                              1.655038   
-C0997                              1.716814   
-C0998                              0.000000   
-C0999                              1.793772   
+C0995                                   0.0   
+C0996                                   0.0   
+C0997                                   0.0   
+C0998                                   0.0   
+C0999                                   0.0   
 
                    cost Notify unavailability to customer  \
 case:concept:name                                           
@@ -15157,55 +15157,55 @@ C0000                                            0.000000
 C0001                                            0.000000   
 C0002                                            0.000000   
 C0003                                            0.000000   
-C0004                                            1.833333   
+C0004                                            0.000000   
 ...                                                   ...   
 C0995                                            0.000000   
 C0996                                            0.000000   
-C0997                                            0.000000   
+C0997                                            1.833333   
 C0998                                            0.000000   
-C0999                                            0.000000   
+C0999                                            1.833333   
 
                    cost Obtain raw materials from Supplier 1  \
 case:concept:name                                              
-C0000                                               1.877754   
-C0001                                               0.000000   
-C0002                                               0.000000   
-C0003                                               0.000000   
-C0004                                               0.000000   
+C0000                                                    0.0   
+C0001                                                    0.0   
+C0002                                                    0.0   
+C0003                                                    0.0   
+C0004                                                    0.0   
 ...                                                      ...   
-C0995                                               1.664123   
-C0996                                               1.998123   
-C0997                                               1.813820   
-C0998                                               0.000000   
-C0999                                               1.872519   
+C0995                                                    0.0   
+C0996                                                    0.0   
+C0997                                                    0.0   
+C0998                                                    0.0   
+C0999                                                    0.0   
 
                    cost Obtain raw materials from Supplier 2  ...  \
 case:concept:name                                             ...   
-C0000                                               1.908259  ...   
-C0001                                               0.000000  ...   
-C0002                                               0.000000  ...   
-C0003                                               0.000000  ...   
-C0004                                               0.000000  ...   
+C0000                                                    0.0  ...   
+C0001                                                    0.0  ...   
+C0002                                                    0.0  ...   
+C0003                                                    0.0  ...   
+C0004                                                    0.0  ...   
 ...                                                      ...  ...   
-C0995                                               1.756089  ...   
-C0996                                               1.802530  ...   
-C0997                                               1.787603  ...   
-C0998                                               0.000000  ...   
-C0999                                               1.778979  ...   
+C0995                                                    0.0  ...   
+C0996                                                    0.0  ...   
+C0997                                                    0.0  ...   
+C0998                                                    0.0  ...   
+C0999                                                    0.0  ...   
 
                    Num of Get shipping address  Num of Manufacture product  \
 case:concept:name                                                            
-C0000                                      1.0                         1.0   
+C0000                                      0.0                         0.0   
 C0001                                      0.0                         0.0   
 C0002                                      0.0                         0.0   
 C0003                                      0.0                         0.0   
 C0004                                      0.0                         0.0   
 ...                                        ...                         ...   
-C0995                                      1.0                         1.0   
-C0996                                      1.0                         1.0   
-C0997                                      1.0                         1.0   
+C0995                                      0.0                         0.0   
+C0996                                      0.0                         0.0   
+C0997                                      0.0                         0.0   
 C0998                                      0.0                         0.0   
-C0999                                      1.0                         1.0   
+C0999                                      0.0                         0.0   
 
                    Num of Notify unavailability to customer  \
 case:concept:name                                             
@@ -15213,111 +15213,97 @@ C0000                                                   0.0
 C0001                                                   0.0   
 C0002                                                   0.0   
 C0003                                                   0.0   
-C0004                                                   1.0   
+C0004                                                   0.0   
 ...                                                     ...   
 C0995                                                   0.0   
 C0996                                                   0.0   
-C0997                                                   0.0   
+C0997                                                   1.0   
 C0998                                                   0.0   
-C0999                                                   0.0   
+C0999                                                   1.0   
 
                    Num of Obtain raw materials from Supplier 1  \
 case:concept:name                                                
-C0000                                                      1.0   
+C0000                                                      0.0   
 C0001                                                      0.0   
 C0002                                                      0.0   
 C0003                                                      0.0   
 C0004                                                      0.0   
 ...                                                        ...   
-C0995                                                      1.0   
-C0996                                                      1.0   
-C0997                                                      1.0   
+C0995                                                      0.0   
+C0996                                                      0.0   
+C0997                                                      0.0   
 C0998                                                      0.0   
-C0999                                                      1.0   
+C0999                                                      0.0   
 
                    Num of Obtain raw materials from Supplier 2  \
 case:concept:name                                                
-C0000                                                      1.0   
+C0000                                                      0.0   
 C0001                                                      0.0   
 C0002                                                      0.0   
 C0003                                                      0.0   
 C0004                                                      0.0   
 ...                                                        ...   
-C0995                                                      1.0   
-C0996                                                      1.0   
-C0997                                                      1.0   
+C0995                                                      0.0   
+C0996                                                      0.0   
+C0997                                                      0.0   
 C0998                                                      0.0   
-C0999                                                      1.0   
+C0999                                                      0.0   
 
                    Num of Receive Payment  \
 case:concept:name                           
-C0000                                 1.0   
+C0000                                 0.0   
 C0001                                 0.0   
 C0002                                 0.0   
 C0003                                 0.0   
 C0004                                 0.0   
 ...                                   ...   
-C0995                                 1.0   
-C0996                                 1.0   
-C0997                                 1.0   
+C0995                                 0.0   
+C0996                                 0.0   
+C0997                                 0.0   
 C0998                                 0.0   
-C0999                                 1.0   
+C0999                                 0.0   
 
-                   Num of Retrieve product from warehouse  \
-case:concept:name                                           
-C0000                                                 0.0   
-C0001                                                 1.0   
-C0002                                                 1.0   
-C0003                                                 1.0   
-C0004                                                 0.0   
-...                                                   ...   
-C0995                                                 0.0   
-C0996                                                 0.0   
-C0997                                                 0.0   
-C0998                                                 1.0   
-C0999                                                 0.0   
+                   Num of Request raw materials from Supplier 1  \
+case:concept:name                                                 
+C0000                                                       0.0   
+C0001                                                       0.0   
+C0002                                                       0.0   
+C0003                                                       0.0   
+C0004                                                       0.0   
+...                                                         ...   
+C0995                                                       0.0   
+C0996                                                       0.0   
+C0997                                                       0.0   
+C0998                                                       0.0   
+C0999                                                       0.0   
 
-                   Num of Ship product  \
-case:concept:name                        
-C0000                              1.0   
-C0001                              0.0   
-C0002                              0.0   
-C0003                              0.0   
-C0004                              0.0   
-...                                ...   
-C0995                              1.0   
-C0996                              1.0   
-C0997                              1.0   
-C0998                              0.0   
-C0999                              1.0   
+                   Num of Request raw materials from Supplier 2  \
+case:concept:name                                                 
+C0000                                                       0.0   
+C0001                                                       0.0   
+C0002                                                       0.0   
+C0003                                                       0.0   
+C0004                                                       0.0   
+...                                                         ...   
+C0995                                                       0.0   
+C0996                                                       0.0   
+C0997                                                       0.0   
+C0998                                                       0.0   
+C0999                                                       0.0   
 
-                   Num of Start request raw materials from Supplier 1  \
-case:concept:name                                                       
-C0000                                                            1.0    
-C0001                                                            0.0    
-C0002                                                            0.0    
-C0003                                                            0.0    
-C0004                                                            0.0    
-...                                                              ...    
-C0995                                                            1.0    
-C0996                                                            1.0    
-C0997                                                            1.0    
-C0998                                                            0.0    
-C0999                                                            1.0    
-
-                   Num of Start request raw materials from Supplier 2  
-case:concept:name                                                      
-C0000                                                            1.0   
-C0001                                                            0.0   
-C0002                                                            0.0   
-C0003                                                            0.0   
-C0004                                                            0.0   
-...                                                              ...   
-C0995                                                            1.0   
-C0996                                                            1.0   
-C0997                                                            1.0   
-C0998                                                            0.0   
-C0999                                                            1.0   
+                   Num of Retrieve product from warehouse  Num of Ship product  
+case:concept:name                                                               
+C0000                                                 1.0                  0.0  
+C0001                                                 1.0                  0.0  
+C0002                                                 1.0                  0.0  
+C0003                                                 1.0                  0.0  
+C0004                                                 1.0                  0.0  
+...                                                   ...                  ...  
+C0995                                                 1.0                  0.0  
+C0996                                                 1.0                  0.0  
+C0997                                                 0.0                  0.0  
+C0998                                                 1.0                  0.0  
+C0999                                                 0.0                  0.0  
 
 [1000 rows x 45 columns]
 </pre>
@@ -15331,7 +15317,7 @@ C0999                                                            1.0
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Finally, we can apply the defined rules and calculate the result.</p>
+<p>Finally, we can apply the defined rules and calculate the result. In this case, the times are in hours and the costs are in euros.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -15372,31 +15358,31 @@ C0999                                                            1.0
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>    case:concept:name  cost Archieve order  \
-0               C0000             1.833333   
-1               C0001             1.833333   
-2               C0002             1.833333   
-3               C0003             1.833333   
-4               C0004             1.833333   
-..                ...                  ...   
-995             C0995             1.833333   
-996             C0996             1.833333   
-997             C0997             1.833333   
-998             C0998             1.833333   
-999             C0999             1.833333   
+<pre>    case:concept:name  cost Archive order  \
+0               C0000            1.833333   
+1               C0001            1.833333   
+2               C0002            1.833333   
+3               C0003            1.833333   
+4               C0004            1.833333   
+..                ...                 ...   
+995             C0995            1.833333   
+996             C0996            1.833333   
+997             C0997            1.833333   
+998             C0998            1.833333   
+999             C0999            1.833333   
 
-     cost Check raw materials availabilty  cost Check stock availability  \
-0                                0.000000                       1.833333   
-1                                1.833333                       1.833333   
-2                                1.833333                       1.833333   
-3                                0.000000                       1.833333   
-4                                1.833333                       1.833333   
-..                                    ...                            ...   
-995                              1.833333                       1.833333   
-996                              0.000000                       1.833333   
-997                              0.000000                       1.833333   
-998                              0.000000                       1.833333   
-999                              1.833333                       1.833333   
+     cost Check raw materials availability  cost Check stock availability  \
+0                                 1.833333                       1.833333   
+1                                 1.833333                       1.833333   
+2                                 1.833333                       1.833333   
+3                                 1.833333                       1.833333   
+4                                 1.833333                       1.833333   
+..                                     ...                            ...   
+995                               0.000000                       1.833333   
+996                               0.000000                       1.833333   
+997                               0.000000                       1.833333   
+998                               1.833333                       1.833333   
+999                               0.000000                       1.833333   
 
      cost Confirm order  cost Emit invoice  cost Get shipping address  \
 0              1.833333           1.833333                   1.833333   
@@ -15412,252 +15398,265 @@ C0999                                                            1.0
 999            1.833333           1.833333                   1.833333   
 
      cost Manufacture product  cost Obtain raw materials from Supplier 1  \
-0                    0.000000                                   0.000000   
-1                    1.806044                                   1.833766   
-2                    1.846709                                   1.928332   
-3                    0.000000                                   0.000000   
-4                    1.900497                                   1.835040   
+0                    1.678151                                   1.937964   
+1                    1.874765                                   1.878748   
+2                    1.872077                                   1.776891   
+3                    1.757009                                   1.792334   
+4                    1.870412                                   1.760657   
 ..                        ...                                        ...   
-995                  1.846385                                   1.870751   
+995                  0.000000                                   0.000000   
 996                  0.000000                                   0.000000   
 997                  0.000000                                   0.000000   
-998                  0.000000                                   0.000000   
-999                  1.822779                                   1.893984   
+998                  1.827977                                   1.787821   
+999                  0.000000                                   0.000000   
 
      cost Obtain raw materials from Supplier 2  ...  \
-0                                     0.000000  ...   
-1                                     1.867458  ...   
-2                                     1.776117  ...   
-3                                     0.000000  ...   
-4                                     1.836200  ...   
+0                                     1.728169  ...   
+1                                     1.812782  ...   
+2                                     1.824346  ...   
+3                                     1.939364  ...   
+4                                     1.844286  ...   
 ..                                         ...  ...   
-995                                   1.960020  ...   
+995                                   0.000000  ...   
 996                                   0.000000  ...   
 997                                   0.000000  ...   
-998                                   0.000000  ...   
-999                                   1.796379  ...   
+998                                   1.898442  ...   
+999                                   0.000000  ...   
 
      Num of Manufacture product  Num of Obtain raw materials from Supplier 1  \
-0                           0.0                                          0.0   
+0                           1.0                                          1.0   
 1                           1.0                                          1.0   
 2                           1.0                                          1.0   
-3                           0.0                                          0.0   
+3                           1.0                                          1.0   
 4                           1.0                                          1.0   
 ..                          ...                                          ...   
-995                         1.0                                          1.0   
+995                         0.0                                          0.0   
 996                         0.0                                          0.0   
 997                         0.0                                          0.0   
-998                         0.0                                          0.0   
-999                         1.0                                          1.0   
+998                         1.0                                          1.0   
+999                         0.0                                          0.0   
 
      Num of Obtain raw materials from Supplier 2  Num of Receive Payment  \
-0                                            0.0                     1.0   
+0                                            1.0                     1.0   
 1                                            1.0                     1.0   
 2                                            1.0                     1.0   
-3                                            0.0                     1.0   
+3                                            1.0                     1.0   
 4                                            1.0                     1.0   
 ..                                           ...                     ...   
-995                                          1.0                     1.0   
+995                                          0.0                     1.0   
 996                                          0.0                     1.0   
 997                                          0.0                     1.0   
-998                                          0.0                     1.0   
-999                                          1.0                     1.0   
+998                                          1.0                     1.0   
+999                                          0.0                     1.0   
 
      Num of Request raw materials from Supplier 1  \
-0                                             0.0   
+0                                             1.0   
 1                                             1.0   
 2                                             1.0   
-3                                             0.0   
+3                                             1.0   
 4                                             1.0   
 ..                                            ...   
-995                                           1.0   
+995                                           0.0   
 996                                           0.0   
 997                                           0.0   
-998                                           0.0   
-999                                           1.0   
+998                                           1.0   
+999                                           0.0   
 
      Num of Request raw materials from Supplier 2  \
-0                                             0.0   
+0                                             1.0   
 1                                             1.0   
 2                                             1.0   
-3                                             0.0   
+3                                             1.0   
 4                                             1.0   
 ..                                            ...   
-995                                           1.0   
+995                                           0.0   
 996                                           0.0   
 997                                           0.0   
-998                                           0.0   
-999                                           1.0   
+998                                           1.0   
+999                                           0.0   
 
      Num of Retrieve product from warehouse  Num of Ship product      time  \
-0                                       1.0                  1.0  0.101330   
-1                                       0.0                  1.0  0.151822   
-2                                       0.0                  1.0  0.153026   
-3                                       1.0                  1.0  0.101641   
-4                                       0.0                  1.0  0.152426   
+0                                       0.0                  1.0  0.146666   
+1                                       0.0                  1.0  0.151306   
+2                                       0.0                  1.0  0.151126   
+3                                       0.0                  1.0  0.150743   
+4                                       0.0                  1.0  0.150671   
 ..                                      ...                  ...       ...   
-995                                     0.0                  1.0  0.153605   
-996                                     1.0                  1.0  0.099334   
-997                                     1.0                  1.0  0.103737   
-998                                     1.0                  1.0  0.103334   
-999                                     0.0                  1.0  0.154107   
+995                                     1.0                  1.0  0.101265   
+996                                     1.0                  1.0  0.105980   
+997                                     1.0                  1.0  0.105761   
+998                                     0.0                  1.0  0.151935   
+999                                     1.0                  1.0  0.106831   
 
           cost  
-0    14.733143  
-1    23.958125  
-2    23.882139  
-3    14.667609  
-4    23.817213  
+0    23.565810  
+1    23.866120  
+2    23.803836  
+3    23.734594  
+4    23.658667  
 ..         ...  
-995  24.040984  
-996  14.477794  
-997  14.853497  
-998  14.740309  
-999  23.906703  
+995  14.729929  
+996  14.965651  
+997  14.954730  
+998  23.972774  
+999  15.008239  
 
 [1000 rows x 45 columns]
-    case:concept:name  cost Archieve order  \
-0               C0000             1.833333   
-1               C0001             0.000000   
-2               C0002             0.000000   
-3               C0003             0.000000   
-4               C0004             0.000000   
-..                ...                  ...   
-995             C0995             1.833333   
-996             C0996             1.833333   
-997             C0997             1.833333   
-998             C0998             0.000000   
-999             C0999             1.833333   
+    case:concept:name  cost Archive order  \
+0               C0000                 0.0   
+1               C0001                 0.0   
+2               C0002                 0.0   
+3               C0003                 0.0   
+4               C0004                 0.0   
+..                ...                 ...   
+995             C0995                 0.0   
+996             C0996                 0.0   
+997             C0997                 0.0   
+998             C0998                 0.0   
+999             C0999                 0.0   
 
-     cost Check raw materials availabilty  cost Check stock availability  \
-0                                1.833333                       1.833333   
-1                                0.000000                       1.833333   
-2                                0.000000                       1.833333   
-3                                0.000000                       1.833333   
-4                                1.833333                       1.833333   
-..                                    ...                            ...   
-995                              1.833333                       1.833333   
-996                              1.833333                       1.833333   
-997                              1.833333                       1.833333   
-998                              0.000000                       1.833333   
-999                              1.833333                       1.833333   
+     cost Check raw materials availability  cost Check stock availability  \
+0                                 0.000000                       1.833333   
+1                                 0.000000                       1.833333   
+2                                 0.000000                       1.833333   
+3                                 0.000000                       1.833333   
+4                                 0.000000                       1.833333   
+..                                     ...                            ...   
+995                               0.000000                       1.833333   
+996                               0.000000                       1.833333   
+997                               1.833333                       1.833333   
+998                               0.000000                       1.833333   
+999                               1.833333                       1.833333   
 
      cost Confirm order  cost Emit invoice  cost Get shipping address  \
-0              1.833333           1.833333                   1.833333   
-1              1.833333           0.000000                   0.000000   
-2              1.833333           0.000000                   0.000000   
-3              1.833333           0.000000                   0.000000   
-4              0.000000           0.000000                   0.000000   
+0              1.833333                0.0                        0.0   
+1              1.833333                0.0                        0.0   
+2              1.833333                0.0                        0.0   
+3              1.833333                0.0                        0.0   
+4              1.833333                0.0                        0.0   
 ..                  ...                ...                        ...   
-995            1.833333           1.833333                   1.833333   
-996            1.833333           1.833333                   1.833333   
-997            1.833333           1.833333                   1.833333   
-998            1.833333           0.000000                   0.000000   
-999            1.833333           1.833333                   1.833333   
+995            1.833333                0.0                        0.0   
+996            1.833333                0.0                        0.0   
+997            0.000000                0.0                        0.0   
+998            1.833333                0.0                        0.0   
+999            0.000000                0.0                        0.0   
 
      cost Manufacture product  cost Notify unavailability to customer  \
-0                    1.792326                                0.000000   
-1                    0.000000                                0.000000   
-2                    0.000000                                0.000000   
-3                    0.000000                                0.000000   
-4                    0.000000                                1.833333   
+0                         0.0                                0.000000   
+1                         0.0                                0.000000   
+2                         0.0                                0.000000   
+3                         0.0                                0.000000   
+4                         0.0                                0.000000   
 ..                        ...                                     ...   
-995                  1.872307                                0.000000   
-996                  1.655038                                0.000000   
-997                  1.716814                                0.000000   
-998                  0.000000                                0.000000   
-999                  1.793772                                0.000000   
+995                       0.0                                0.000000   
+996                       0.0                                0.000000   
+997                       0.0                                1.833333   
+998                       0.0                                0.000000   
+999                       0.0                                1.833333   
 
      cost Obtain raw materials from Supplier 1  ...  \
-0                                     1.877754  ...   
-1                                     0.000000  ...   
-2                                     0.000000  ...   
-3                                     0.000000  ...   
-4                                     0.000000  ...   
+0                                          0.0  ...   
+1                                          0.0  ...   
+2                                          0.0  ...   
+3                                          0.0  ...   
+4                                          0.0  ...   
 ..                                         ...  ...   
-995                                   1.664123  ...   
-996                                   1.998123  ...   
-997                                   1.813820  ...   
-998                                   0.000000  ...   
-999                                   1.872519  ...   
+995                                        0.0  ...   
+996                                        0.0  ...   
+997                                        0.0  ...   
+998                                        0.0  ...   
+999                                        0.0  ...   
 
      Num of Notify unavailability to customer  \
 0                                         0.0   
 1                                         0.0   
 2                                         0.0   
 3                                         0.0   
-4                                         1.0   
+4                                         0.0   
 ..                                        ...   
 995                                       0.0   
 996                                       0.0   
-997                                       0.0   
+997                                       1.0   
 998                                       0.0   
-999                                       0.0   
+999                                       1.0   
 
      Num of Obtain raw materials from Supplier 1  \
-0                                            1.0   
+0                                            0.0   
 1                                            0.0   
 2                                            0.0   
 3                                            0.0   
 4                                            0.0   
 ..                                           ...   
-995                                          1.0   
-996                                          1.0   
-997                                          1.0   
+995                                          0.0   
+996                                          0.0   
+997                                          0.0   
 998                                          0.0   
-999                                          1.0   
+999                                          0.0   
 
      Num of Obtain raw materials from Supplier 2  Num of Receive Payment  \
-0                                            1.0                     1.0   
+0                                            0.0                     0.0   
 1                                            0.0                     0.0   
 2                                            0.0                     0.0   
 3                                            0.0                     0.0   
 4                                            0.0                     0.0   
 ..                                           ...                     ...   
-995                                          1.0                     1.0   
-996                                          1.0                     1.0   
-997                                          1.0                     1.0   
+995                                          0.0                     0.0   
+996                                          0.0                     0.0   
+997                                          0.0                     0.0   
 998                                          0.0                     0.0   
-999                                          1.0                     1.0   
+999                                          0.0                     0.0   
 
-     Num of Retrieve product from warehouse  Num of Ship product  \
-0                                       0.0                  1.0   
-1                                       1.0                  0.0   
-2                                       1.0                  0.0   
-3                                       1.0                  0.0   
-4                                       0.0                  0.0   
-..                                      ...                  ...   
-995                                     0.0                  1.0   
-996                                     0.0                  1.0   
-997                                     0.0                  1.0   
-998                                     1.0                  0.0   
-999                                     0.0                  1.0   
+     Num of Request raw materials from Supplier 1  \
+0                                             0.0   
+1                                             0.0   
+2                                             0.0   
+3                                             0.0   
+4                                             0.0   
+..                                            ...   
+995                                           0.0   
+996                                           0.0   
+997                                           0.0   
+998                                           0.0   
+999                                           0.0   
 
-     Num of Start request raw materials from Supplier 1  \
-0                                                  1.0    
-1                                                  0.0    
-2                                                  0.0    
-3                                                  0.0    
-4                                                  0.0    
-..                                                 ...    
-995                                                1.0    
-996                                                1.0    
-997                                                1.0    
-998                                                0.0    
-999                                                1.0    
+     Num of Request raw materials from Supplier 2  \
+0                                             0.0   
+1                                             0.0   
+2                                             0.0   
+3                                             0.0   
+4                                             0.0   
+..                                            ...   
+995                                           0.0   
+996                                           0.0   
+997                                           0.0   
+998                                           0.0   
+999                                           0.0   
 
-     Num of Start request raw materials from Supplier 2      time       cost  
-0                                                  1.0   0.167345  23.766073  
-1                                                  0.0   0.049736   5.486819  
-2                                                  0.0   0.047655   5.382752  
-3                                                  0.0   0.049048   5.452422  
-4                                                  0.0   0.050000   5.500000  
-..                                                 ...        ...        ...  
-995                                                1.0   0.165901  23.675341  
-996                                                1.0   0.166397  23.812930  
-997                                                1.0   0.163946  23.636690  
-998                                                0.0   0.048024   5.401184  
-999                                                1.0   0.166659  23.734434  
+     Num of Retrieve product from warehouse  Num of Ship product      time  \
+0                                       1.0                  0.0  0.048433   
+1                                       1.0                  0.0  0.052218   
+2                                       1.0                  0.0  0.054947   
+3                                       1.0                  0.0  0.049375   
+4                                       1.0                  0.0  0.049695   
+..                                      ...                  ...       ...   
+995                                     1.0                  0.0  0.052664   
+996                                     1.0                  0.0  0.049703   
+997                                     0.0                  0.0  0.050000   
+998                                     1.0                  0.0  0.047191   
+999                                     0.0                  0.0  0.050000   
+
+         cost  
+0    5.421641  
+1    5.610921  
+2    5.747364  
+3    5.468734  
+4    5.484733  
+..        ...  
+995  5.633192  
+996  5.485166  
+997  5.500000  
+998  5.359530  
+999  5.500000  
 
 [1000 rows x 48 columns]
 </pre>
@@ -15671,7 +15670,7 @@ C0999                                                            1.0
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Causality">Causality<a class="anchor-link" href="#Causality">&#182;</a></h2><p>Now we have the data we need. So it is time to explain the idea behind it. For this we use the so-called "Double Machine Learning". The basic idea is that the prediction can be used as a guide for causality testing. In our case, we will try to compare the two different processes under the same conditions and finally explain the difference in the KPI using the changes in the process. The background is explained below.</p>
+<h2 id="Causality">Causality<a class="anchor-link" href="#Causality">&#182;</a></h2><p>Now we have the data we need. So it's time to explain the idea behind it. For this, we use what is called "double machine learning". The basic idea is that the prediction can be used as a guide for causality testing. In our case, we will try to compare two different processes under the same conditions and finally explain the difference in the KPI by the changes in the process. The background is explained below.</p>
 <h3 id="Variables">Variables<a class="anchor-link" href="#Variables">&#182;</a></h3><table>
 <thead><tr>
 <th>Variable</th>
@@ -15705,7 +15704,7 @@ C0999                                                            1.0
 </tr>
 </tbody>
 </table>
-<h3 id="Assumption">Assumption<a class="anchor-link" href="#Assumption">&#182;</a></h3><p>The first assumptions that need to be made are those that represent the KPI's. In this case, these are <code>c</code> and <code>t</code>. So we can assume that the result is calculated by a function <code>f</code> which takes the generic characteristics <code>x</code> as input. In addition, the result changes due to the changes <code>p</code> made. This is achieved by adding the function <code>g</code> which uses <code>p</code> as input.&lt;/br&gt; 
+<h3 id="Assumption">Assumption<a class="anchor-link" href="#Assumption">&#182;</a></h3><p>The first assumptions that need to be made are those that represent the KPIs. In this case, these are <code>c</code> and <code>t</code>. So we can assume that the result is calculated by a function <code>f</code> which takes the generic characteristics <code>x</code> as input. In addition, the result changes due to the changes <code>p</code> made. This is achieved by adding the function <code>g</code> which uses <code>p</code> as input.&lt;/br&gt; 
 t(x) = f<sub>t</sub>(x) + g<sub>t</sub>(p)&lt;/br&gt;
 c(x) = f<sub>c</sub>(x) + g<sub>c</sub>(p)&lt;/br&gt;
 Using the example <code>c</code>, it must be explained for the next assumptions that the result does not change if the process is not changed.&lt;/br&gt;
@@ -15728,7 +15727,7 @@ causality &equiv; &sum;<sup>n</sup>accuracy(M<sub>c<sub>n</sub>&lt;/sub&gt;(d(n)
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Machine-Learning">Machine Learning<a class="anchor-link" href="#Machine-Learning">&#182;</a></h2><p>However, in order to implement our idea, it still needs preparation. Since machine learning is always involved in the end, it is necessary to take a closer look at the data and, if necessary, to process it further.</p>
+<h2 id="Machine-Learning">Machine Learning<a class="anchor-link" href="#Machine-Learning">&#182;</a></h2><p>However, in order to be able to implement our idea, preparation is still required. Since machine learning is involved in the end, it is necessary to take a closer look at the data and process it further if necessary.</p>
 <h3 id="Preprocessing">Preprocessing<a class="anchor-link" href="#Preprocessing">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -15758,15 +15757,15 @@ causality &equiv; &sum;<sup>n</sup>accuracy(M<sub>c<sub>n</sub>&lt;/sub&gt;(d(n)
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>       cost Archieve order  cost Check raw materials availabilty  \
-count         1.000000e+03                           1000.000000   
-mean          1.833333e+00                              0.933167   
-std           4.443114e-16                              0.916977   
-min           1.833333e+00                              0.000000   
-25%           1.833333e+00                              0.000000   
-50%           1.833333e+00                              1.833333   
-75%           1.833333e+00                              1.833333   
-max           1.833333e+00                              1.833333   
+<pre>       cost Archive order  cost Check raw materials availability  \
+count        1.000000e+03                            1000.000000   
+mean         1.833333e+00                               0.922167   
+std          4.443114e-16                               0.917109   
+min          1.833333e+00                               0.000000   
+25%          1.833333e+00                               0.000000   
+50%          1.833333e+00                               1.833333   
+75%          1.833333e+00                               1.833333   
+max          1.833333e+00                               1.833333   
 
        cost Check stock availability  cost Confirm order  cost Emit invoice  \
 count                   1.000000e+03        1.000000e+03       1.000000e+03   
@@ -15780,38 +15779,38 @@ max                     1.833333e+00        1.833333e+00       1.833333e+00
 
        cost Get shipping address  cost Manufacture product  \
 count               1.000000e+03               1000.000000   
-mean                1.833333e+00                  0.937488   
-std                 4.443114e-16                  0.923123   
+mean                1.833333e+00                  0.925664   
+std                 4.443114e-16                  0.922367   
 min                 1.833333e+00                  0.000000   
 25%                 1.833333e+00                  0.000000   
-50%                 1.833333e+00                  1.670641   
-75%                 1.833333e+00                  1.844267   
-max                 1.833333e+00                  2.103184   
+50%                 1.833333e+00                  1.635512   
+75%                 1.833333e+00                  1.839023   
+max                 1.833333e+00                  2.078696   
 
        cost Obtain raw materials from Supplier 1  \
 count                                1000.000000   
-mean                                    0.932382   
-std                                     0.918131   
+mean                                    0.924775   
+std                                     0.921526   
 min                                     0.000000   
 25%                                     0.000000   
-50%                                     1.665336   
-75%                                     1.830759   
-max                                     2.059176   
+50%                                     1.633799   
+75%                                     1.836489   
+max                                     2.084796   
 
        cost Obtain raw materials from Supplier 2  cost Receive Payment  ...  \
 count                                1000.000000          1.000000e+03  ...   
-mean                                    0.930930          1.833333e+00  ...   
-std                                     0.916609          4.443114e-16  ...   
+mean                                    0.921586          1.833333e+00  ...   
+std                                     0.918313          4.443114e-16  ...   
 min                                     0.000000          1.833333e+00  ...   
 25%                                     0.000000          1.833333e+00  ...   
-50%                                     1.663896          1.833333e+00  ...   
-75%                                     1.827457          1.833333e+00  ...   
-max                                     2.066614          1.833333e+00  ...   
+50%                                     1.629644          1.833333e+00  ...   
+75%                                     1.837562          1.833333e+00  ...   
+max                                     2.041728          1.833333e+00  ...   
 
        Num of Manufacture product  \
 count                 1000.000000   
-mean                     0.509000   
-std                      0.500169   
+mean                     0.503000   
+std                      0.500241   
 min                      0.000000   
 25%                      0.000000   
 50%                      1.000000   
@@ -15820,8 +15819,8 @@ max                      1.000000
 
        Num of Obtain raw materials from Supplier 1  \
 count                                  1000.000000   
-mean                                      0.509000   
-std                                       0.500169   
+mean                                      0.503000   
+std                                       0.500241   
 min                                       0.000000   
 25%                                       0.000000   
 50%                                       1.000000   
@@ -15830,8 +15829,8 @@ max                                       1.000000
 
        Num of Obtain raw materials from Supplier 2  Num of Receive Payment  \
 count                                  1000.000000                  1000.0   
-mean                                      0.509000                     1.0   
-std                                       0.500169                     0.0   
+mean                                      0.503000                     1.0   
+std                                       0.500241                     0.0   
 min                                       0.000000                     1.0   
 25%                                       0.000000                     1.0   
 50%                                       1.000000                     1.0   
@@ -15840,8 +15839,8 @@ max                                       1.000000                     1.0
 
        Num of Request raw materials from Supplier 1  \
 count                                   1000.000000   
-mean                                       0.509000   
-std                                        0.500169   
+mean                                       0.503000   
+std                                        0.500241   
 min                                        0.000000   
 25%                                        0.000000   
 50%                                        1.000000   
@@ -15850,8 +15849,8 @@ max                                        1.000000
 
        Num of Request raw materials from Supplier 2  \
 count                                   1000.000000   
-mean                                       0.509000   
-std                                        0.500169   
+mean                                       0.503000   
+std                                        0.500241   
 min                                        0.000000   
 25%                                        0.000000   
 50%                                        1.000000   
@@ -15860,8 +15859,8 @@ max                                        1.000000
 
        Num of Retrieve product from warehouse  Num of Ship product  \
 count                             1000.000000               1000.0   
-mean                                 0.491000                  1.0   
-std                                  0.500169                  0.0   
+mean                                 0.497000                  1.0   
+std                                  0.500241                  0.0   
 min                                  0.000000                  1.0   
 25%                                  0.000000                  1.0   
 50%                                  0.000000                  1.0   
@@ -15870,144 +15869,144 @@ max                                  1.000000                  1.0
 
               time         cost  
 count  1000.000000  1000.000000  
-mean      0.126850    19.333044  
-std       0.025908     4.594176  
-min       0.096169    14.313001  
-25%       0.100512    14.663666  
-50%       0.145886    23.384804  
-75%       0.152263    23.848245  
-max       0.162607    24.408473  
+mean      0.126622    19.282990  
+std       0.025824     4.588879  
+min       0.095364    14.287873  
+25%       0.100709    14.668038  
+50%       0.145737    23.295933  
+75%       0.152094    23.835356  
+max       0.161383    24.479228  
 
 [8 rows x 44 columns]
-       cost Archieve order  cost Check raw materials availabilty  \
-count          1000.000000                           1000.000000   
-mean              0.469333                              0.887333   
-std               0.800507                              0.916656   
-min               0.000000                              0.000000   
-25%               0.000000                              0.000000   
-50%               0.000000                              0.000000   
-75%               1.833333                              1.833333   
-max               1.833333                              1.833333   
+       cost Archive order  cost Check raw materials availability  \
+count         1000.000000                            1000.000000   
+mean             0.421667                               0.925833   
+std              0.771912                               0.917079   
+min              0.000000                               0.000000   
+25%              0.000000                               0.000000   
+50%              0.000000                               1.833333   
+75%              0.000000                               1.833333   
+max              1.833333                               1.833333   
 
        cost Check stock availability  cost Confirm order  cost Emit invoice  \
 count                   1.000000e+03         1000.000000        1000.000000   
-mean                    1.833333e+00            1.415333           0.469333   
-std                     4.443114e-16            0.769546           0.800507   
+mean                    1.833333e+00            1.329167           0.421667   
+std                     4.443114e-16            0.819019           0.771912   
 min                     1.833333e+00            0.000000           0.000000   
-25%                     1.833333e+00            1.833333           0.000000   
+25%                     1.833333e+00            0.000000           0.000000   
 50%                     1.833333e+00            1.833333           0.000000   
-75%                     1.833333e+00            1.833333           1.833333   
+75%                     1.833333e+00            1.833333           0.000000   
 max                     1.833333e+00            1.833333           1.833333   
 
        cost Get shipping address  cost Manufacture product  \
 count                1000.000000               1000.000000   
-mean                    0.469333                  0.471615   
-std                     0.800507                  0.805582   
+mean                    0.421667                  0.421431   
+std                     0.771912                  0.772642   
 min                     0.000000                  0.000000   
 25%                     0.000000                  0.000000   
 50%                     0.000000                  0.000000   
-75%                     1.833333                  1.669200   
-max                     1.833333                  2.056263   
+75%                     0.000000                  0.000000   
+max                     1.833333                  2.031670   
 
        cost Notify unavailability to customer  \
 count                             1000.000000   
-mean                                 0.418000   
-std                                  0.769546   
+mean                                 0.504167   
+std                                  0.819019   
 min                                  0.000000   
 25%                                  0.000000   
 50%                                  0.000000   
-75%                                  0.000000   
+75%                                  1.833333   
 max                                  1.833333   
 
        cost Obtain raw materials from Supplier 1  \
 count                                1000.000000   
-mean                                    0.469423   
-std                                     0.801688   
+mean                                    0.419631   
+std                                     0.769270   
 min                                     0.000000   
 25%                                     0.000000   
 50%                                     0.000000   
-75%                                     1.684896   
-max                                     2.043074   
+75%                                     0.000000   
+max                                     2.028092   
 
        cost Obtain raw materials from Supplier 2  ...  \
 count                                1000.000000  ...   
-mean                                    0.469155  ...   
-std                                     0.801377  ...   
+mean                                    0.424381  ...   
+std                                     0.778180  ...   
 min                                     0.000000  ...   
 25%                                     0.000000  ...   
 50%                                     0.000000  ...   
-75%                                     1.644732  ...   
-max                                     2.068849  ...   
+75%                                     0.000000  ...   
+max                                     2.125974  ...   
 
        Num of Notify unavailability to customer  \
 count                               1000.000000   
-mean                                   0.228000   
-std                                    0.419753   
+mean                                   0.275000   
+std                                    0.446738   
 min                                    0.000000   
 25%                                    0.000000   
 50%                                    0.000000   
-75%                                    0.000000   
+75%                                    1.000000   
 max                                    1.000000   
 
        Num of Obtain raw materials from Supplier 1  \
-count                                   1000.00000   
-mean                                       0.25600   
-std                                        0.43664   
-min                                        0.00000   
-25%                                        0.00000   
-50%                                        0.00000   
-75%                                        1.00000   
-max                                        1.00000   
+count                                  1000.000000   
+mean                                      0.230000   
+std                                       0.421043   
+min                                       0.000000   
+25%                                       0.000000   
+50%                                       0.000000   
+75%                                       0.000000   
+max                                       1.000000   
 
        Num of Obtain raw materials from Supplier 2  Num of Receive Payment  \
-count                                   1000.00000              1000.00000   
-mean                                       0.25600                 0.25600   
-std                                        0.43664                 0.43664   
-min                                        0.00000                 0.00000   
-25%                                        0.00000                 0.00000   
-50%                                        0.00000                 0.00000   
-75%                                        1.00000                 1.00000   
-max                                        1.00000                 1.00000   
+count                                  1000.000000             1000.000000   
+mean                                      0.230000                0.230000   
+std                                       0.421043                0.421043   
+min                                       0.000000                0.000000   
+25%                                       0.000000                0.000000   
+50%                                       0.000000                0.000000   
+75%                                       0.000000                0.000000   
+max                                       1.000000                1.000000   
+
+       Num of Request raw materials from Supplier 1  \
+count                                   1000.000000   
+mean                                       0.230000   
+std                                        0.421043   
+min                                        0.000000   
+25%                                        0.000000   
+50%                                        0.000000   
+75%                                        0.000000   
+max                                        1.000000   
+
+       Num of Request raw materials from Supplier 2  \
+count                                   1000.000000   
+mean                                       0.230000   
+std                                        0.421043   
+min                                        0.000000   
+25%                                        0.000000   
+50%                                        0.000000   
+75%                                        0.000000   
+max                                        1.000000   
 
        Num of Retrieve product from warehouse  Num of Ship product  \
-count                             1000.000000           1000.00000   
-mean                                 0.516000              0.25600   
-std                                  0.499994              0.43664   
-min                                  0.000000              0.00000   
-25%                                  0.000000              0.00000   
-50%                                  1.000000              0.00000   
-75%                                  1.000000              1.00000   
-max                                  1.000000              1.00000   
+count                             1000.000000          1000.000000   
+mean                                 0.495000             0.230000   
+std                                  0.500225             0.421043   
+min                                  0.000000             0.000000   
+25%                                  0.000000             0.000000   
+50%                                  0.000000             0.000000   
+75%                                  1.000000             0.000000   
+max                                  1.000000             1.000000   
 
-       Num of Start request raw materials from Supplier 1  \
-count                                         1000.00000    
-mean                                             0.25600    
-std                                              0.43664    
-min                                              0.00000    
-25%                                              0.00000    
-50%                                              0.00000    
-75%                                              1.00000    
-max                                              1.00000    
-
-       Num of Start request raw materials from Supplier 2         time  \
-count                                         1000.00000   1000.000000   
-mean                                             0.25600      0.080112   
-std                                              0.43664      0.051469   
-min                                              0.00000      0.045362   
-25%                                              0.00000      0.049845   
-50%                                              0.00000      0.050000   
-75%                                              1.00000      0.163700   
-max                                              1.00000      0.172668   
-
-              cost  
-count  1000.000000  
-mean     10.193560  
-std       8.010272  
-min       5.268076  
-25%       5.492266  
-50%       5.500000  
-75%      23.488877  
-max      24.314720  
+              time         cost  
+count  1000.000000  1000.000000  
+mean      0.077075     9.717133  
+std       0.049578     7.720021  
+min       0.043721     5.186074  
+25%       0.050000     5.500000  
+50%       0.050000     5.500000  
+75%       0.052887     5.644346  
+max       0.173030    24.333228  
 
 [8 rows x 47 columns]
 </pre>
@@ -16021,7 +16020,7 @@ max      24.314720
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>As can be seen, there are features on both sides which have no standard deviation or, due to the presentation, a standard deviation close to zero. In addition, it is known that some features can carry the same information due to the way they are presented. This happens when a process step is always performed the same number of times and under the same times and costs (e.g. the automatic sending of invoices). Therefore, it must be checked whether there are features that carry identical information on an aligned scale.</p>
+<p>As can be seen, there are features on both sides that have no standard deviation or have a standard deviation close to zero due to the way they are represented. Furthermore, it is known that some characteristics can carry the same information due to the way they are represented. This is the case if a process step is always performed the same number of times and at the same times and costs (e.g., automatic invoice dispatch). Therefore, it must be checked whether there are features that carry identical information on an aligned scale.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -16055,68 +16054,68 @@ max      24.314720
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>       cost Manufacture product  cost Obtain raw materials from Supplier 1  \
 count               1000.000000                                1000.000000   
-mean                   0.937488                                   0.932382   
-std                    0.923123                                   0.918131   
+mean                   0.925664                                   0.924775   
+std                    0.922367                                   0.921526   
 min                    0.000000                                   0.000000   
 25%                    0.000000                                   0.000000   
-50%                    1.670641                                   1.665336   
-75%                    1.844267                                   1.830759   
-max                    2.103184                                   2.059176   
+50%                    1.635512                                   1.633799   
+75%                    1.839023                                   1.836489   
+max                    2.078696                                   2.084796   
 
        cost Obtain raw materials from Supplier 2  \
 count                                1000.000000   
-mean                                    0.930930   
-std                                     0.916609   
+mean                                    0.921586   
+std                                     0.918313   
 min                                     0.000000   
 25%                                     0.000000   
-50%                                     1.663896   
-75%                                     1.827457   
-max                                     2.066614   
+50%                                     1.629644   
+75%                                     1.837562   
+max                                     2.041728   
 
        cost Request raw materials from Supplier 1  \
 count                                 1000.000000   
-mean                                     0.933509   
-std                                      0.919305   
+mean                                     0.922119   
+std                                      0.919022   
 min                                      0.000000   
 25%                                      0.000000   
-50%                                      1.636714   
-75%                                      1.835337   
-max                                      2.150647   
+50%                                      1.638764   
+75%                                      1.834566   
+max                                      2.053298   
 
        cost Request raw materials from Supplier 2  \
 count                                 1000.000000   
-mean                                     0.934080   
-std                                      0.919662   
+mean                                     0.922465   
+std                                      0.919320   
 min                                      0.000000   
 25%                                      0.000000   
-50%                                      1.675959   
-75%                                      1.838002   
-max                                      2.139441   
+50%                                      1.637515   
+75%                                      1.834777   
+max                                      2.099780   
 
        cost Retrieve product from warehouse  cost Ship product  \
 count                           1000.000000        1000.000000   
-mean                               0.899881           1.831608   
-std                                0.918604           0.083631   
-min                                0.000000           1.552653   
-25%                                0.000000           1.777981   
-50%                                0.000000           1.833409   
-75%                                1.826411           1.887190   
-max                                2.102088           2.079214   
+mean                               0.912559           1.831654   
+std                                0.920449           0.085113   
+min                                0.000000           1.581587   
+25%                                0.000000           1.774451   
+50%                                0.000000           1.828669   
+75%                                1.834587           1.888784   
+max                                2.045101           2.181420   
 
-       Num of Check raw materials availabilty  Num of Manufacture product  \
-count                             1000.000000                 1000.000000   
-mean                                 0.509000                    0.509000   
-std                                  0.500169                    0.500169   
-min                                  0.000000                    0.000000   
-25%                                  0.000000                    0.000000   
-50%                                  1.000000                    1.000000   
-75%                                  1.000000                    1.000000   
-max                                  1.000000                    1.000000   
+       Num of Check raw materials availability  Num of Manufacture product  \
+count                              1000.000000                 1000.000000   
+mean                                  0.503000                    0.503000   
+std                                   0.500241                    0.500241   
+min                                   0.000000                    0.000000   
+25%                                   0.000000                    0.000000   
+50%                                   1.000000                    1.000000   
+75%                                   1.000000                    1.000000   
+max                                   1.000000                    1.000000   
 
        Num of Obtain raw materials from Supplier 1  \
 count                                  1000.000000   
-mean                                      0.509000   
-std                                       0.500169   
+mean                                      0.503000   
+std                                       0.500241   
 min                                       0.000000   
 25%                                       0.000000   
 50%                                       1.000000   
@@ -16125,8 +16124,8 @@ max                                       1.000000
 
        Num of Obtain raw materials from Supplier 2  \
 count                                  1000.000000   
-mean                                      0.509000   
-std                                       0.500169   
+mean                                      0.503000   
+std                                       0.500241   
 min                                       0.000000   
 25%                                       0.000000   
 50%                                       1.000000   
@@ -16135,8 +16134,8 @@ max                                       1.000000
 
        Num of Request raw materials from Supplier 1  \
 count                                   1000.000000   
-mean                                       0.509000   
-std                                        0.500169   
+mean                                       0.503000   
+std                                        0.500241   
 min                                        0.000000   
 25%                                        0.000000   
 50%                                        1.000000   
@@ -16145,8 +16144,8 @@ max                                        1.000000
 
        Num of Request raw materials from Supplier 2  \
 count                                   1000.000000   
-mean                                       0.509000   
-std                                        0.500169   
+mean                                       0.503000   
+std                                        0.500241   
 min                                        0.000000   
 25%                                        0.000000   
 50%                                        1.000000   
@@ -16155,144 +16154,144 @@ max                                        1.000000
 
        Num of Retrieve product from warehouse         time         cost  
 count                             1000.000000  1000.000000  1000.000000  
-mean                                 0.491000     0.126850    19.333044  
-std                                  0.500169     0.025908     4.594176  
-min                                  0.000000     0.096169    14.313001  
-25%                                  0.000000     0.100512    14.663666  
-50%                                  0.000000     0.145886    23.384804  
-75%                                  1.000000     0.152263    23.848245  
-max                                  1.000000     0.162607    24.408473  
+mean                                 0.497000     0.126622    19.282990  
+std                                  0.500241     0.025824     4.588879  
+min                                  0.000000     0.095364    14.287873  
+25%                                  0.000000     0.100709    14.668038  
+50%                                  0.000000     0.145737    23.295933  
+75%                                  1.000000     0.152094    23.835356  
+max                                  1.000000     0.161383    24.479228  
        cost Emit invoice  cost Get shipping address  cost Manufacture product  \
 count        1000.000000                1000.000000               1000.000000   
-mean            0.469333                   0.469333                  0.471615   
-std             0.800507                   0.800507                  0.805582   
+mean            0.421667                   0.421667                  0.421431   
+std             0.771912                   0.771912                  0.772642   
 min             0.000000                   0.000000                  0.000000   
 25%             0.000000                   0.000000                  0.000000   
 50%             0.000000                   0.000000                  0.000000   
-75%             1.833333                   1.833333                  1.669200   
-max             1.833333                   1.833333                  2.056263   
+75%             0.000000                   0.000000                  0.000000   
+max             1.833333                   1.833333                  2.031670   
 
        cost Obtain raw materials from Supplier 1  \
 count                                1000.000000   
-mean                                    0.469423   
-std                                     0.801688   
+mean                                    0.419631   
+std                                     0.769270   
 min                                     0.000000   
 25%                                     0.000000   
 50%                                     0.000000   
-75%                                     1.684896   
-max                                     2.043074   
+75%                                     0.000000   
+max                                     2.028092   
 
        cost Obtain raw materials from Supplier 2  cost Receive Payment  \
 count                                1000.000000           1000.000000   
-mean                                    0.469155              0.469333   
-std                                     0.801377              0.800507   
+mean                                    0.424381              0.421667   
+std                                     0.778180              0.771912   
 min                                     0.000000              0.000000   
 25%                                     0.000000              0.000000   
 50%                                     0.000000              0.000000   
-75%                                     1.644732              1.833333   
-max                                     2.068849              1.833333   
+75%                                     0.000000              0.000000   
+max                                     2.125974              1.833333   
 
-       cost Retrieve product from warehouse  cost Ship product  \
-count                           1000.000000        1000.000000   
-mean                               0.944176           0.469191   
-std                                0.916802           0.801267   
-min                                0.000000           0.000000   
-25%                                0.000000           0.000000   
-50%                                1.673418           0.000000   
-75%                                1.830863           1.674820   
-max                                2.047524           2.093668   
-
-       cost Start request raw materials from Supplier 1  \
-count                                       1000.000000   
-mean                                           0.469333   
-std                                            0.800507   
-min                                            0.000000   
-25%                                            0.000000   
-50%                                            0.000000   
-75%                                            1.833333   
-max                                            1.833333   
-
-       cost Start request raw materials from Supplier 2  ...  \
-count                                       1000.000000  ...   
-mean                                           0.469333  ...   
-std                                            0.800507  ...   
-min                                            0.000000  ...   
-25%                                            0.000000  ...   
-50%                                            0.000000  ...   
-75%                                            1.833333  ...   
-max                                            1.833333  ...   
-
-       Num of Retrieve product from warehouse  Num of Ship product  \
-count                             1000.000000           1000.00000   
-mean                                 0.516000              0.25600   
-std                                  0.499994              0.43664   
-min                                  0.000000              0.00000   
-25%                                  0.000000              0.00000   
-50%                                  1.000000              0.00000   
-75%                                  1.000000              1.00000   
-max                                  1.000000              1.00000   
-
-       Num of Start request raw materials from Supplier 1  \
-count                                         1000.00000    
-mean                                             0.25600    
-std                                              0.43664    
-min                                              0.00000    
-25%                                              0.00000    
-50%                                              0.00000    
-75%                                              1.00000    
-max                                              1.00000    
-
-       Num of Start request raw materials from Supplier 2         time  \
-count                                         1000.00000   1000.000000   
-mean                                             0.25600      0.080112   
-std                                              0.43664      0.051469   
-min                                              0.00000      0.045362   
-25%                                              0.00000      0.049845   
-50%                                              0.00000      0.050000   
-75%                                              1.00000      0.163700   
-max                                              1.00000      0.172668   
-
-              cost  cost Request raw materials from Supplier 1  \
-count  1000.000000                                      1000.0   
-mean     10.193560                                         0.0   
-std       8.010272                                         0.0   
-min       5.268076                                         0.0   
-25%       5.492266                                         0.0   
-50%       5.500000                                         0.0   
-75%      23.488877                                         0.0   
-max      24.314720                                         0.0   
+       cost Request raw materials from Supplier 1  \
+count                                 1000.000000   
+mean                                     0.421667   
+std                                      0.771912   
+min                                      0.000000   
+25%                                      0.000000   
+50%                                      0.000000   
+75%                                      0.000000   
+max                                      1.833333   
 
        cost Request raw materials from Supplier 2  \
-count                                      1000.0   
-mean                                          0.0   
-std                                           0.0   
-min                                           0.0   
-25%                                           0.0   
-50%                                           0.0   
-75%                                           0.0   
-max                                           0.0   
+count                                 1000.000000   
+mean                                     0.421667   
+std                                      0.771912   
+min                                      0.000000   
+25%                                      0.000000   
+50%                                      0.000000   
+75%                                      0.000000   
+max                                      1.833333   
+
+       cost Retrieve product from warehouse  cost Ship product  ...  \
+count                           1000.000000        1000.000000  ...   
+mean                               0.907776           0.421414  ...   
+std                                0.919368           0.772506  ...   
+min                                0.000000           0.000000  ...   
+25%                                0.000000           0.000000  ...   
+50%                                0.000000           0.000000  ...   
+75%                                1.832507           0.000000  ...   
+max                                2.095236           2.091292  ...   
+
+       Num of Notify unavailability to customer  \
+count                               1000.000000   
+mean                                   0.275000   
+std                                    0.446738   
+min                                    0.000000   
+25%                                    0.000000   
+50%                                    0.000000   
+75%                                    1.000000   
+max                                    1.000000   
+
+       Num of Obtain raw materials from Supplier 1  \
+count                                  1000.000000   
+mean                                      0.230000   
+std                                       0.421043   
+min                                       0.000000   
+25%                                       0.000000   
+50%                                       0.000000   
+75%                                       0.000000   
+max                                       1.000000   
+
+       Num of Obtain raw materials from Supplier 2  Num of Receive Payment  \
+count                                  1000.000000             1000.000000   
+mean                                      0.230000                0.230000   
+std                                       0.421043                0.421043   
+min                                       0.000000                0.000000   
+25%                                       0.000000                0.000000   
+50%                                       0.000000                0.000000   
+75%                                       0.000000                0.000000   
+max                                       1.000000                1.000000   
 
        Num of Request raw materials from Supplier 1  \
-count                                        1000.0   
-mean                                            0.0   
-std                                             0.0   
-min                                             0.0   
-25%                                             0.0   
-50%                                             0.0   
-75%                                             0.0   
-max                                             0.0   
+count                                   1000.000000   
+mean                                       0.230000   
+std                                        0.421043   
+min                                        0.000000   
+25%                                        0.000000   
+50%                                        0.000000   
+75%                                        0.000000   
+max                                        1.000000   
 
-       Num of Request raw materials from Supplier 2  
-count                                        1000.0  
-mean                                            0.0  
-std                                             0.0  
-min                                             0.0  
-25%                                             0.0  
-50%                                             0.0  
-75%                                             0.0  
-max                                             0.0  
+       Num of Request raw materials from Supplier 2  \
+count                                   1000.000000   
+mean                                       0.230000   
+std                                        0.421043   
+min                                        0.000000   
+25%                                        0.000000   
+50%                                        0.000000   
+75%                                        0.000000   
+max                                        1.000000   
 
-[8 rows x 30 columns]
+       Num of Retrieve product from warehouse  Num of Ship product  \
+count                             1000.000000          1000.000000   
+mean                                 0.495000             0.230000   
+std                                  0.500225             0.421043   
+min                                  0.000000             0.000000   
+25%                                  0.000000             0.000000   
+50%                                  0.000000             0.000000   
+75%                                  1.000000             0.000000   
+max                                  1.000000             1.000000   
+
+              time         cost  
+count  1000.000000  1000.000000  
+mean      0.077075     9.717133  
+std       0.049578     7.720021  
+min       0.043721     5.186074  
+25%       0.050000     5.500000  
+50%       0.050000     5.500000  
+75%       0.052887     5.644346  
+max       0.173030    24.333228  
+
+[8 rows x 26 columns]
 </pre>
 </div>
 </div>
@@ -16304,7 +16303,7 @@ max                                             0.0
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Validation">Validation<a class="anchor-link" href="#Validation">&#182;</a></h3><p>The next step is to divide the features into generic and changed features. The generic characteristics describe the information that is absolutely necessary to represent the process as a model. The changed characteristics are accordingly necessary for the representation of the change.</p>
+<h3 id="Validation">Validation<a class="anchor-link" href="#Validation">&#182;</a></h3><p>The next step is to divide the characteristics into generic and modified characteristics. The generic features describe the information that is absolutely necessary to represent the process as a model.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -16342,7 +16341,7 @@ cost Request raw materials from Supplier 1
 cost Request raw materials from Supplier 2
 cost Retrieve product from warehouse
 cost Ship product
-Num of Check raw materials availabilty
+Num of Check raw materials availability
 Num of Manufacture product
 Num of Obtain raw materials from Supplier 1
 Num of Obtain raw materials from Supplier 2
@@ -16357,15 +16356,26 @@ Num of Retrieve product from warehouse
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The next step is to find out, which of these characteristics best describe the process. For this we need to choose a model. In this case, we use a regression model that is as simple as possible. Since the calculation of the KPIs is about linear functions, the use of a linear regression is obvious. In addition, all Sklearn compliant estimators are supported. The score is given as a negative mean square error. This means that greater is better or closer to zero is better.</p>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">changed_features</span> <span class="o">=</span> <span class="n">prepared_changed_case_table</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;case:concept:name&#39;</span><span class="p">,</span><span class="s1">&#39;time&#39;</span><span class="p">,</span><span class="s1">&#39;cost&#39;</span><span class="p">]</span><span class="o">+</span><span class="n">generic_features</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">changed_features</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">feature</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">source.causality</span> <span class="kn">import</span> <span class="n">feature_tracing</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="n">unchanged_time_feature_table</span> <span class="o">=</span> <span class="n">feature_tracing</span><span class="p">(</span><span class="n">LinearRegression</span><span class="p">(),</span> <span class="n">prepared_unchanged_case_table</span><span class="p">,</span> <span class="n">generic_features</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;score&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;feature table for time:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">unchanged_time_feature_table</span><span class="p">)</span>
+<span class="n">unchanged_cost_feature_table</span> <span class="o">=</span> <span class="n">feature_tracing</span><span class="p">(</span><span class="n">LinearRegression</span><span class="p">(),</span> <span class="n">prepared_unchanged_case_table</span><span class="p">,</span> <span class="n">generic_features</span><span class="p">,</span> <span class="s1">&#39;cost&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;score&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;feature table for cost:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">unchanged_cost_feature_table</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16385,20 +16395,36 @@ Num of Retrieve product from warehouse
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>cost Emit invoice
-cost Get shipping address
-cost Receive Payment
-cost Start request raw materials from Supplier 1
-cost Start request raw materials from Supplier 2
-Num of Archieve order
-Num of Confirm order
-Num of Emit invoice
-Num of Get shipping address
-Num of Notify unavailability to customer
-Num of Receive Payment
-Num of Ship product
-Num of Start request raw materials from Supplier 1
-Num of Start request raw materials from Supplier 2
+<pre>feature table for time:
+                                             features  dim         score
+83  [cost Manufacture product, cost Ship product, ...    7 -8.311558e-07
+89  [cost Manufacture product, cost Ship product, ...    8 -8.311558e-07
+88  [cost Manufacture product, cost Ship product, ...    8 -8.311558e-07
+87  [cost Manufacture product, cost Ship product, ...    8 -8.311558e-07
+86  [cost Manufacture product, cost Ship product, ...    8 -8.311558e-07
+..                                                ...  ...           ...
+2         [cost Obtain raw materials from Supplier 2]    0 -6.332041e-06
+1         [cost Obtain raw materials from Supplier 1]    0 -6.469095e-06
+4        [cost Request raw materials from Supplier 2]    0 -6.821925e-06
+5              [cost Retrieve product from warehouse]    0 -1.264761e-05
+6                                 [cost Ship product]    0 -6.678726e-04
+
+[90 rows x 3 columns]
+feature table for cost:
+                                             features  dim         score
+86  [Num of Retrieve product from warehouse, cost ...    8 -9.106610e-30
+89  [Num of Retrieve product from warehouse, cost ...    8 -9.106610e-30
+84  [Num of Retrieve product from warehouse, cost ...    8 -9.106610e-30
+85  [Num of Retrieve product from warehouse, cost ...    8 -9.106610e-30
+87  [Num of Retrieve product from warehouse, cost ...    8 -9.106610e-30
+..                                                ...  ...           ...
+0                          [cost Manufacture product]    0 -7.616646e-02
+1         [cost Obtain raw materials from Supplier 1]    0 -7.911953e-02
+4        [cost Request raw materials from Supplier 2]    0 -8.380713e-02
+5              [cost Retrieve product from warehouse]    0 -1.536286e-01
+6                                 [cost Ship product]    0 -2.108400e+01
+
+[95 rows x 3 columns]
 </pre>
 </div>
 </div>
@@ -16410,7 +16436,7 @@ Num of Start request raw materials from Supplier 2
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Causality-Checking">Causality Checking<a class="anchor-link" href="#Causality-Checking">&#182;</a></h3><p>Now we have made all the preparations to start the actual causality check. For this we use the generic and modified feature, as well as the associated data. The only thing left to do is to choose a model. In this case, we have chosen the simplest type of regression, linear regression. For this we can use the implementation of Sklearn. In addition, all Sklearn compliant estimators are supported.</p>
+<p>Using these tables, we can now determine the really important features.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -16419,12 +16445,12 @@ Num of Start request raw materials from Supplier 2
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">source.causality</span> <span class="kn">import</span> <span class="n">full_check</span>
-<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
-<span class="n">causal_accuracy_time</span> <span class="o">=</span> <span class="n">full_check</span><span class="p">(</span><span class="n">LinearRegression</span><span class="p">(),</span> <span class="n">prepared_unchanged_case_table</span><span class="p">,</span> <span class="n">prepared_changed_case_table</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="n">generic_features</span><span class="p">,</span> <span class="n">changed_features</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accurarcy time:&#39;</span><span class="p">,</span> <span class="n">causal_accuracy_time</span><span class="p">)</span>
-<span class="n">causal_accuracy_cost</span> <span class="o">=</span> <span class="n">full_check</span><span class="p">(</span><span class="n">LinearRegression</span><span class="p">(),</span> <span class="n">prepared_unchanged_case_table</span><span class="p">,</span> <span class="n">prepared_changed_case_table</span><span class="p">,</span> <span class="s1">&#39;cost&#39;</span><span class="p">,</span> <span class="n">generic_features</span><span class="p">,</span> <span class="n">changed_features</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accurarcy cost:&#39;</span><span class="p">,</span> <span class="n">causal_accuracy_cost</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_features</span> <span class="o">=</span> <span class="n">unchanged_time_feature_table</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;features&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;time features:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">time_features</span><span class="p">)</span>
+<span class="n">cost_features</span> <span class="o">=</span> <span class="n">unchanged_cost_feature_table</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;features&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;cost features:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cost_features</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16444,8 +16470,224 @@ Num of Start request raw materials from Supplier 2
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Accurarcy time: 0.7954693444709908
-Accurarcy cost: 0.749695926364829
+<pre>time features:
+[&#39;cost Manufacture product&#39;, &#39;cost Ship product&#39;, &#39;cost Request raw materials from Supplier 1&#39;, &#39;cost Retrieve product from warehouse&#39;, &#39;cost Request raw materials from Supplier 2&#39;, &#39;cost Obtain raw materials from Supplier 1&#39;, &#39;cost Obtain raw materials from Supplier 2&#39;, &#39;Num of Retrieve product from warehouse&#39;]
+cost features:
+[&#39;Num of Retrieve product from warehouse&#39;, &#39;cost Ship product&#39;, &#39;cost Request raw materials from Supplier 1&#39;, &#39;cost Manufacture product&#39;, &#39;cost Request raw materials from Supplier 2&#39;, &#39;cost Retrieve product from warehouse&#39;, &#39;cost Obtain raw materials from Supplier 1&#39;, &#39;cost Obtain raw materials from Supplier 2&#39;, &#39;Num of Obtain raw materials from Supplier 1&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Causality-Checking">Causality Checking<a class="anchor-link" href="#Causality-Checking">&#182;</a></h3><p>Now we have made all the preparations to start the actual causality check. For this we use the generic features, as well as the associated data. The only thing left to do is to choose a model. We have already decided to use linear regression at the beginning. Therefore it is obvious to use one here as well.&lt;/br&gt;
+First, we determine the difference between what the unchanged process would output as a result under the same circumstances and what the changed process actually has as a result.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">source.causality</span> <span class="kn">import</span> <span class="n">calculate_difference</span><span class="p">,</span> <span class="n">UNCHANGED_PREDICTION</span><span class="p">,</span> <span class="n">DIFFERENCE</span>
+<span class="n">time_difference</span> <span class="o">=</span> <span class="n">calculate_difference</span><span class="p">(</span><span class="n">LinearRegression</span><span class="p">(),</span> <span class="n">prepared_unchanged_case_table</span><span class="p">,</span> <span class="n">prepared_changed_case_table</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="n">time_features</span><span class="p">)</span>
+<span class="n">CHANGE</span> <span class="o">=</span> <span class="s1">&#39;change relative&#39;</span>
+<span class="n">time_difference</span><span class="p">[</span><span class="n">CHANGE</span><span class="p">]</span> <span class="o">=</span> <span class="n">time_difference</span><span class="p">[</span><span class="n">UNCHANGED_PREDICTION</span><span class="p">]</span><span class="o">/</span><span class="n">time_difference</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;time difference:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">time_difference</span><span class="p">[[</span><span class="s1">&#39;time&#39;</span><span class="p">,</span><span class="n">UNCHANGED_PREDICTION</span><span class="p">,</span><span class="n">DIFFERENCE</span><span class="p">,</span><span class="n">CHANGE</span><span class="p">]])</span>
+<span class="n">cost_difference</span> <span class="o">=</span> <span class="n">calculate_difference</span><span class="p">(</span><span class="n">LinearRegression</span><span class="p">(),</span> <span class="n">prepared_unchanged_case_table</span><span class="p">,</span> <span class="n">prepared_changed_case_table</span><span class="p">,</span> <span class="s1">&#39;cost&#39;</span><span class="p">,</span> <span class="n">cost_features</span><span class="p">)</span>
+<span class="n">time_difference</span><span class="p">[</span><span class="n">CHANGE</span><span class="p">]</span> <span class="o">=</span> <span class="n">time_difference</span><span class="p">[</span><span class="n">UNCHANGED_PREDICTION</span><span class="p">]</span><span class="o">/</span><span class="n">time_difference</span><span class="p">[</span><span class="s1">&#39;cost&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;cost difference:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">time_difference</span><span class="p">[[</span><span class="s1">&#39;cost&#39;</span><span class="p">,</span><span class="n">UNCHANGED_PREDICTION</span><span class="p">,</span><span class="n">DIFFERENCE</span><span class="p">,</span><span class="n">CHANGE</span><span class="p">]])</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>time difference:
+         time  unchanged prediction  difference  change relative
+0    0.048433              0.147843   -0.099410         3.052528
+1    0.052218              0.152787   -0.100568         2.925919
+2    0.054947              0.152160   -0.097213         2.769198
+3    0.049375              0.150170   -0.100796         3.041442
+4    0.049695              0.150608   -0.100913         3.030661
+..        ...                   ...         ...              ...
+995  0.052664              0.100748   -0.048084         1.913030
+996  0.049703              0.104509   -0.054806         2.102654
+997  0.050000              0.103917   -0.053917         2.078348
+998  0.047191              0.153362   -0.106172         3.249848
+999  0.050000              0.106249   -0.056249         2.124977
+
+[1000 rows x 4 columns]
+cost difference:
+         cost  unchanged prediction  difference  change relative
+0    5.421641             23.565810  -18.144169         4.346620
+1    5.610921             23.866120  -18.255199         4.253512
+2    5.747364             23.803836  -18.056471         4.141696
+3    5.468734             23.734594  -18.265861         4.340053
+4    5.484733             23.658667  -18.173934         4.313550
+..        ...                   ...         ...              ...
+995  5.633192             14.729929   -9.096738         2.614846
+996  5.485166             14.965651   -9.480485         2.728386
+997  5.500000             14.954730   -9.454730         2.719042
+998  5.359530             23.972774  -18.613245         4.472925
+999  5.500000             15.008239   -9.508239         2.728771
+
+[1000 rows x 4 columns]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>In the next step we have to try to explain the difference. For this we can use the same function that we used to examine the generic features. This time, however, we take the features of the changed process. The result can be interpreted in such a way that the better the combination of features can explain the difference, the more likely we can speak of a causality from the changes in the features and the changes in the result.&lt;/br&gt;
+For the score, the larger it is, the better the difference can be explained. By default, it is the negative mean squared error. That is, the closer the value tends to zero (becomes larger, with the absolute value becoming smaller), the more accurately the difference could be explained. However, the methods support all measurement variants implemented by Sklearn.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">time_difference_features</span> <span class="o">=</span> <span class="n">time_difference</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;case:concept:name&#39;</span><span class="p">,</span><span class="s1">&#39;time&#39;</span><span class="p">,</span><span class="s1">&#39;cost&#39;</span><span class="p">,</span><span class="n">UNCHANGED_PREDICTION</span><span class="p">,</span><span class="n">DIFFERENCE</span><span class="p">,</span><span class="n">CHANGE</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">time_explanation</span> <span class="o">=</span> <span class="n">feature_tracing</span><span class="p">(</span><span class="n">LinearRegression</span><span class="p">(),</span> <span class="n">time_difference</span><span class="p">,</span> <span class="n">time_difference_features</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;time explanation:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">time_explanation</span><span class="p">)</span>
+<span class="n">cost_difference_features</span> <span class="o">=</span> <span class="n">cost_difference</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;case:concept:name&#39;</span><span class="p">,</span><span class="s1">&#39;time&#39;</span><span class="p">,</span><span class="s1">&#39;cost&#39;</span><span class="p">,</span><span class="n">UNCHANGED_PREDICTION</span><span class="p">,</span><span class="n">DIFFERENCE</span><span class="p">,</span><span class="n">CHANGE</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">cost_explanation</span> <span class="o">=</span> <span class="n">feature_tracing</span><span class="p">(</span><span class="n">LinearRegression</span><span class="p">(),</span> <span class="n">cost_difference</span><span class="p">,</span> <span class="n">cost_difference_features</span><span class="p">,</span> <span class="s1">&#39;cost&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;cost explanation:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cost_explanation</span><span class="p">)</span>
+
+<span class="n">time_explanation</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">CAUSALITY_FEATURE_TABLES_PATH</span><span class="o">/</span><span class="s1">&#39;time_explanation.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">time_explanation</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">CAUSALITY_FEATURE_TABLES_PATH</span><span class="o">/</span><span class="s1">&#39;cost_explanation.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>time explanation:
+                                              features  dim         score
+0                                  [cost Emit invoice]    0 -2.653645e-06
+1                          [cost Get shipping address]    0 -2.653645e-06
+2                           [cost Manufacture product]    0 -5.486905e-06
+3          [cost Obtain raw materials from Supplier 1]    0 -8.033574e-06
+4          [cost Obtain raw materials from Supplier 2]    0 -8.195246e-06
+..                                                 ...  ...           ...
+159  [Num of Archive order, cost Manufacture produc...    7 -1.353587e-07
+160  [Num of Archive order, cost Manufacture produc...    7 -1.353587e-07
+161  [Num of Archive order, cost Manufacture produc...    7 -1.353587e-07
+162  [Num of Archive order, cost Manufacture produc...    7 -1.353578e-07
+163  [Num of Archive order, cost Manufacture produc...    7 -1.353587e-07
+
+[164 rows x 3 columns]
+cost explanation:
+                                              features  dim         score
+0                                  [cost Emit invoice]    0 -1.082865e-02
+1                          [cost Get shipping address]    0 -1.082865e-02
+2                           [cost Manufacture product]    0 -1.558280e-01
+3          [cost Obtain raw materials from Supplier 1]    0 -1.442180e-01
+4          [cost Obtain raw materials from Supplier 2]    0 -1.725381e-01
+..                                                 ...  ...           ...
+175  [cost Emit invoice, cost Obtain raw materials ...    8 -3.710746e-28
+176  [cost Emit invoice, cost Obtain raw materials ...    8 -3.710746e-28
+177  [cost Emit invoice, cost Obtain raw materials ...    8 -3.710746e-28
+178  [cost Emit invoice, cost Obtain raw materials ...    8 -2.115141e-28
+179  [cost Emit invoice, cost Obtain raw materials ...    8 -3.710746e-28
+
+[180 rows x 3 columns]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The last thing we can look at now is which combination of features provides the best explanation.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;best time explanation:&#39;</span><span class="p">)</span>
+<span class="n">best_time_explanation</span> <span class="o">=</span> <span class="n">time_explanation</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;score&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;features:&#39;</span><span class="p">,</span> <span class="n">best_time_explanation</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;score:&#39;</span><span class="p">,</span> <span class="n">best_time_explanation</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;best cost explanation:&#39;</span><span class="p">)</span>
+<span class="n">best_cost_explanation</span> <span class="o">=</span> <span class="n">cost_explanation</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;score&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;features:&#39;</span><span class="p">,</span> <span class="n">best_cost_explanation</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;score:&#39;</span><span class="p">,</span> <span class="n">best_cost_explanation</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>best time explanation:
+features: [&#39;Num of Archive order&#39;, &#39;cost Manufacture product&#39;, &#39;cost Obtain raw materials from Supplier 2&#39;, &#39;cost Obtain raw materials from Supplier 1&#39;, &#39;cost Retrieve product from warehouse&#39;, &#39;Num of Check raw materials availability&#39;, &#39;Num of Confirm order&#39;]
+score: -1.3535704963526519e-07
+best cost explanation:
+features: [&#39;cost Emit invoice&#39;, &#39;cost Obtain raw materials from Supplier 2&#39;, &#39;cost Ship product&#39;, &#39;cost Manufacture product&#39;, &#39;cost Obtain raw materials from Supplier 1&#39;, &#39;cost Retrieve product from warehouse&#39;, &#39;Num of Notify unavailability to customer&#39;, &#39;cost Get shipping address&#39;]
+score: -9.13327378846783e-29
 </pre>
 </div>
 </div>
