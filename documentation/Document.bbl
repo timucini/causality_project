@@ -1,0 +1,110 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{mahu2020}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=62023ef11c8c35aad6d9e4cf52411643}{%
+           family={Huber},
+           familyi={H\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Fachmedien Wiesbaden GmbH}%
+      }
+      \strng{namehash}{62023ef11c8c35aad6d9e4cf52411643}
+      \strng{fullhash}{62023ef11c8c35aad6d9e4cf52411643}
+      \strng{bibnamehash}{62023ef11c8c35aad6d9e4cf52411643}
+      \strng{authorbibnamehash}{62023ef11c8c35aad6d9e4cf52411643}
+      \strng{authornamehash}{62023ef11c8c35aad6d9e4cf52411643}
+      \strng{authorfullhash}{62023ef11c8c35aad6d9e4cf52411643}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Kausalanalyse mit maschinellem Lernen}
+      \field{year}{2020}
+    \endentry
+    \entry{voli2020}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=01e1b7b7606c51e265d16ffde4a7ce7d}{%
+           family={Literatur},
+           familyi={L\bibinitperiod},
+           given={Vorname},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Vieweg}%
+      }
+      \strng{namehash}{01e1b7b7606c51e265d16ffde4a7ce7d}
+      \strng{fullhash}{01e1b7b7606c51e265d16ffde4a7ce7d}
+      \strng{bibnamehash}{01e1b7b7606c51e265d16ffde4a7ce7d}
+      \strng{authorbibnamehash}{01e1b7b7606c51e265d16ffde4a7ce7d}
+      \strng{authornamehash}{01e1b7b7606c51e265d16ffde4a7ce7d}
+      \strng{authorfullhash}{01e1b7b7606c51e265d16ffde4a7ce7d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{123-4-567-89101-1}
+      \field{title}{Titel Literatur}
+      \field{year}{2020}
+    \endentry
+    \entry{us2020}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=350fd16cd76e3e23e7eca6e139b86043}{%
+           family={{Unternehmen Sonstige GmbH}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{350fd16cd76e3e23e7eca6e139b86043}
+      \strng{fullhash}{350fd16cd76e3e23e7eca6e139b86043}
+      \strng{bibnamehash}{350fd16cd76e3e23e7eca6e139b86043}
+      \strng{authorbibnamehash}{350fd16cd76e3e23e7eca6e139b86043}
+      \strng{authornamehash}{350fd16cd76e3e23e7eca6e139b86043}
+      \strng{authorfullhash}{350fd16cd76e3e23e7eca6e139b86043}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Titel Sonstige}
+      \field{urlday}{14}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.google.com
+      \endverb
+      \verb{url}
+      \verb https://www.google.com
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

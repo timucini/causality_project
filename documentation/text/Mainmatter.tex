@@ -1,0 +1,113 @@
+\chapter{Introduction}
+    This document was created as a report within the context of the project. The project is part of the Master's program in Business Informatics at HTW Berlin. The project has been presented by DATANOMIQ GmbH. The project was accompanied by Signavio GmbH as a cooperation partner.
+
+    \section{Background}
+    As a part of business intelligence, process mining is a way for modern companies to get information about their processes. It is not uncommon for processes to be further adapted and changed over time. The question always arises to what extent the changes have influenced the measurement results of the process.
+
+    \section{Goal}
+    In order to specify this question further, it should be found out whether there is a causal relationship between the change in the process and the change in the measurement result. In the best case, the goal is to find the specific changes from all the changes that also influence the measurement result.
+
+    \section{Structure}
+    In the following, the methodology used is presented first for the sake of clarity. This is to clarify afterwards, for which reasons which kind of data was used. Afterwards, the implementation of the software will be discussed in order to explain its peculiarities, limitations and possibilities.
+
+\clearpage
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\chapter{Double Machine Learning}
+
+    \section{In general}
+    A data-based causal analysis attempts to measure the effect of a change on observable outcome. The measurement of this effect is possible when the changes are observable. This can be implemented by double machine learning. In general, it tries to estimate the effect of the change on the outcome by the changes.\footcite[see][106]{mahu2020} In order to recognize the causal effect of a change, all other influences must be comparable.\footcite[see][107]{mahu2020} In addition, it is necessary that the results can arise from the same characteristics, as well as there should be no combination that is found only before the change or after the change.\footcite[see][109]{mahu2020}\\
+    By using machine learning, the relationships between the changes and their effects can be represented as machine models. It should be noted that the representation as a model is always only an approximately correct estimate of the real relationship.\footcite[see][111]{mahu2020}Now we can assume that there are two models. One to calculate the result under condition of the change and one to explain the change. By assuming that a change is calculable if the calculation of the first model is different under the different conditions (changed/not changed), it can be assumed that the representation of the change by the second model explains the difference.\footcite[see][112\psqq]{mahu2020}
+
+    \section{In this case}
+    In this case, however, we are talking about process changes. If there is a suitable representation of the process properties in the flow and its results, then double machine learning can also be used for this. In the following, the idea is explained with an example.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.99\textwidth-2\fboxsep-2\fboxrule]{includes/p1.png}
+        \caption{Process 1 (Unchanged)}
+        \label{p1}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.99\textwidth-2\fboxsep-2\fboxrule]{includes/p2.png}
+        \caption{Process 2 (Changed)}
+        \label{p2}
+    \end{figure}
+    As can be seen in the figures, Task B was deleted and Task D was introduced in the modified process. As a simple example, we now use time as our measurand. Here, the result of the measurement is the sum of the time used for the tasks. We can therefore set up the following example functions:\\
+    \small{$p_1$/$p_2$ representing the results, $A$..$D$ representing the measurements}
+    \[p_1 = A + B + C\]
+    \[p_2 = A + C + D\]
+    Now, we can assume that a machine learning model ($u$) can be trained for the unmodified process as the adornment of the estimate p1 and as the characteristics A..C. Then, we can try to use the model ($u$) to perform a prediction for our modified process to measure the difference ($\beta$) in the outcome.
+    \[u \approx p_1\]
+    However, this requires the model to make a prediction ($q$) for the outcome of the changed process.
+    \[u \rightarrow p_2 \approx q\]
+    Now the difference ($\beta$) can be calculated.
+    \[\beta = p_2 - q\]
+    A second model ($m$) shows the effect of the change on the difference.
+    \[m \approx \beta\]
+    In this case, it is clear because the change in results can only be explained by task D.
+    \[m \equiv D\]
+    In more complex examples, it is conceivable that the change in difference may also consist of combination of changed characteristics. In the end, it is only necessary to find out whether the estimation of the difference was successful. A classical regressive measurement would be the mean squared error. The smaller this is (closer to zero) the better the estimation succeeds and thus the presentation as a causal reason.
+    \[m \rightarrow \beta \equiv \beta_m\]
+    \[causality = mean((\beta-\beta_m)^2)\]
+\clearpage
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\chapter{Data acquisition}
+
+    \section{Real Data}
+    \begin{figure}[H]
+        \centering
+        \fbox{\includegraphics[width=0.99\textwidth-2\fboxsep-2\fboxrule]{includes/blindbild.jpg}}
+        \caption{Bildunterschrift}
+        \label{soqu2}
+        \small{Erstellt in Eigenarbeit in Anlehnung an \cite[see][]{us2020}}
+    \end{figure}
+    \blindtext (siehe Abbildung \ref{soqu2})
+
+    \section{Simulation}
+    \begin{table}[H]
+        \begin{tabular}{p{0.29\textwidth}p{0.65\textwidth}}
+            \textbf{Inhalt} & Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. "Wie ein Hund!" sagte er, es war, als sollte die Scham ihn überleben.\\
+            \textbf{Inhalt} & Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. "Wie ein Hund!" sagte er, es war, als sollte die Scham ihn überleben.\\
+            \textbf{Inhalt} & Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. "Wie ein Hund!" sagte er, es war, als sollte die Scham ihn überleben.\\
+            \textbf{Inhalt} & Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. "Wie ein Hund!" sagte er, es war, als sollte die Scham ihn überleben.\\
+            \textbf{Inhalt} & Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. "Wie ein Hund!" sagte er, es war, als sollte die Scham ihn überleben.\\
+        \end{tabular}
+        \caption{Tabellenunterschrift}
+        \label{tabe2}
+    \end{table}
+    \blindtext (siehe Tabelle \ref{tabe2})
+\clearpage
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\chapter{Implementation}
+
+    \section{Simulation}
+    \begin{figure}[H]
+        \centering
+        \fbox{\includegraphics[width=0.99\textwidth-2\fboxsep-2\fboxrule]{includes/blindbild.jpg}}
+        \caption{Bildunterschrift}
+        \label{soqu3}
+        \small{Erstellt in Eigenarbeit in Anlehnung an \cite[see][]{us2020}}
+    \end{figure}
+    \blindtext (siehe Abbildung \ref{soqu3})
+
+    \section{Data Transformation}
+    \begin{table}[H]
+        \begin{tabular}{p{0.29\textwidth}p{0.65\textwidth}}
+            \textbf{Inhalt} & Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. "Wie ein Hund!" sagte er, es war, als sollte die Scham ihn überleben.\\
+            \textbf{Inhalt} & Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. "Wie ein Hund!" sagte er, es war, als sollte die Scham ihn überleben.\\
+            \textbf{Inhalt} & Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. "Wie ein Hund!" sagte er, es war, als sollte die Scham ihn überleben.\\
+            \textbf{Inhalt} & Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. "Wie ein Hund!" sagte er, es war, als sollte die Scham ihn überleben.\\
+            \textbf{Inhalt} & Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. "Wie ein Hund!" sagte er, es war, als sollte die Scham ihn überleben.\\
+        \end{tabular}
+        \caption{Tabellenunterschrift}
+        \label{tabe3}
+    \end{table}
+    \blindtext (siehe Tabelle \ref{tabe3})
+
+    \section{Double Machine Learning}
+    \blindtext\footcite[see][1]{voli2020}
+\clearpage
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\chapter{Conclusion}
+    \blindtext
+\clearpage

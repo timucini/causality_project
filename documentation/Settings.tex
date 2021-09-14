@@ -1,0 +1,110 @@
+%Kompatibilitätspakete:
+\usepackage{scrhack}
+
+%Zeichen- und Schriftpakete:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{txfonts}\recalctypearea
+
+%Sprachpakete
+%\usepackage[ngerman]{babel}
+\usepackage{csquotes}
+  %Einstellungen:
+  \MakeOuterQuote{"}
+
+%Bild-/Tabellen- und Figurenpakete:
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+  %Einstellungen:
+  %\addto\captionsngerman{
+  %  \crefname{chapter}{kap.}{kap.}
+  %  \Crefname{chapter}{Kap.}{Kap.}
+  %  \crefname{subsubsection}{abs.}{abs.}
+  %  \Crefname{subsubsection}{Abs.}{Abs.}
+  %  \crefname{subsection}{abs.}{abs.}
+  %  \Crefname{subsection}{Abs.}{Abs.}
+  %  \crefname{section}{abs.}{abs.}
+  %  \Crefname{section}{Abs.}{Abs.}
+  %  \crefname{figure}{abb.}{abb.}
+  %  \Crefname{figure}{Abb.}{Abb.}
+  %  \crefname{table}{tab.}{tab.}
+  %  \Crefname{table}{Tab.}{Tab.}
+  %  \renewcommand{\figurename}{Abb.}
+  %  \renewcommand{\tablename}{Tab.}
+  %}
+\usepackage{graphicx}
+  %Bildrandeinstellungen:
+  \setlength{\fboxsep}{0pt}
+  \setlength{\fboxrule}{1pt}
+\usepackage{epstopdf}  
+
+%Fußnotenpakete
+\usepackage[bottom]{footmisc}
+
+%Farbpakete:
+%\usepackage{color}
+  %Eigene Farben:
+  %\definecolor{htwgreen}{rgb}{0.26, 0.73, 0.00}
+  %\definecolor{darkgray}{rgb}{0.30, 0.30, 0.30}
+  %\definecolor{lightgray}{rgb}{0.65, 0.65, 0.65}
+  %Farbeinstellungen:
+  %\addtokomafont{pagenumber}{\color{htwgreen}}
+  %\addtokomafont{author}{\color{lightgray}}
+  %\addtokomafont{sectioning}{\color{htwgreen}}
+  %\addtokomafont{chapterentrypagenumber}{\color{darkgray}}
+  %\color{darkgray}
+
+%Funktionspakete:
+  %Abkürzungen:
+  \usepackage{acronym}
+  %Blindtext:
+  \usepackage{blindtext}
+  %Einbinden von PDF:
+  \usepackage{pdfpages}
+  %Seitenränder einblenden:
+  %\usepackage{showframe}
+  %URLs und Hyperlinks:
+  \usepackage{url}
+  \usepackage[breaklinks=true]{hyperref}
+    %Einstellungen:
+    \hypersetup{
+      colorlinks=true,
+      linkcolor=black,
+      citecolor=blue,
+      urlcolor=cyan
+    }
+  %Nummerierungen und Aufzählungen:
+  \usepackage{enumitem}
+
+%Positionspakete:
+\usepackage{ragged2e}
+
+%Kopf- und Fußzeilenpakete:
+\usepackage{scrlayer-scrpage}
+  %Einstellungen:
+  \clearpairofpagestyles
+  \renewcommand*\chapterpagestyle{scrheadings}
+  \setlength{\headsep}{12pt}
+  \setlength{\headheight}{24pt}
+  \setlength{\footskip}{12pt}
+  \setlength{\footheight}{24pt}
+
+%Literaturpakete:
+\usepackage[backend=biber,style=authoryear-ibid,hyperref]{biblatex}
+  %Einstellungen:
+  \setcounter{biburllcpenalty}{9000}% Kleinbuchstaben
+  \setcounter{biburlucpenalty}{9000}% Großbuchstaben
+  \addbibresource{Literatur.bib}
+
+%Pakete für Verknüpfungen und Referenzen:
+\usepackage[ngerman]{cleveref}
+
+%Einstellungen für Abstände:
+\renewcommand*{\chapterheadstartvskip}{\vspace*{24pt}}
+\renewcommand*{\chapterheadendvskip}{\vspace{12pt}}
+\setlength{\parskip}{1.5ex}
+\renewcommand*{\headfont}{\normalfont}
+\renewcommand*{\arraystretch}{1.5}
+\setlength{\parindent}{0pt}
+\linespread{1.5}

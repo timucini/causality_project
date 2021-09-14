@@ -1,0 +1,13 @@
+%Papier- und Grundeinstellungen:
+\documentclass[a4paper, fontsize = 12pt, oneside]{scrbook}
+\usepackage[a4paper , left = 25mm , right = 25mm , top = 25mm , bottom = 25mm , nomarginpar]{geometry}
+
+\input{Settings.tex}
+\begin{document}
+\frontmatter{}
+    \input{Text/Frontmatter.tex}
+\mainmatter{}
+    \input{Text/Mainmatter.tex}
+\backmatter{}
+    \input{Text/Backmatter.tex}
+\end{document}
