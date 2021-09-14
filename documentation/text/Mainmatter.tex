@@ -1,5 +1,5 @@
 \chapter{Introduction}
-    This document was created as a report within the context of the project. The project is part of the Master's program in Business Informatics at HTW Berlin. The project has been presented by DATANOMIQ GmbH. The project was accompanied by Signavio GmbH as a cooperation partner.
+    This document was created as a report about the project. The project is part of the Master's program in Business Informatics at HTW Berlin. The project has been presented by DATANOMIQ GmbH and was accompanied by Signavio GmbH as a cooperation partner.
 
     \section{Background}
     As a part of business intelligence, process mining is a way for modern companies to get information about their processes. It is not uncommon for processes to be further adapted and changed over time. The question always arises to what extent the changes have influenced the measurement results of the process.
@@ -8,7 +8,7 @@
     In order to specify this question further, it should be found out whether there is a causal relationship between the change in the process and the change in the measurement result. In the best case, the goal is to find the specific changes from all the changes that also influence the measurement result.
 
     \section{Structure}
-    In the following, the methodology used is presented first for the sake of clarity. This is to clarify afterwards, for which reasons which kind of data was used. Afterwards, the implementation of the software will be discussed in order to explain its peculiarities, limitations and possibilities.
+    First, the methods used are introduced. This is to clarify afterwards, for which reasons which kind of data was used. Afterwards, the implementation of the software will be discussed in order to explain its peculiarities, limitations and possibilities.
 
 \clearpage
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -54,28 +54,35 @@
 \chapter{Data acquisition}
 
     \section{Real Data}
-    \begin{figure}[H]
-        \centering
-        \fbox{\includegraphics[width=0.99\textwidth-2\fboxsep-2\fboxrule]{includes/blindbild.jpg}}
-        \caption{Bildunterschrift}
-        \label{soqu2}
-        \small{Erstellt in Eigenarbeit in Anlehnung an \cite[see][]{us2020}}
-    \end{figure}
-    \blindtext (siehe Abbildung \ref{soqu2})
+    To implement such an algorithm, you need data to work with. In the best case, real data is available from a company that has just adapted its processes. The difficulty is that there must be at least two data sets from the same process. One must represent the state before the changes and one after the changes.\\
+    Since no data could be provided during the course of the project, some had to be sought. One place to start is the Business Process Intelligence Challenge, which annually challenges participants with problems in process mining. However, even after finding two data sets, with the same origin and the same process, problems arose. On the one hand, the datasets were in different languages and on the other hand, some of them were poorly described. This is due to the time gap of five years (2012\footnote{BPI 2012 https://www.win.tue.nl/bpi/doku.php?id=2012:challenge}, 2017\footnote{BPI 2017 https://www.win.tue.nl/bpi/doku.php?id=2017:challenge}). Therefore, it was decided to simulate data.
 
     \section{Simulation}
-    \begin{table}[H]
-        \begin{tabular}{p{0.29\textwidth}p{0.65\textwidth}}
-            \textbf{Inhalt} & Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. "Wie ein Hund!" sagte er, es war, als sollte die Scham ihn überleben.\\
-            \textbf{Inhalt} & Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. "Wie ein Hund!" sagte er, es war, als sollte die Scham ihn überleben.\\
-            \textbf{Inhalt} & Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. "Wie ein Hund!" sagte er, es war, als sollte die Scham ihn überleben.\\
-            \textbf{Inhalt} & Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. "Wie ein Hund!" sagte er, es war, als sollte die Scham ihn überleben.\\
-            \textbf{Inhalt} & Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. "Wie ein Hund!" sagte er, es war, als sollte die Scham ihn überleben.\\
-        \end{tabular}
-        \caption{Tabellenunterschrift}
-        \label{tabe2}
-    \end{table}
-    \blindtext (siehe Tabelle \ref{tabe2})
+    During the project, a simple order-to-cash process was designed in BPMN-format. The order-to-cash process encompasses all steps from when a customer order is placed up until the business is paid (the cash). Those steps include order management and order fulfillment, through to credit management, then invoicing and ultimately payment collection. Since the project does not focus on developing a complex process, a simplified process was used.\\
+    A variety of sources were consulted for this purpose and finally the process from the following source was used: \cite[][373]{madu2018}.\\
+    Other processes from \cite[][251]{dafi2020} and \cite[][353]{duer2017} were under consideration, but were discarded as the project progressed.\\
+    The BPMN process shows the process from ordering a product to delivery. The example company works with two suppliers. The three roles of the ERP system, a warehouse employee and a sales employee are represented by swin lanes. When a customer orders a product, it is checked whether it is already in stock. If it is, the product is ordered from the warehouse and confirmed after the order is received. If the product is not in stock, the raw materials are ordered from the two suppliers and then the product is manufactured. If the product is then available, the product is shipped to the customer's delivery address. At the same time, an invoice is sent to the customer. When the amount is received and the product has been delivered, the order is archived, and the process is finished.\\    
+    The process is considered the basis for the project. For this purpose, a second similar process will be developed, in which the first process will be modified.\\
+    The BPMN process can be found on the next page.
+    \begin{figure}[H]
+        \centering
+        \fbox{\includegraphics[height=23cm]{includes/p1_bpmn.png}}
+        \caption{BPMN: Process 1 (Unchanged)}
+        \label{bpmn1}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \fbox{\includegraphics[height=23cm]{includes/p2_bpmn.png}}
+        \caption{BPMN: Process 2 (Changed)}
+        \label{bpmn2}
+    \end{figure}
+    In the previous page (\pageref{bpmn2}) you can see the customized process. The markers show the changes.\\
+    The following adjustments were applied:
+    \begin{enumerate}
+        \item A new gateway was integrated. Here it is checked whether the raw materials are available at the suppliers. If this is not the case, a new end is reached and the customer is informed that the product is not available.
+        \item Orders for raw materials have now been automated by the ERP system. A warehouse employee no longer must do this manually. For this purpose, the suppliers' databases were connected and automatic processes were started.
+        \item The customer's delivery address is now entered directly by the sales staff, who also confirm the order. In addition, this changed the sequence and parallelism of the process steps.
+    \end{enumerate}
 \clearpage
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \chapter{Implementation}

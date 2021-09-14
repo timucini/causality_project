@@ -19,6 +19,126 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{duer2017}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=638d7418ba559777c91e198bb01448d7}{%
+           family={Dubois},
+           familyi={D\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod},
+           givenun=0,
+           suffix={Eric;\bibnamedelima Pohl},
+           suffixi={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+           suffixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{638d7418ba559777c91e198bb01448d7}
+      \strng{fullhash}{638d7418ba559777c91e198bb01448d7}
+      \strng{bibnamehash}{638d7418ba559777c91e198bb01448d7}
+      \strng{authorbibnamehash}{638d7418ba559777c91e198bb01448d7}
+      \strng{authornamehash}{638d7418ba559777c91e198bb01448d7}
+      \strng{authorfullhash}{638d7418ba559777c91e198bb01448d7}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Advanced Information Systems Engineering}
+      \field{year}{2017}
+    \endentry
+    \entry{madu2018}{book}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=3608d06b171d40c433341a0cb7bf8a3b}{%
+           family={Dumas},
+           familyi={D\bibinitperiod},
+           given={Marlon},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6c93b851668ff9e0023eaf8c20dde5d3}{%
+           family={La\bibnamedelima Rosa},
+           familyi={L\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Marcello},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=77c03f6db0b7101e4efabda4bd436ce4}{%
+           family={Mendling},
+           familyi={M\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9dd3370027e0332318af3685a3ebbba}{%
+           family={Reijers},
+           familyi={R\bibinitperiod},
+           given={Hajo\bibnamedelima A.},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{684f13bcea5d48a54b4c2ab50da09377}
+      \strng{fullhash}{c9431f8eb18151527096bfb4b503cefa}
+      \strng{bibnamehash}{684f13bcea5d48a54b4c2ab50da09377}
+      \strng{authorbibnamehash}{684f13bcea5d48a54b4c2ab50da09377}
+      \strng{authornamehash}{684f13bcea5d48a54b4c2ab50da09377}
+      \strng{authorfullhash}{c9431f8eb18151527096bfb4b503cefa}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fundamentals of Business Process Management}
+      \field{year}{2018}
+    \endentry
+    \entry{dafi2020}{book}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=7d74ac54a5956360222a7ea350920f26}{%
+           family={Fahland},
+           familyi={F\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=31e9465c8c8d2598cceb631a66bffd27}{%
+           family={Ghidini},
+           familyi={G\bibinitperiod},
+           given={Chiara},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8cdc40448cfff3a37807d63b1f93f1b2}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3608d06b171d40c433341a0cb7bf8a3b}{%
+           family={Dumas},
+           familyi={D\bibinitperiod},
+           given={Marlon},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{9e26a180a97d8daefaf095423188b652}
+      \strng{fullhash}{07de98e7f8e4b110db38f4416918631b}
+      \strng{bibnamehash}{9e26a180a97d8daefaf095423188b652}
+      \strng{authorbibnamehash}{9e26a180a97d8daefaf095423188b652}
+      \strng{authornamehash}{9e26a180a97d8daefaf095423188b652}
+      \strng{authorfullhash}{07de98e7f8e4b110db38f4416918631b}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Business Process Management Forum}
+      \field{year}{2020}
+    \endentry
     \entry{mahu2020}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=62023ef11c8c35aad6d9e4cf52411643}{%

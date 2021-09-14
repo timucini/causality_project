@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.19)  14 SEP 2021 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.19)  14 SEP 2021 18:34
 entering extended mode
 **"e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/Document.tex"
 (e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/Document.tex
@@ -1132,24 +1132,24 @@ LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
 
 
 
-] [2]
+]
 chapter 2.
-<includes/p1.png, id=97, 685.56125pt x 87.32625pt>
+<includes/p1.png, id=90, 685.56125pt x 87.32625pt>
 File: includes/p1.png Graphic file (type png)
 <use includes/p1.png>
 Package pdftex.def Info: includes/p1.png  used on input line 25.
 (pdftex.def)             Requested size: 441.65208pt x 56.25903pt.
-[3
+[2
 
 
 
 ]
-<includes/p2.png, id=110, 685.56125pt x 87.32625pt>
+<includes/p2.png, id=104, 685.56125pt x 87.32625pt>
 File: includes/p2.png Graphic file (type png)
 <use includes/p2.png>
 Package pdftex.def Info: includes/p2.png  used on input line 31.
 (pdftex.def)             Requested size: 441.65208pt x 56.25903pt.
- [4 <e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/includes/p1.png> <e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/includes/p2.png>] [5]
+ [3 <e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/includes/p1.png> <e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/includes/p2.png>] [4]
 chapter 3.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
 (Font)              scaled to size 10.40245pt on input line 54.
@@ -1157,44 +1157,51 @@ LaTeX Font Info:    Font shape `T1/txss/b/n' in size <10.95> not available
 (Font)              Font shape `T1/txss/bx/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
 (Font)              scaled to size 10.40245pt on input line 54.
-<includes/blindbild.jpg, id=124, 602.25pt x 301.125pt>
+<includes/p1_bpmn.png, id=123, 443.40656pt x 743.02594pt>
+File: includes/p1_bpmn.png Graphic file (type png)
+<use includes/p1_bpmn.png>
+Package pdftex.def Info: includes/p1_bpmn.png  used on input line 69.
+(pdftex.def)             Requested size: 390.53726pt x 654.41338pt.
+[5
+
+
+
+]
+<includes/p2_bpmn.png, id=133, 480.29437pt x 727.96968pt>
+File: includes/p2_bpmn.png Graphic file (type png)
+<use includes/p2_bpmn.png>
+Package pdftex.def Info: includes/p2_bpmn.png  used on input line 75.
+(pdftex.def)             Requested size: 431.77724pt x 654.41338pt.
+ [6]
+Overfull \vbox (52.66336pt too high) has occurred while \output is active []
+
+ [7 <e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/includes/p1_bpmn.png>]
+Overfull \vbox (52.66336pt too high) has occurred while \output is active []
+
+ [8 <e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/includes/p2_bpmn.png>] [9]
+chapter 4.
+<includes/blindbild.jpg, id=157, 602.25pt x 301.125pt>
 File: includes/blindbild.jpg Graphic file (type jpg)
 <use includes/blindbild.jpg>
-Package pdftex.def Info: includes/blindbild.jpg  used on input line 59.
+Package pdftex.def Info: includes/blindbild.jpg  used on input line 93.
 (pdftex.def)             Requested size: 441.65208pt x 220.83485pt.
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <12> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 69.
-[6
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 103.
+[10
 
 
 
- <e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/includes/blindbild.jpg>] [7] [8]
-chapter 4.
-File: includes/blindbild.jpg Graphic file (type jpg)
-<use includes/blindbild.jpg>
-Package pdftex.def Info: includes/blindbild.jpg  used on input line 86.
-(pdftex.def)             Requested size: 441.65208pt x 220.83485pt.
-[9
-
-
-
-] [10] [11]
+ <e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/includes/blindbild.jpg>] [11] [12]
 chapter 5.
-[12
+[13
 
 
 
-]) (e:/Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Text/Backmatter.tex
-
-Package biblatex Warning: Type 'online' not found on input line 7.
-
-
-LaTeX Warning: Empty bibliography on input line 7.
-
-LaTeX Font Info:    Trying to load font information for T1+txtt on input line 9.
-(C:\Users\Brezz\AppData\Roaming\MiKTeX\tex/latex/txfonts\t1txtt.fd
+]) (e:/Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Text/Backmatter.tex)
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 4.
+ (C:\Users\Brezz\AppData\Roaming\MiKTeX\tex/latex/txfonts\t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
-))pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
+)pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.13 \end{document}
@@ -1212,17 +1219,17 @@ Package logreq Info: Writing requests to 'Document.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28066 strings out of 479173
- 528808 string characters out of 2864085
- 1407854 words of memory out of 3000000
- 45212 multiletter control sequences out of 15000+600000
+ 28099 strings out of 479173
+ 529483 string characters out of 2864085
+ 1408035 words of memory out of 3000000
+ 45237 multiletter control sequences out of 15000+600000
  473267 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,110p,10785b,1587s stack positions out of 5000i,500n,10000p,200000b,80000s
 {E:/Program Files/MikTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Brezz/AppData/Roaming/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Brezz/AppData/Roaming/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Brezz/AppData/Roaming/MiKTeX/fonts/type1/public/txfonts/rtxsc.pfb><C:/Users/Brezz/AppData/Roaming/MiKTeX/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/Brezz/AppData/Roaming/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><E:/Program Files/MikTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><E:/Program Files/MikTeX/fonts/type1/urw/times/utmb8a.pfb><E:/Program Files/MikTeX/fonts/type1/urw/times/utmr8a.pfb><E:/Program Files/MikTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "e:/Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Document.pdf" (18 pages, 161905 bytes).
+Output written on "e:/Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Document.pdf" (19 pages, 368705 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
- 165 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
 
