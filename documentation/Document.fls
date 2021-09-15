@@ -973,6 +973,17 @@ INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\cleveref\cleveref.sty
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\cleveref\cleveref.sty
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\cleveref\cleveref.sty
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\cleveref\cleveref.sty
+INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\chngcntr\chngcntr.sty
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Document.aux
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Document.aux
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Document.aux
@@ -1278,16 +1289,6 @@ INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentat
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\includes\p2.png
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\includes\p2.png
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\includes\p2.png
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txr.tfm
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txmi.tfm
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txsy.tfm
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txex.tfm
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txi.tfm
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txmia.tfm
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txsya.tfm
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txsyb.tfm
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txsyc.tfm
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\vf\public\txfonts\txmi.vf
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxmi.tfm
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxptmri.tfm
@@ -1296,8 +1297,10 @@ INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\vf\public\txfonts\txr.vf
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\vf\public\txfonts\txmi.vf
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxmi.tfm
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxptmri.tfm
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\t1xss.tfm
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\t1xbss.tfm
+INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\vf\public\txfonts\txr.vf
+INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\vf\public\txfonts\txmi.vf
+INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxmi.tfm
+INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxptmri.tfm
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\includes\p1_bpmn.png
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\includes\p1_bpmn.png
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\includes\p1_bpmn.png
@@ -1312,33 +1315,13 @@ INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentat
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\includes\p2_bpmn.png
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\includes\p2_bpmn.png
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\includes\p2_bpmn.png
-INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\includes\blindbild.jpg
-INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\includes\blindbild.jpg
-INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\includes\blindbild.jpg
-INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\includes\blindbild.jpg
-INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\includes\blindbild.jpg
-INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\includes\blindbild.jpg
-INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\includes\blindbild.jpg
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\t1xb.tfm
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\vf\public\txfonts\t1xb.vf
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxptmb.tfm
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxb.tfm
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Text\Backmatter.tex
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Text\Backmatter.tex
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Text\Backmatter.tex
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Text\Backmatter.tex
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\t1xi.tfm
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\t1xsc.tfm
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\txfonts\t1txtt.fd
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\txfonts\t1txtt.fd
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\txfonts\t1txtt.fd
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\tex\latex\txfonts\t1txtt.fd
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\t1xtt.tfm
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\vf\public\txfonts\t1xi.vf
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxptmri.tfm
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxi.tfm
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\vf\public\txfonts\t1xsc.vf
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxsc.tfm
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Document.aux
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Document.out
 INPUT e:\Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Document.out
@@ -1349,16 +1332,10 @@ INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\type1\public\txfonts\rtxmi.pfb
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\type1\public\txfonts\rtxmi.pfb
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\type1\public\txfonts\rtxr.pfb
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\type1\public\txfonts\rtxr.pfb
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\type1\public\txfonts\rtxsc.pfb
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\type1\public\txfonts\rtxsc.pfb
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\type1\public\txfonts\t1xtt.pfb
-INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\type1\public\txfonts\t1xtt.pfb
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\type1\public\txfonts\txsy.pfb
 INPUT C:\Users\Brezz\AppData\Roaming\MiKTeX\fonts\type1\public\txfonts\txsy.pfb
 INPUT E:\Program Files\MikTeX\fonts\type1\urw\helvetic\uhvb8a.pfb
 INPUT E:\Program Files\MikTeX\fonts\type1\urw\helvetic\uhvb8a.pfb
-INPUT E:\Program Files\MikTeX\fonts\type1\urw\times\utmb8a.pfb
-INPUT E:\Program Files\MikTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT E:\Program Files\MikTeX\fonts\type1\urw\times\utmr8a.pfb
 INPUT E:\Program Files\MikTeX\fonts\type1\urw\times\utmr8a.pfb
 INPUT E:\Program Files\MikTeX\fonts\type1\urw\times\utmri8a.pfb
