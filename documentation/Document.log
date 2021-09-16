@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.19)  16 SEP 2021 22:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.19)  16 SEP 2021 22:42
 entering extended mode
 **"e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/Document.tex"
 (e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/Document.tex
@@ -1118,13 +1118,6 @@ LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
  [2
 
 
-] (e:/Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Document.lot)
-\tf@lot=\write7
-\openout7 = `Document.lot'.
-
- [3
-
-
 ]) (e:/Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Text/Mainmatter.tex
 chapter 1.
 LaTeX Font Info:    Font shape `T1/txss/b/n' in size <17.28> not available
@@ -1138,7 +1131,7 @@ LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
 
 ]
 chapter 2.
-<includes/p1.png, id=87, 685.56125pt x 87.32625pt>
+<includes/p1.png, id=81, 685.56125pt x 87.32625pt>
 File: includes/p1.png Graphic file (type png)
 <use includes/p1.png>
 Package pdftex.def Info: includes/p1.png  used on input line 25.
@@ -1148,7 +1141,7 @@ Package pdftex.def Info: includes/p1.png  used on input line 25.
 
 
 ]
-<includes/p2.png, id=100, 685.56125pt x 87.32625pt>
+<includes/p2.png, id=93, 685.56125pt x 87.32625pt>
 File: includes/p2.png Graphic file (type png)
 <use includes/p2.png>
 Package pdftex.def Info: includes/p2.png  used on input line 31.
@@ -1160,7 +1153,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
 [3 <e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/includes/p1.png> <e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/includes/p2.png>] [4]
 chapter 3.
-<includes/p1_bpmn.png, id=121, 2131.21219pt x 1136.74687pt>
+<includes/p1_bpmn.png, id=115, 2131.21219pt x 1136.74687pt>
 File: includes/p1_bpmn.png Graphic file (type png)
 <use includes/p1_bpmn.png>
 Package pdftex.def Info: includes/p1_bpmn.png  used on input line 68.
@@ -1170,7 +1163,7 @@ Package pdftex.def Info: includes/p1_bpmn.png  used on input line 68.
 
 
 ]
-<includes/p2_bpmn.png, id=129, 2331.46031pt x 1391.95032pt>
+<includes/p2_bpmn.png, id=123, 2331.46031pt x 1391.95032pt>
 File: includes/p2_bpmn.png Graphic file (type png)
 <use includes/p2_bpmn.png>
 Package pdftex.def Info: includes/p2_bpmn.png  used on input line 74.
@@ -1211,17 +1204,17 @@ Package logreq Info: Writing requests to 'Document.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28033 strings out of 479173
- 528463 string characters out of 2864085
+ 28019 strings out of 479173
+ 528113 string characters out of 2864085
  1409799 words of memory out of 3000000
- 45173 multiletter control sequences out of 15000+600000
+ 45164 multiletter control sequences out of 15000+600000
  458937 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,110p,10785b,1587s stack positions out of 5000i,500n,10000p,200000b,80000s
 {E:/Program Files/MikTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Brezz/AppData/Roaming/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Brezz/AppData/Roaming/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Brezz/AppData/Roaming/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><E:/Program Files/MikTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><E:/Program Files/MikTeX/fonts/type1/urw/times/utmr8a.pfb><E:/Program Files/MikTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "e:/Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Document.pdf" (20 pages, 618589 bytes).
+Output written on "e:/Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Document.pdf" (19 pages, 617390 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 66 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
