@@ -103,8 +103,8 @@ def feature_tracing(model: BaseEstimator, data: DataFrame, features: List[str], 
 
     Returns
     ---
-    float
-        A value defined by the scoring, the larger the better
+    pandas DataFrame
+        A data frame with all sampled feature combinations and their result
     """
     from sklearn.model_selection import cross_validate as validate
     records = []

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.19)  6 OCT 2021 13:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.19)  6 OCT 2021 20:14
 entering extended mode
 **"e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/Document.tex"
 (e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/Document.tex
@@ -1137,7 +1137,7 @@ chapter 2.
 
 ]
 chapter 3.
-<includes/p1_bpmn.png, id=100, 2131.21219pt x 1136.74687pt>
+<includes/p1_bpmn.png, id=106, 2131.21219pt x 1136.74687pt>
 File: includes/p1_bpmn.png Graphic file (type png)
 <use includes/p1_bpmn.png>
 Package pdftex.def Info: includes/p1_bpmn.png  used on input line 36.
@@ -1147,7 +1147,7 @@ Package pdftex.def Info: includes/p1_bpmn.png  used on input line 36.
 
 
 ]
-<includes/p2_bpmn.png, id=110, 2331.46031pt x 1391.95032pt>
+<includes/p2_bpmn.png, id=116, 2331.46031pt x 1391.95032pt>
 File: includes/p2_bpmn.png Graphic file (type png)
 <use includes/p2_bpmn.png>
 Package pdftex.def Info: includes/p2_bpmn.png  used on input line 42.
@@ -1169,37 +1169,42 @@ LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
 
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 69.
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 76.
  (C:\Users\Brezz\AppData\Roaming\MiKTeX\tex/latex/txfonts\ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-) [9] [10] [11] [12] [13]
+) [9] [10] [11]
+Overfull \hbox (0.84909pt too wide) in paragraph at lines 104--105
+\T1/txr/m/n/12 This method is suit-able for ex-clud-ing re-dun-dant columns or fea-tures in a case ta-ble (case_table)
+ []
+
+[12] [13] [14] [15] [16] [17] [18] [19]
 chapter 5.
-[14
+[20
 
 
 
 ]
 chapter 6.
-<includes/p1.png, id=182, 685.56125pt x 87.32625pt>
+<includes/p1.png, id=250, 685.56125pt x 87.32625pt>
 File: includes/p1.png Graphic file (type png)
 <use includes/p1.png>
-Package pdftex.def Info: includes/p1.png  used on input line 130.
+Package pdftex.def Info: includes/p1.png  used on input line 166.
 (pdftex.def)             Requested size: 441.65208pt x 56.25903pt.
-<includes/p2.png, id=183, 685.56125pt x 87.32625pt>
+<includes/p2.png, id=251, 685.56125pt x 87.32625pt>
 File: includes/p2.png Graphic file (type png)
 <use includes/p2.png>
-Package pdftex.def Info: includes/p2.png  used on input line 136.
+Package pdftex.def Info: includes/p2.png  used on input line 172.
 (pdftex.def)             Requested size: 441.65208pt x 56.25903pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
-[15
+[21
 
 
 
- <e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/includes/p1.png> <e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/includes/p2.png>] [16]) (e:/Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Text/Backmatter.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
+ <e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/includes/p1.png> <e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/includes/p2.png>] [22]) (e:/Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Text/Backmatter.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.13 \end{document}
@@ -1217,17 +1222,17 @@ Package logreq Info: Writing requests to 'Document.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28099 strings out of 479173
- 529757 string characters out of 2864085
- 1410149 words of memory out of 3000000
- 45228 multiletter control sequences out of 15000+600000
+ 28149 strings out of 479173
+ 530302 string characters out of 2864085
+ 1412195 words of memory out of 3000000
+ 45255 multiletter control sequences out of 15000+600000
  462576 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,110p,10785b,1585s stack positions out of 5000i,500n,10000p,200000b,80000s
 {E:/Program Files/MikTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Brezz/AppData/Roaming/MiKTeX/fonts/type1/public/txfonts/rtcxr.pfb><C:/Users/Brezz/AppData/Roaming/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Brezz/AppData/Roaming/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Brezz/AppData/Roaming/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><E:/Program Files/MikTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><E:/Program Files/MikTeX/fonts/type1/urw/times/utmr8a.pfb><E:/Program Files/MikTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "e:/Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Document.pdf" (21 pages, 626305 bytes).
+Output written on "e:/Brezz\Documents\HTW\3. Semester\Projekt BI\causality_project\documentation\Document.pdf" (27 pages, 646535 bytes).
 PDF statistics:
- 299 PDF objects out of 1000 (max. 8388607)
- 73 named destinations out of 1000 (max. 500000)
- 170 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 383 PDF objects out of 1000 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 
