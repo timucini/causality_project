@@ -14,40 +14,8 @@
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \chapter{Double Machine Learning}
 
-    \section{In general}
     Data-driven causal analysis attempts to measure the effect of a change on an observable outcome. Measuring this effect is possible if the changes are observable. This can be realized through double machine learning. In general, it attempts to estimate the effect of the change on the outcome based on the changes.\footcite[see][106]{mahu2020} In order to identify the causal effect of a change, all other influences must be comparable.\footcite[see][107]{mahu2020} It is also necessary that the results can arise from the same characteristics, and there should be no combination that can be found only before the change or only after the change.\footcite[see][109]{mahu2020}\\
     Machine learning can be used to represent the relationships between changes and their effects in the form of machine models. It should be noted that the representation as a model is always only an approximately correct estimate of the actual relationship.\footcite[see][111]{mahu2020} Now we can assume that there are two models. One to calculate the result under condition of the change and one to explain the change. Assuming that a change is calculable, if the calculation of the first model is different under the different conditions (changed/not changed), we can assume that the representation of the change by the second model explains the difference.\footcite[see][112\psqq]{mahu2020}
-
-    \section{In this case}
-    In this case, however, we are dealing with process changes. If there is a suitable representation of the process properties in the flow and its results, then double machine learning can be used for this as well. In the following, the idea is explained by means of an example.
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.99\textwidth-2\fboxsep-2\fboxrule]{includes/p1.png}
-        \caption{Process 1 (Unchanged)}
-        \label{p1}
-    \end{figure}
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.99\textwidth-2\fboxsep-2\fboxrule]{includes/p2.png}
-        \caption{Process 2 (Changed)}
-        \label{p2}
-    \end{figure}
-    As can be seen in the figures, Task B has been deleted and Task D has been introduced in the modified process. As a simple example, we now use time as our measurand. The result of the measurement here is the sum of the time spent on the tasks. We can therefore set up the following example functions:\footnote{$p_1$/$p_2$ representing the results, $A$..$D$ representing the measurements}\\
-    \[p_1 = A + B + C\]
-    \[p_2 = A + C + D\]
-    We can now assume that a machine learning model ($u$) can be trained for the unmodified process as the adornment of the estimate p1 and as the characteristics A..C. Then we can try to use the model ($u$) to make a prediction for our modified process to measure the difference ($\beta$) in the outcome.
-    \[u \approx p_1\]
-    However, this requires that the model makes a prediction ($q$) for the outcome of the changed process.
-    \[u \rightarrow p_2 \approx q\]
-    Now the difference ($\beta$) can be calculated.
-    \[\beta = p_2 - q\]
-    A second model ($m$) shows the effect of the change on the difference.
-    \[m \approx \beta\]
-    In this example case, it is clear because the change in results can only be explained by task D.
-    \[m \equiv D\]
-    In more complex examples, it is conceivable that the change in the difference may also consist of combination of changed characteristics. In the end, it is only a matter of finding out whether the estimation of the difference was successful. A classical regressive measurement would be the mean squared error. The smaller this is (closer to zero), the more successful the estimation and thus the presentation as causal.
-    \[m \rightarrow \beta \equiv \beta_m\]
-    \[causality = mean((\beta-\beta_m)^2)\]
 \clearpage
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \chapter{Data acquisition}
@@ -85,6 +53,33 @@
 \clearpage
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \chapter{Implementation}
+
+    \section{Package description}
+    For better understanding, the Python files of the source folder and their functions and methods are discussed below.
+
+    \subsection{misc.py}
+    This module contains methods that could be used in many different places. However, these could not be assigned to the specific modules.
+            
+    \subsubsection*{read\_bpmn}
+    This method can be used to read BPMN files in XML format. The path (path) to the file must be specified. Additionally a generic path (path) and the name (name) can be specified. The implementation of the pm4py package is used to convert the read file into an image of a BPMN graph.\label{readbpmn}
+    \subsubsection*{get\_scenario}
+    This method can be used to import scenario files in CSV format. The scenario created in the process can be used to generate measurement values for a KPI in an event log. In this version, only the KPIs time and costs based on time are taken into account. The path to the file must be specified. Additionally, a generic path and the name can be specified. Furthermore, the deviation scale for non-automated activities can be specified. This can be used to simulate the work done manually by people. The basis for this is the normal distribution (random.normal) implemented by the numpy package.\\
+    The imported scenario file must have the following formatting.
+    \begin{itemize}
+        \item Activity: A column representing the names of the activities as a string.
+        \item Execution time: A column representing the average execution times of the activities as time difference hours:minutes:seconds.
+        \item Execution costs: A column representing the initial execution costs of the activities.
+        \item Automated: A column representing the automation of the activities as a boolean value (true/false).
+        \item Resources cost/hour: A column representing the hourly cost of the bound resource of activities.
+    \end{itemize}
+    The method returns a nested Python Dictonary representing a Scenario. On the first level there are two attributes apply\_to and functions. The attribute apply\_to represents a string that points to another KPI (column in an event log) that is necessary for the calculation. The functions attribute contains another Python dictionary where the names of the activities are assigned to individual so-called lambda functions that reflect the calculation of the KPI. By this structure, a fast application to an evnet log implemented in the pandas DataFrame format is possible.\label{getscenario}
+    \subsubsection*{get\_dummy\_scenario}
+    This method is very similar to method \nameref{getscenario}. However, it does not require a file that represents a scenario. However, the names of the activities (activities) are required. Furthermore, the deviation scale for non-automated activities can be specified. Here, too, only the KPIs time and costs are taken into account. The output is therefore identical in form.
+    \subsubsection*{get\_dummy\_ruleset}
+    This method can be used to create a rule set for calculating KPIs. Thereby the method needs the eventlog as pandas DataFrame. Additionally, the name of the column for the case ID and the activity ID can be changed. These are set to pm4py values by default. Furthermore, the number of activities executed in parallel (n\_parallels) can be set. By default, the rule set is given the name "cost", which reflects the KPI cost. However, this can be changed.\\
+    The return value is a Python dictionary that matches the name with a Python list of activity names. Thereby sequential activities are coded as Python List and parallel ones as Python Tuple.\label{dummyrs}
+    \subsubsection*{min\_max\_scale}
+    This method can be used to scale numeric columns of a pandas DataFrame (frame) between two values (scale\_min, scale\_max) by their minima and maxima. By default, the limits zero and one are used.\label{minmax}
 
     \section{Simulation}
     Since it was necessary to simulate the data, different possibilities to generate an event log from a BPMN were searched. However, it was quickly determined that the options available to us (open source, Signavio) did not provide the desired result. Therefore, it was necessary to include the simulation into our implementation.\\
@@ -125,4 +120,37 @@ In the future, it might be interesting to test the algorithms with different mac
 Also the consideration of different measurement methods for the processes, as well as evaluation possibilities of the model could be interesting. This could have a strong impact on finding the right feature combinations. One possibility would be to measure the models at interval limits and to determine the accuracy.\\
 Another point worth mentioning is the complexity of the processes. In reality, processes are usually not so clear and simple. Therefore, it can't hurt to test significantly more complicated processes as well.\\
 Finally, it must be said that the results are not always as we expected them to be. Often the results of the models differed in the decimal range. But there were also areas where floating point calculations can become very inaccurate. In conclusion, we did not succeed in finding an adequate reason, even if the deviation occurred in the range $<10^{-7}$.
+\clearpage
+\chapter{Appendix}
+
+\section{Double Machine Learning: In this case}
+In this case, however, we are dealing with process changes. If there is a suitable representation of the process properties in the flow and its results, then double machine learning can be used for this as well. In the following, the idea is explained by means of an example.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\textwidth-2\fboxsep-2\fboxrule]{includes/p1.png}
+    \caption{Process 1 (Unchanged)}
+    \label{p1}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\textwidth-2\fboxsep-2\fboxrule]{includes/p2.png}
+    \caption{Process 2 (Changed)}
+    \label{p2}
+\end{figure}
+As can be seen in the figures, Task B has been deleted and Task D has been introduced in the modified process. As a simple example, we now use time as our measurand. The result of the measurement here is the sum of the time spent on the tasks. We can therefore set up the following example functions:\footnote{$p_1$/$p_2$ representing the results, $A$..$D$ representing the measurements}\\
+\[p_1 = A + B + C\]
+\[p_2 = A + C + D\]
+We can now assume that a machine learning model ($u$) can be trained for the unmodified process as the adornment of the estimate p1 and as the characteristics A..C. Then we can try to use the model ($u$) to make a prediction for our modified process to measure the difference ($\beta$) in the outcome.
+\[u \approx p_1\]
+However, this requires that the model makes a prediction ($q$) for the outcome of the changed process.
+\[u \rightarrow p_2 \approx q\]
+Now the difference ($\beta$) can be calculated.
+\[\beta = p_2 - q\]
+A second model ($m$) shows the effect of the change on the difference.
+\[m \approx \beta\]
+In this example case, it is clear because the change in results can only be explained by task D.
+\[m \equiv D\]
+In more complex examples, it is conceivable that the change in the difference may also consist of combination of changed characteristics. In the end, it is only a matter of finding out whether the estimation of the difference was successful. A classical regressive measurement would be the mean squared error. The smaller this is (closer to zero), the more successful the estimation and thus the presentation as causal.
+\[m \rightarrow \beta \equiv \beta_m\]
+\[causality = mean((\beta-\beta_m)^2)\]
 \clearpage
