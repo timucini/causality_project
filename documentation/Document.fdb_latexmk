@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber Document"] 1633541921 "Document.bcf" "Document.bbl" "Document" 1633544083
+["biber Document"] 1633541921 "Document.bcf" "Document.bbl" "Document" 1633544190
   "Document.bcf" 1633544083 107369 4b6d45940556ea549bff2c4d4f51deaf "pdflatex"
   "Literatur.bib" 1631636293 1408 7fed4be7bfeac752c5a9331d1a762476 ""
   (generated)
-  "Document.bbl"
   "Document.blg"
-["pdflatex"] 1633544079 "e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/Document.tex" "e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/Document.pdf" "Document" 1633544083
+  "Document.bbl"
+["pdflatex"] 1633544079 "e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/Document.tex" "e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/Document.pdf" "Document" 1633544190
   "C:/Users/Brezz/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1621429226 9547927 3a46eb0d40205ff6a3c68a0a90d444cd ""
   "C:/Users/Brezz/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1625257707 84835 ea49355689c87853232baf14d44df7dc ""
   "C:/Users/Brezz/AppData/Roaming/MiKTeX/fonts/tfm/public/txfonts/rtcxr.tfm" 977346360 1368 7af309acf53bb727783600185f629f47 ""
@@ -183,7 +183,7 @@
   "Settings.tex" 1631711421 3126 6e4f3ff574220ffc83898e3a53518bcb ""
   "Text/Backmatter.tex" 1631636342 67 2d2631387dbcdf4b6851e0adbaf2f3eb ""
   "Text/Frontmatter.tex" 1631824934 2125 77806070f9e9c31849e49c63749fea6e ""
-  "Text/Mainmatter.tex" 1633544074 33075 fa1e8f2a4b164b61f64c48af2dc377c6 ""
+  "Text/Mainmatter.tex" 1633544189 33075 fa1e8f2a4b164b61f64c48af2dc377c6 ""
   "e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/Document.aux" 1633544083 15617 d802395002857ca1330e8b0f9ac32c81 ""
   "e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/Document.tex" 1631617275 400 3c1edcafdde3bc87d22ac9e35f281713 ""
   "includes/csm_Logos_1330x430_612fe2f37a.jpg" 1592226778 27891 a1c7ca637598befdfd41e230cd341773 ""
@@ -192,13 +192,13 @@
   "includes/p2.png" 1631628705 11907 e9c852bc1cbfd5603e8422400e326de6 ""
   "includes/p2_bpmn.png" 1631705803 272316 d1d8b9560a155121e06f65fd64965950 ""
   (generated)
-  "Document.aux"
-  "Document.toc"
+  "e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/Document.pdf"
+  "Document.lof"
+  "Document.pdf"
+  "e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/Document.log"
   "Document.bcf"
+  "Document.out"
   "Document.log"
   "Document.run.xml"
-  "e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/Document.log"
-  "Document.lof"
-  "e:/Brezz/Documents/HTW/3. Semester/Projekt BI/causality_project/documentation/Document.pdf"
-  "Document.out"
-  "Document.pdf"
+  "Document.toc"
+  "Document.aux"
